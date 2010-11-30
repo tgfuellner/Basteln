@@ -1,0 +1,115 @@
+Cmp-Mod V01 Created by CvPCB (20100406 SVN-R2509)-final date = Di 11 Mai 2010 21:30:53 CEST
+
+BeginCmp
+TimeStamp = /4BE9A253;
+Reference = BT1;
+ValeurCmp = BATTERY;
+IdModule  = Batclip-AA;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDC034D;
+Reference = C1;
+ValeurCmp = 4.7u;
+IdModule  = SM1206POL;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDBD377;
+Reference = C2;
+ValeurCmp = 22n;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDC03F7;
+Reference = C3;
+ValeurCmp = 22u;
+IdModule  = SM1210L;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDC0469;
+Reference = C4;
+ValeurCmp = 22n;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDBD2DB;
+Reference = D1;
+ValeurCmp = Shottky;
+IdModule  = SM1210L;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDBD28B;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-SUFLUX;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BE9AEA1;
+Reference = D3;
+ValeurCmp = LED-sense;
+IdModule  = LED-3MM;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDBD330;
+Reference = L1;
+ValeurCmp = 15uH;
+IdModule  = SM1210L;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDC09F2;
+Reference = P1;
+ValeurCmp = CONN_3X2;
+IdModule  = pin_array_3x2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDC0225;
+Reference = R1;
+ValeurCmp = 1k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDC07A3;
+Reference = R2;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDC0D95;
+Reference = R3;
+ValeurCmp = 3;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BE9AE7F;
+Reference = R4;
+ValeurCmp = 140;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BDC0E87;
+Reference = SW1;
+ValeurCmp = Taster;
+IdModule  = PUSH_BUTT_SHAPE1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4BD9C826;
+Reference = U1;
+ValeurCmp = ATTINY43U;
+IdModule  = MLF20;
+EndCmp
+
+EndListe

@@ -1,0 +1,7 @@
+sudo avrdude -c avrispv2 -P usb -p m32 -U flash:w:countdown.hex 
+sudo avrdude -c USBasp -P usb -p m32 -U flash:w:countdown.hex 
+
+grep '\.h:$' .dep/*|sed 's/:$//' | xargs ctags *.c
+
+Algorithmus für Sekundentakt:
+http://www.mikrocontroller.net/articles/AVR_-_Die_genaue_Sekunde_/_RTC

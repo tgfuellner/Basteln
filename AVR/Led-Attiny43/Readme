@@ -1,0 +1,3 @@
+Mehrere Pstscript auf eine Seite:
+
+ pstops '0(0cm,-9cm)+0(3.2cm,-9cm)+0(-3.2cm,-9cm)+0(-6.4cm,-9cm)+0(6.4cm,-9cm)'  Led-Attiny43-Rückseite.ps rueckMulti.ps

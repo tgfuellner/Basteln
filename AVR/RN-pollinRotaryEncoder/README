@@ -1,0 +1,5 @@
+Drehgeber Panasonic Pollin auslesen:
+
+sudo avrdude -c avrispv2 -P usb -p m32 -U flash:w:encoder.hex 
+
+grep '\.h:$' .dep/*|sed 's/:$//' | xargs ctags *.c

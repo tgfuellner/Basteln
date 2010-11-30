@@ -1,0 +1,32 @@
+PCBNEW-LibDoc----V1  Sa 24 Jul 2010 17:21:46 CEST
+#
+$MODULE TOM-LM78XX
+Li TOM-LM78XX
+Cd Regulateur TO220 serie LM78xx
+Kw TR TO220
+$EndMODULE
+#
+$MODULE TOM-1pin
+Li TOM-1pin
+Cd module 1 pin (ou trou mecanique de percage)
+Kw DEV
+$EndMODULE
+#
+$MODULE SRUH-112DM
+Li SRUH-112DM
+Cd Relay
+Kw Relay
+$EndMODULE
+#
+$MODULE MLF20
+Li MLF20
+Kw MLF20 QFN20
+$EndMODULE
+#
+$MODULE Batclip-AA
+Li Batclip-AA
+Cd Battery Clip
+Kw Battery
+$EndMODULE
+#
+$EndLIBDOC

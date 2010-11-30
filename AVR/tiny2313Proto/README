@@ -1,0 +1,11 @@
+# Terminalmode
+sudo avrdude -B 10 -c avrispv2 -P usb -p t2313 -t
+# oder
+sudo avrdude -B 10 -c USBasp -P usb -p t2313 -t
+
+# Fuses:
+# http://www.engbedded.com/fusecalc
+
+
+# 2 MHz Quartz
+sudo avrdude -c avrispv2 -P usb -pt2313 -U lfuse:w:0xcb:m

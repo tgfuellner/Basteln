@@ -1,0 +1,150 @@
+Cmp-Mod V01 Created by CvPCB (2010-05-05 BZR 2356)-stable date = Mi 08 Sep 2010 12:22:07 CEST
+
+BeginCmp
+TimeStamp = /4C752A05;
+Reference = C1;
+ValeurCmp = 10n;
+IdModule  = C2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C7525DD;
+Reference = C2;
+ValeurCmp = 10u;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C7527C5;
+Reference = C3;
+ValeurCmp = 10u;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C864DEB;
+Reference = C4;
+ValeurCmp = 10u;
+IdModule  = SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C864DE7;
+Reference = C5;
+ValeurCmp = 100n;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C8648F3;
+Reference = D1;
+ValeurCmp = 3.6;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C8648DD;
+Reference = D2;
+ValeurCmp = 3.6;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C864753;
+Reference = J1;
+ValeurCmp = USB_1;
+IdModule  = USB_A;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C752A74;
+Reference = L1;
+ValeurCmp = 10u;
+IdModule  = R4;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C752AF5;
+Reference = P1;
+ValeurCmp = Lx;
+IdModule  = bornier2;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C75272F;
+Reference = R1;
+ValeurCmp = 100k;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C75275B;
+Reference = R2;
+ValeurCmp = 100k;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C752863;
+Reference = R3;
+ValeurCmp = 47k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C752908;
+Reference = R4;
+ValeurCmp = 100k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C752999;
+Reference = R5;
+ValeurCmp = 1k;
+IdModule  = SM1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C8647DF;
+Reference = R6;
+ValeurCmp = 68;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C864815;
+Reference = R7;
+ValeurCmp = 68;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C864863;
+Reference = R8;
+ValeurCmp = 1.5k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C864A1B;
+Reference = SW1;
+ValeurCmp = SW_PUSH;
+IdModule  = PUSH_BUTT_SHAPE1;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C752531;
+Reference = U1;
+ValeurCmp = LM393;
+IdModule  = SO8E;
+EndCmp
+
+BeginCmp
+TimeStamp = /4C752C87;
+Reference = U2;
+ValeurCmp = ATTINY25-45-85/DIP-SO;
+IdModule  = SO8N;
+EndCmp
+
+EndListe

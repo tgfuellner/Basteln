@@ -1,0 +1,7 @@
+sudo avrdude  -c stk500hvsp -P avrdoper  -p t13  -U flash:w:main.hex
+
+Fuses:
+-U lfuse:w:0x7a:m -U hfuse:w:0xff:m 
+
+Mit pin1 (Reset disabled)
+-U lfuse:w:0x7a:m -U hfuse:w:0xfe:m 

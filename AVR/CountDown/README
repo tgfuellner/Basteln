@@ -1,0 +1,6 @@
+sudo avrdude -B 10 -c avrispv2 -P usb -p t2313 -U flash:w:countdown.hex 
+
+grep '\.h:$' .dep/*|sed 's/:$//' | xargs ctags *.c
+
+Algorithmus für Sekundentakt:
+http://www.mikrocontroller.net/articles/AVR_-_Die_genaue_Sekunde_/_RTC

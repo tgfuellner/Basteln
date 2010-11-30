@@ -1,0 +1,8 @@
+Siehe:
+ http://www.ladyada.net/make/drawdio/index.html
+ Vorsicht Fehler im Schaltplan: Die zwei Transistoren müssen vertauscht werden
+    Unten in der Seite sind se richtig! (http://retrointerfacing.com/?p=100=1)
+
+
+ pstops '0+0(3.2cm,0cm)+0(6.4cm,0cm)+0(9.6cm,0cm)+0(12.6cm,0cm)+0(0cm,-2cm)+0(3.2cm,-2cm)+0(6.4cm,-2cm)+0(9.6cm,-2cm)+0(12.6cm,-2cm)+0(0cm,-4cm)+0(3.2cm,-4cm)+0(6.4cm,-4cm)+0(9.6cm,-4cm)+0(12.6cm,-4cm)+0(0cm,-6cm)+0(3.2cm,-6cm)+0(6.4cm,-6cm)+0(9.6cm,-6cm)+0(12.6cm,-6cm)'  drawdioCopper.ps drawdioCopperMulti.ps
+

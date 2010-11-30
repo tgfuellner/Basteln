@@ -1,0 +1,16 @@
+EESchema-DOCLIB  Version 2.0  Date: 29/4/2010-17:46:02
+#
+$CMP ATMEGA8_PDIP28_PDIP
+K Atmega
+$ENDCMP
+#
+$CMP E3206S
+K Relay*
+$ENDCMP
+#
+$CMP SRUH-SH-112DM
+D Relay SRUH-SH-112DM 12VDC 240VAC 3A
+K Relay
+$ENDCMP
+#
+#End Doc Library

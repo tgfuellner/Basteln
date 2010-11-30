@@ -1,0 +1,6 @@
+# Wir teilen den Clock nicht durch 8:
+sudo avrdude -c avrispv2 -P usb -p attiny13 -U lfuse:w:0x79:m
+
+# Daraus resultiert: F_CPU = 4800000L
+
+sudo avrdude -c avrispv2 -P usb -p attiny13 -U flash:w:ds1820.hex

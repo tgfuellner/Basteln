@@ -1,0 +1,351 @@
+EESchema Schematic File Version 2  date Sa 24 Jul 2010 18:58:00 CEST
+LIBS:power
+LIBS:atmel_prototype_header
+LIBS:kicadPersonaLib
+LIBS:device
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:contrib
+LIBS:valves
+EELAYER 24  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title ""
+Date "24 jul 2010"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4850 3700 4700 3700
+Wire Wire Line
+	4700 3200 4850 3200
+Wire Wire Line
+	4300 2100 4100 2100
+Wire Wire Line
+	4100 2100 4100 2200
+Wire Wire Line
+	2800 1400 2600 1400
+Wire Wire Line
+	3450 2200 3450 1900
+Wire Wire Line
+	5650 4400 4700 4400
+Wire Wire Line
+	3000 4900 3300 4900
+Wire Wire Line
+	1750 2300 1600 2300
+Wire Wire Line
+	1600 2300 1600 3650
+Wire Wire Line
+	1600 3650 2750 3650
+Wire Wire Line
+	1750 2200 1450 2200
+Wire Wire Line
+	1450 2200 1450 3500
+Wire Wire Line
+	1450 3500 2750 3500
+Wire Wire Line
+	2750 2200 2550 2200
+Wire Wire Line
+	3750 2200 3750 2000
+Connection ~ 3550 4500
+Connection ~ 5300 4400
+Wire Wire Line
+	4850 4800 4100 4800
+Wire Wire Line
+	4200 4400 4100 4400
+Wire Wire Line
+	4100 4400 4100 4350
+Wire Wire Line
+	3950 4350 3950 5050
+Wire Wire Line
+	3800 4350 3800 4550
+Wire Wire Line
+	3550 4500 3550 5050
+Wire Wire Line
+	3650 4350 3650 4500
+Wire Wire Line
+	3950 5050 4050 5050
+Wire Wire Line
+	4100 4800 4100 4850
+Wire Wire Line
+	4650 5050 5300 5050
+Wire Wire Line
+	5300 5050 5300 4400
+Wire Wire Line
+	3750 1500 3750 1300
+Wire Wire Line
+	3750 1300 3800 1300
+Wire Wire Line
+	2750 3350 2650 3350
+Wire Wire Line
+	2650 3350 2650 2300
+Wire Wire Line
+	2650 2300 2550 2300
+Wire Wire Line
+	2550 2400 2550 2550
+Wire Wire Line
+	3750 2000 1150 2000
+Wire Wire Line
+	1150 2000 1150 2400
+Wire Wire Line
+	1150 2400 1750 2400
+Wire Wire Line
+	3300 4900 3300 5000
+Wire Wire Line
+	3650 4500 3000 4500
+Connection ~ 3300 4500
+Connection ~ 4850 4400
+Wire Wire Line
+	5650 5000 5650 5100
+Wire Wire Line
+	3450 1400 3200 1400
+Wire Wire Line
+	4300 1500 4300 1300
+Wire Wire Line
+	5250 3200 5500 3200
+Wire Wire Line
+	5500 3200 5500 3700
+Wire Wire Line
+	5500 3700 5300 3700
+Connection ~ 5350 3700
+$Comp
+L LED D3
+U 1 1 4BE9AEA1
+P 5050 3200
+F 0 "D3" H 5050 3300 50  0000 C CNN
+F 1 "LED-sense" H 5050 3100 50  0000 C CNN
+	1    5050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 4BE9AE7F
+P 5100 3700
+F 0 "R4" V 5180 3700 50  0000 C CNN
+F 1 "140" V 5100 3700 50  0000 C CNN
+	1    5100 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 4BE9A2C8
+P 5650 5100
+F 0 "#PWR01" H 5650 5100 30  0001 C CNN
+F 1 "GND" H 5650 5030 30  0001 C CNN
+	1    5650 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L BATTERY BT1
+U 1 1 4BE9A253
+P 5650 4700
+F 0 "BT1" H 5650 4900 50  0000 C CNN
+F 1 "BATTERY" H 5650 4510 50  0000 C CNN
+	1    5650 4700
+	0    1    1    0   
+$EndComp
+Text Label 3000 4500 0    60   ~ 0
+VCC
+$Comp
+L GND #PWR02
+U 1 1 4BDC3327
+P 2600 1400
+F 0 "#PWR02" H 2600 1400 30  0001 C CNN
+F 1 "GND" H 2600 1330 30  0001 C CNN
+	1    2600 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 4BDC0ED5
+P 4300 1300
+F 0 "#PWR03" H 4300 1300 30  0001 C CNN
+F 1 "GND" H 4300 1230 30  0001 C CNN
+	1    4300 1300
+	-1   0    0    1   
+$EndComp
+$Comp
+L SW_PUSH SW1
+U 1 1 4BDC0E87
+P 4300 1800
+F 0 "SW1" H 4450 1910 50  0000 C CNN
+F 1 "Taster" H 4300 1720 50  0000 C CNN
+	1    4300 1800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 4BDC0D95
+P 3450 1650
+F 0 "R3" V 3530 1650 50  0000 C CNN
+F 1 "3" V 3450 1650 50  0000 C CNN
+	1    3450 1650
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 4BDC0AB6
+P 2550 2550
+F 0 "#PWR04" H 2550 2550 30  0001 C CNN
+F 1 "GND" H 2550 2480 30  0001 C CNN
+	1    2550 2550
+	1    0    0    -1  
+$EndComp
+Text Label 2750 2200 0    60   ~ 0
+VCC
+$Comp
+L CONN_3X2 P1
+U 1 1 4BDC09F2
+P 2150 2350
+F 0 "P1" H 2150 2600 50  0000 C CNN
+F 1 "CONN_3X2" V 2150 2400 40  0000 C CNN
+	1    2150 2350
+	1    0    0    -1  
+$EndComp
+Text Label 3800 1300 0    60   ~ 0
+VCC
+$Comp
+L R R2
+U 1 1 4BDC07A3
+P 3750 1750
+F 0 "R2" V 3830 1750 50  0000 C CNN
+F 1 "10k" V 3750 1750 50  0000 C CNN
+	1    3750 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C4
+U 1 1 4BDC0469
+P 3000 4700
+F 0 "C4" H 3050 4800 50  0000 L CNN
+F 1 "22n" H 3050 4600 50  0000 L CNN
+	1    3000 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 4BDC043D
+P 3300 5000
+F 0 "#PWR05" H 3300 5000 30  0001 C CNN
+F 1 "GND" H 3300 4930 30  0001 C CNN
+	1    3300 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPAPOL C3
+U 1 1 4BDC03F7
+P 3300 4700
+F 0 "C3" H 3350 4800 50  0000 L CNN
+F 1 "22u" H 3350 4600 50  0000 L CNN
+	1    3300 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CAPAPOL C1
+U 1 1 4BDC034D
+P 4850 4600
+F 0 "C1" H 4900 4700 50  0000 L CNN
+F 1 "4.7u" H 4900 4500 50  0000 L CNN
+	1    4850 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 4BDC0225
+P 4450 4400
+F 0 "R1" V 4530 4400 50  0000 C CNN
+F 1 "1k" V 4450 4400 50  0000 C CNN
+	1    4450 4400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 4BDBD3F5
+P 4100 4850
+F 0 "#PWR06" H 4100 4850 30  0001 C CNN
+F 1 "GND" H 4100 4780 30  0001 C CNN
+	1    4100 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 4BDBD377
+P 4100 4600
+F 0 "C2" H 4150 4700 50  0000 L CNN
+F 1 "22n" H 4150 4500 50  0000 L CNN
+	1    4100 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L INDUCTOR L1
+U 1 1 4BDBD330
+P 4350 5050
+F 0 "L1" V 4300 5050 40  0000 C CNN
+F 1 "15uH" V 4450 5050 40  0000 C CNN
+	1    4350 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L DIODESCH D1
+U 1 1 4BDBD2DB
+P 3750 5050
+F 0 "D1" H 3750 5150 40  0000 C CNN
+F 1 "Shottky" H 3750 4950 40  0000 C CNN
+	1    3750 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L LED D2
+U 1 1 4BDBD28B
+P 3000 1400
+F 0 "D2" H 3000 1500 50  0000 C CNN
+F 1 "LED" H 3000 1300 50  0000 C CNN
+	1    3000 1400
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR07
+U 1 1 4BDBCF9D
+P 3800 4550
+F 0 "#PWR07" H 3800 4550 30  0001 C CNN
+F 1 "GND" H 3800 4480 30  0001 C CNN
+	1    3800 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L ATTINY43U U1
+U 1 1 4BD9C826
+P 3850 3300
+F 0 "U1" H 3650 3500 50  0001 L BNN
+F 1 "ATTINY43U" H 3850 3300 50  0000 L BNN
+F 2 "MLF20" H 3850 3450 50  0000 C CNN
+	1    3850 3300
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

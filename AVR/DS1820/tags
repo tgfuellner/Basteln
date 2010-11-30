@@ -1,0 +1,43 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BAUD	main.h	18;"	d
+CONVERT_T	1wire.h	7;"	d
+DATA_ERR	1wire.h	15;"	d
+EE_RECALL	1wire.h	11;"	d
+EE_WRITE	1wire.h	10;"	d
+LAST_DEVICE	1wire.h	16;"	d
+LED_MOD1	main.h	49;"	d
+LED_MOD5	main.h	47;"	d
+MATCH_ROM	1wire.h	3;"	d
+PRESENCE_ERR	1wire.h	14;"	d
+READ	1wire.h	8;"	d
+SEARCH_FIRST	1wire.h	13;"	d
+SEARCH_ROM	1wire.h	5;"	d
+SKIP_ROM	1wire.h	4;"	d
+W1_DDR	main.h	44;"	d
+W1_IN	main.h	42;"	d
+W1_OUT	main.h	43;"	d
+W1_PIN	main.h	41;"	d
+WRITE	1wire.h	9;"	d
+_1wire_h_	1wire.h	2;"	d
+_main_h_	main.h	10;"	d
+bauddivider	main.h	19;"	d
+bit	main.h	24;"	d
+code	main.h	26;"	d
+idata	main.h	25;"	d
+main	main.c	/^int main( void )$/;"	f
+read_meas	tempmeas.c	/^uint read_meas( void )$/;"	f
+showTempUsing2LEDs	tempmeas.c	/^void showTempUsing2LEDs(uint temp) {$/;"	f
+start_meas	tempmeas.c	/^void start_meas( void ){$/;"	f
+uchar	main.h	22;"	d
+uint	main.h	23;"	d
+w1_bit_io	1wire.c	/^uchar w1_bit_io( bit b )$/;"	f
+w1_byte_rd	1wire.c	/^uint w1_byte_rd( void )$/;"	f
+w1_byte_wr	1wire.c	/^uint w1_byte_wr( uchar b )$/;"	f
+w1_command	1wire.c	/^void w1_command( uchar command )$/;"	f
+w1_reset	1wire.c	/^bit w1_reset(void)$/;"	f
+w1_rom_search	1wire.c	/^uchar w1_rom_search( uchar diff, uchar idata *id )$/;"	f

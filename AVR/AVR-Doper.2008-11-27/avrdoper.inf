@@ -1,0 +1,66 @@
+; Windows USB CDC Setup File
+; Copyright (c) 2000 Microsoft Corporation
+; Copyright (c) 2006 Recursion Co., Ltd.
+; Copyright (c) 2006 OBJECTIVE DEVELOPMENT Software GmbH
+
+[Version]
+Signature="$Windows NT$"
+Class=Ports
+ClassGuid={4D36E978-E325-11CE-BFC1-08002BE10318}
+Provider=%OBDEV%
+LayoutFile=layout.inf
+DriverVer=06/06/2006,1.0.0.0
+
+[Manufacturer]
+%MFGNAME% = Obdev,NTx86,NTia64,NTamd64
+
+[DestinationDirs]
+DefaultDestDir=12
+
+[Obdev.NTx86]
+%Modem3% = Modem3, USB\VID_16C0&PID_05E1
+
+[Obdev.NTia64]
+%Modem3% = Modem3, USB\VID_16C0&PID_05E1
+
+[Obdev.NTamd64]
+%Modem3% = Modem3, USB\VID_16C0&PID_05E1
+
+[Obdev]
+%Modem3% = Modem3, USB\VID_16C0&PID_05E1
+
+;------------------------------------------------------------------------------
+;  Windows 2000/XP Sections
+;------------------------------------------------------------------------------
+
+[Modem3.nt]
+CopyFiles=USBModemCopyFileSection
+AddReg=Modem3.nt.AddReg
+
+[USBModemCopyFileSection]
+usbser.sys,,,0x20
+
+[Modem3.nt.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,usbser.sys
+HKR,,EnumPropPages32,,"MsPorts.dll,SerialPortPropPageProvider"
+
+[Modem3.nt.Services]
+AddService=usbser, 0x00000002, DriverService
+
+[DriverService]
+DisplayName=%SERVICE%
+ServiceType=1
+StartType=3
+ErrorControl=1
+ServiceBinary=%12%\usbser.sys
+
+;------------------------------------------------------------------------------
+;  String Definitions
+;------------------------------------------------------------------------------
+
+[Strings]
+OBDEV="OBJECTIVE DEVELOPMENT Software GmbH"
+MFGNAME="www.obdev.at"
+Modem3="Communications Port"
+SERVICE="USB-232 Emulation Driver"

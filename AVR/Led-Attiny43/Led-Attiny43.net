@@ -1,0 +1,229 @@
+# EESchema Netlist Version 1.1 created  Sa 24 Jul 2010 18:58:18 CEST
+(
+ ( /4BE9AEA1 $noname  D3 LED-sense {Lib=LED}
+  (    1 N-000009 )
+  (    2 N-000023 )
+ )
+ ( /4BE9AE7F $noname  R4 140 {Lib=R}
+  (    1 N-000012 )
+  (    2 N-000023 )
+ )
+ ( /4BE9A253 $noname  BT1 BATTERY {Lib=BATTERY}
+  (    1 N-000001 )
+  (    2 GND )
+ )
+ ( /4BDC0E87 $noname  SW1 Taster {Lib=SW_PUSH}
+  (    1 GND )
+  (    2 N-000007 )
+ )
+ ( /4BDC0D95 $noname  R3 3 {Lib=R}
+  (    1 N-000013 )
+  (    2 N-000019 )
+ )
+ ( /4BDC09F2 $noname  P1 CONN_3X2 {Lib=CONN_3X2}
+  (    1 N-000016 )
+  (    2 /VCC )
+  (    3 N-000015 )
+  (    4 N-000004 )
+  (    5 N-000003 )
+  (    6 GND )
+ )
+ ( /4BDC07A3 $noname  R2 10k {Lib=R}
+  (    1 /VCC )
+  (    2 N-000003 )
+ )
+ ( /4BDC0469 $noname  C4 22n {Lib=C}
+  (    1 /VCC )
+  (    2 GND )
+ )
+ ( /4BDC03F7 $noname  C3 22u {Lib=CAPAPOL}
+  (    1 /VCC )
+  (    2 GND )
+ )
+ ( /4BDC034D $noname  C1 4.7u {Lib=CAPAPOL}
+  (    1 N-000001 )
+  (    2 GND )
+ )
+ ( /4BDC0225 $noname  R1 1k {Lib=R}
+  (    1 N-000001 )
+  (    2 N-000022 )
+ )
+ ( /4BDBD377 $noname  C2 22n {Lib=C}
+  (    1 N-000022 )
+  (    2 GND )
+ )
+ ( /4BDBD330 $noname  L1 15uH {Lib=INDUCTOR}
+  (    1 N-000001 )
+  (    2 N-000020 )
+ )
+ ( /4BDBD2DB $noname  D1 Shottky {Lib=DIODESCH}
+  (    1 N-000020 )
+  (    2 /VCC )
+ )
+ ( /4BDBD28B $noname  D2 LED {Lib=LED}
+  (    1 N-000019 )
+  (    2 GND )
+ )
+ ( /4BD9C826 MLF20  U1 ATTINY43U {Lib=ATTINY43U}
+  (    1 ? )
+  (    2 ? )
+  (    3 N-000004 )
+  (    4 N-000016 )
+  (    5 N-000015 )
+  (    6 ? )
+  (    7 /VCC )
+  (    8 GND )
+  (    9 N-000020 )
+  (   10 N-000022 )
+  (   11 N-000012 )
+  (   12 ? )
+  (   13 ? )
+  (   14 N-000009 )
+  (   15 ? )
+  (   16 N-000007 )
+  (   17 ? )
+  (   18 N-000003 )
+  (   19 ? )
+  (   20 N-000013 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component D3
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ CP*
+ SM*
+$endlist
+$component C1
+ CP*
+ SM*
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component C2
+ SM*
+ C?
+ C1-1
+$endlist
+$component D1
+ D?
+ S*
+$endlist
+$component D2
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component U1
+ Attiny
+ AVR
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 "" ""
+ R1 1
+ C1 1
+ BT1 1
+ L1 1
+Net 2 "/VCC" "VCC"
+ U1 7
+ D1 2
+ R2 1
+ C4 1
+ C3 1
+ P1 2
+Net 3 "" ""
+ P1 5
+ R2 2
+ U1 18
+Net 4 "" ""
+ P1 4
+ U1 3
+Net 7 "" ""
+ SW1 2
+ U1 16
+Net 9 "" ""
+ D3 1
+ U1 14
+Net 12 "" ""
+ R4 1
+ U1 11
+Net 13 "" ""
+ R3 1
+ U1 20
+Net 15 "" ""
+ P1 3
+ U1 5
+Net 16 "" ""
+ P1 1
+ U1 4
+Net 19 "" ""
+ R3 2
+ D2 1
+Net 20 "" ""
+ L1 2
+ D1 1
+ U1 9
+Net 21 "GND" "GND"
+ BT1 2
+ C3 2
+ C1 2
+ SW1 1
+ U1 8
+ D2 2
+ C2 2
+ P1 6
+ C4 2
+Net 22 "" ""
+ C2 1
+ R1 2
+ U1 10
+Net 23 "" ""
+ R4 2
+ D3 2
+}
+#End

@@ -1,0 +1,78 @@
+This file documents changes in the software, firmware and hardware of the
+AVR-Doper project. New entries are always appended to the end of the file.
+Scroll down to the bottom to see the most recent changes.
+
+* Release 2006-07-18
+
+- Added compatibility macros to allow ATMega88 instead of ATMega8.
+- Ignore synchLoops parameter in ISP mode since avrdude sometimes sends 0.
+- Changed default ISP clock speed to 2 (instead of fastest).
+
+* Release 2006-09-12
+
+- Added patch for avrdude to support HID mode.
+- Updated Readme file with information about HID mode and avrdude.
+
+* Release 2006-10-23
+
+- Fixed bug in ISP value polling. Value polling is used when programming older
+  devices such as the AT90S8515.
+
+* Release 2007-02-01
+
+- Updated to newest AVR-USB driver version.
+- Connected pins 2 and 3 of 8 pin programming socket because these pins are
+  swapped on some devices.
+- License is now GPL2
+
+* Release 2007-03-29
+
+- Insert "Load Extended Address" command when bit 31 of address is set.
+- avrdebug accepts keyboard input now.
+- avrdebug works in HID mode and CDC mode now.
+
+* Release 2007-08-07
+
+- Fixed serious bug in SPI-MULTI command. When reading fuses, AVR-Doper sent
+  256 uninitialized bytes (content of last buffer) to the device which could
+  have unpredictable effects (including chip erase or similar nasty things).
+- Fixed bug in HVSP circuit: 14 pin socket must connect pins 11, 12 and 13 to
+  GND in order to enter HVSP mode.
+- Updated to new USB driver.
+
+* Release 2007-12-01
+
+- Added avrdoper-vista.inf file for Windows Vista.
+- Switched back to old hvspEnterProgmode() routine -- seems to work more
+  reliably than the one described in the ATTiny45 data sheet.
+
+* Release 2008-02-05
+
+- Assigned a serial number -- this should help to assign a consistent COM
+  device regardless of the USB port used.
+- Reworked ISP clock delay function so that it never goes below the given
+  delay.
+- Moved evaluation of received data into main loop. This reduces load
+  produced by USB interrupt slightly, since an ACK can be sent while commands
+  are executed.
+- Added -DMETABOARD_HARDWARE=1 option for programmers based on Metaboard
+  (see http://www.obdev.at/goto.php?t=metaboard-prog).
+- Added -DUSBASP_HARDWARE=1 option to provide alternative firmware for
+  Thomas Fischl's USBasp hardware (see http://www.fischl.de/usbasp/). 
+- Reduced interrupt-disabled section in timer interrupt.
+- Image formats of schematics and board are now generated automatically from
+  EAGLE design.
+
+* Release 2008-04-26
+
+- Previous release introduced a bug on AVR-Doper hardware: LED was not
+  configured as output. Fixed.
+
+* Release 2008-04-27
+
+- Fixed report ID for debug data HID interface. This interface is not in use
+  because no host side driver exists (yet).
+- Fixed interface detection for Metaboard/USBasp hardware.
+- Don't configure Timer 1 for USBasp hardware.
+
+* Release 2008-11-27

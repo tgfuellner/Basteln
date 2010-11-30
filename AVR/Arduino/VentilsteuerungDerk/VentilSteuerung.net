@@ -1,0 +1,499 @@
+# EESchema Netlist Version 1.1 created  27/2/2010-07:55:00
+(
+ ( /4B87F7D7 $noname  X1 CRYSTAL {Lib=CRYSTAL}
+  (    1 N-000035 )
+  (    2 N-000034 )
+ )
+ ( /4B87D984 $noname  R12 3k9 {Lib=R}
+  (    1 N-000031 )
+  (    2 +5V )
+ )
+ ( /4B87D8D0 $noname  P5 PT1000 {Lib=CONN_4}
+  (    1 N-000004 )
+  (    2 N-000031 )
+  (    3 GND )
+  (    4 GND )
+ )
+ ( /4B87D896 $noname  R11 3k9 {Lib=R}
+  (    1 N-000004 )
+  (    2 +5V )
+ )
+ ( /4B87D570 $noname  LED6 Temp2 {Lib=LED}
+  (    1 N-000009 )
+  (    2 GND )
+ )
+ ( /4B87D564 $noname  R8 220 {Lib=R}
+  (    1 N-000030 )
+  (    2 N-000009 )
+ )
+ ( /4B87D51A $noname  LED4 Temp1 {Lib=LED}
+  (    1 N-000029 )
+  (    2 GND )
+ )
+ ( /4B87D503 $noname  R9 220 {Lib=R}
+  (    1 N-000010 )
+  (    2 N-000029 )
+ )
+ ( /4B87D482 $noname  LED5 Power {Lib=LED}
+  (    1 N-000011 )
+  (    2 GND )
+ )
+ ( /4B87D456 $noname  R10 220 {Lib=R}
+  (    1 N-000028 )
+  (    2 N-000011 )
+ )
+ ( /4B87D361 $noname  C7 100n {Lib=C}
+  (    1 +12V )
+  (    2 GND )
+ )
+ ( /4B87B278 $noname  LED1 Sensor {Lib=LED}
+  (    1 N-000008 )
+  (    2 N-000024 )
+ )
+ ( /4B87B26F $noname  LED2 Ventil2 {Lib=LED}
+  (    1 N-000007 )
+  (    2 N-000013 )
+ )
+ ( /4B87B264 $noname  LED3 Ventil1 {Lib=LED}
+  (    1 N-000006 )
+  (    2 N-000020 )
+ )
+ ( /4B87B239 $noname  R7 1k {Lib=R}
+  (    1 +12V )
+  (    2 N-000008 )
+ )
+ ( /4B87B228 $noname  R6 1k {Lib=R}
+  (    1 +12V )
+  (    2 N-000007 )
+ )
+ ( /4B87B219 $noname  R5 1k {Lib=R}
+  (    1 +12V )
+  (    2 N-000006 )
+ )
+ ( /4B87A5DA $noname  C6 100n {Lib=C}
+  (    1 N-000025 )
+  (    2 GND )
+ )
+ ( /4B87AD7D $noname  P4 CONN_4 {Lib=CONN_4}
+  (    1 N-000027 )
+  (    2 N-000012 )
+  (    3 GND )
+  (    4 +5V )
+ )
+ ( /4B87ACBF $noname  SW1 Taster {Lib=SW_PUSH}
+  (    1 N-000016 )
+  (    2 GND )
+ )
+ ( /4B87AB1F $noname  R4 10k {Lib=R}
+  (    1 +5V )
+  (    2 N-000016 )
+ )
+ ( /4B87A976 $noname  C4 22p {Lib=C}
+  (    1 N-000034 )
+  (    2 GND )
+ )
+ ( /4B87A935 $noname  C3 22p {Lib=C}
+  (    1 N-000035 )
+  (    2 GND )
+ )
+ ( /4B87A60A $noname  C5 100n {Lib=C}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /4B87A19D atmel_prototype_header-DIL-28-3  U2 ATMEGA8_PDIP28_PDIP {Lib=ATMEGA8_PDIP28_PDIP}
+  (    1 N-000016 )
+  (    2 N-000012 )
+  (    3 N-000027 )
+  (    4 N-000028 )
+  (    5 N-000010 )
+  (    6 N-000030 )
+  (    7 +5V )
+  (    8 GND )
+  (    9 N-000035 )
+  (   10 N-000034 )
+  (   11 ? )
+  (   12 ? )
+  (   13 ? )
+  (   14 ? )
+  (   15 ? )
+  (   16 ? )
+  (   17 N-000014 )
+  (   18 N-000026 )
+  (   19 N-000015 )
+  (   20 +5V )
+  (   21 N-000025 )
+  (   22 GND )
+  (   23 N-000031 )
+  (   24 N-000004 )
+  (   25 ? )
+  (   26 ? )
+  (   27 ? )
+  (   28 ? )
+ )
+ ( /4B878325 $noname  P3 Power12V {Lib=CONN_2}
+  (    1 GND )
+  (    2 +12V )
+ )
+ ( /4B86D053 $noname  P1 Sensor {Lib=CONN_3}
+  (    1 N-000032 )
+  (    2 N-000002 )
+  (    3 N-000003 )
+ )
+ ( /4B86CF70 $noname  R1 3k9 {Lib=R}
+  (    1 N-000023 )
+  (    2 N-000014 )
+ )
+ ( /4B86CF6F $noname  Q1 BC548 {Lib=NPN}
+  (    1 GND )
+  (    2 N-000023 )
+  (    3 N-000024 )
+ )
+ ( /4B86CF6E $noname  D1 1N4148 {Lib=DIODE}
+  (    1 N-000024 )
+  (    2 +12V )
+ )
+ ( /4B86CF13 $noname  Relay1 E3206S {Lib=E3206S}
+  (    1 +12V )
+  (    2 N-000024 )
+  (    3 N-000002 )
+  (    4 N-000003 )
+  (    5 N-000032 )
+ )
+ ( /4B842BD0 $noname  C2 10uF {Lib=CP}
+  (    1 +5V )
+  (    2 GND )
+ )
+ ( /4B842BAB $noname  C1 10uF {Lib=CP}
+  (    1 +12V )
+  (    2 GND )
+ )
+ ( /4B8429E1 $noname  U1 7805 {Lib=7805}
+  (   VO +5V )
+  (   VI +12V )
+  (  GND GND )
+ )
+ ( /4B82E1E9 $noname  P2 Ventile {Lib=CONN_4}
+  (    1 N-000001 )
+  (    2 N-000033 )
+  (    3 N-000021 )
+  (    4 N-000017 )
+ )
+ ( /4B8002B8 $noname  RELAY2 SRUH-SH-112DM {Lib=SRUH-SH-112DM}
+  (    1 N-000013 )
+  (    2 +12V )
+  (    3 N-000021 )
+  (    4 N-000017 )
+ )
+ ( /4B800F97 $noname  R3 3k9 {Lib=R}
+  (    1 N-000019 )
+  (    2 N-000015 )
+ )
+ ( /4B800F92 $noname  R2 3k9 {Lib=R}
+  (    1 N-000018 )
+  (    2 N-000026 )
+ )
+ ( /4B800B6A $noname  Q3 BC548 {Lib=NPN}
+  (    1 GND )
+  (    2 N-000019 )
+  (    3 N-000020 )
+ )
+ ( /4B800B64 $noname  Q2 BC548 {Lib=NPN}
+  (    1 GND )
+  (    2 N-000018 )
+  (    3 N-000013 )
+ )
+ ( /4B8009FC $noname  D3 1N4148 {Lib=DIODE}
+  (    1 N-000020 )
+  (    2 +12V )
+ )
+ ( /4B8009F8 $noname  D2 1N4148 {Lib=DIODE}
+  (    1 N-000013 )
+  (    2 +12V )
+ )
+ ( /4B80033F $noname  RELAY3 SRUH-SH-112DM {Lib=SRUH-SH-112DM}
+  (    1 +12V )
+  (    2 N-000020 )
+  (    3 N-000001 )
+  (    4 N-000033 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component R12
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R11
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R8
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R9
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R10
+ R?
+ SM0603
+ SM0805
+$endlist
+$component C7
+ SM*
+ C?
+ C1-1
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+$endlist
+$component C6
+ SM*
+ C?
+ C1-1
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+$endlist
+$component C4
+ SM*
+ C?
+ C1-1
+$endlist
+$component C3
+ SM*
+ C?
+ C1-1
+$endlist
+$component C5
+ SM*
+ C?
+ C1-1
+$endlist
+$component U2
+ Atmega
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+$endlist
+$component D1
+ D?
+ S*
+$endlist
+$component Relay1
+ Relay*
+$endlist
+$component C2
+ CP*
+ SM*
+$endlist
+$component C1
+ CP*
+ SM*
+$endlist
+$component RELAY2
+ Relay*
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+$endlist
+$component D3
+ D?
+ S*
+$endlist
+$component D2
+ D?
+ S*
+$endlist
+$component RELAY3
+ Relay*
+$endlist
+$endfootprintlist
+}
+{ Pin List by Nets
+Net 1 ""
+ P2 1
+ RELAY3 3
+Net 2 ""
+ P1 2
+ Relay1 3
+Net 3 ""
+ P1 3
+ Relay1 4
+Net 4 ""
+ P5 1
+ R11 1
+ U2 24
+Net 5 "+5V"
+ R12 2
+ R11 2
+ P4 4
+ R4 1
+ C5 1
+ U2 20
+ U2 7
+ C2 1
+ U1 VO
+Net 6 ""
+ LED3 1
+ R5 2
+Net 7 ""
+ LED2 1
+ R6 2
+Net 8 ""
+ LED1 1
+ R7 2
+Net 9 ""
+ LED6 1
+ R8 2
+Net 10 ""
+ R9 1
+ U2 5
+Net 11 ""
+ LED5 1
+ R10 2
+Net 12 ""
+ P4 2
+ U2 2
+Net 13 ""
+ LED2 2
+ RELAY2 1
+ Q2 3
+ D2 1
+Net 14 ""
+ U2 17
+ R1 2
+Net 15 ""
+ U2 19
+ R3 2
+Net 16 ""
+ SW1 1
+ R4 2
+ U2 1
+Net 17 ""
+ P2 4
+ RELAY2 4
+Net 18 ""
+ R2 1
+ Q2 2
+Net 19 ""
+ R3 1
+ Q3 2
+Net 20 ""
+ LED3 2
+ Q3 3
+ D3 1
+ RELAY3 2
+Net 21 ""
+ P2 3
+ RELAY2 3
+Net 22 "+12V"
+ C7 1
+ R7 1
+ R6 1
+ R5 1
+ P3 2
+ D1 2
+ Relay1 1
+ C1 1
+ U1 VI
+ RELAY2 2
+ D3 2
+ D2 2
+ RELAY3 1
+Net 23 ""
+ R1 1
+ Q1 2
+Net 24 ""
+ LED1 2
+ Q1 3
+ D1 1
+ Relay1 2
+Net 25 ""
+ C6 1
+ U2 21
+Net 26 ""
+ U2 18
+ R2 2
+Net 27 ""
+ P4 1
+ U2 3
+Net 28 ""
+ R10 1
+ U2 4
+Net 29 ""
+ LED4 1
+ R9 2
+Net 30 ""
+ R8 1
+ U2 6
+Net 31 ""
+ R12 1
+ P5 2
+ U2 23
+Net 32 ""
+ P1 1
+ Relay1 5
+Net 33 ""
+ P2 2
+ RELAY3 4
+Net 34 ""
+ X1 2
+ C4 1
+ U2 10
+Net 35 ""
+ X1 1
+ C3 1
+ U2 9
+Net 36 "GND"
+ P5 4
+ P5 3
+ LED6 2
+ LED4 2
+ LED5 2
+ C7 2
+ C6 2
+ P4 3
+ SW1 2
+ C4 2
+ C3 2
+ C5 2
+ U2 22
+ U2 8
+ P3 1
+ Q1 1
+ C2 2
+ C1 2
+ U1 GND
+ Q3 1
+ Q2 1
+}
+#End

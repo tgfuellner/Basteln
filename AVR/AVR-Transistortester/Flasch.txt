@@ -1,0 +1,4 @@
+Atmega8 in Relaiskarte gesteckt:
+ Auf USBasp: JP2 und JP3 gesetzt!
+
+sudo avrdude -c usbasp -p atmega8 -U flash:w:TransistorTestNew.hex -U eeprom:w:TransistorTestNew.eep
