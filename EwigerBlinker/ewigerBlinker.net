@@ -1,0 +1,133 @@
+# EESchema Netlist Version 1.1 created  Do 16 Dez 2010 18:18:43 CET
+(
+ ( /4D0A4529 SM2112L 1.5V1 BATTERY
+  ( 1 N-000001 )
+  ( 2 GND )
+ )
+ ( /4D0A4481 SM0805 100n1 C
+  ( 1 N-000009 )
+  ( 2 N-000008 )
+ )
+ ( /4D0A44B1 SM1210L 100u1 CP
+  ( 1 N-000002 )
+  ( 2 N-000009 )
+ )
+ ( /4D0A450A LED-1206 D1 LED
+  ( 1 N-000002 )
+  ( 2 GND )
+ )
+ ( /4D0A4373 SOT23EBC Q1 NPN
+  ( 1 GND )
+  ( 2 N-000004 )
+  ( 3 N-000010 )
+ )
+ ( /4D0A437B SOT23EBC Q2 NPN
+  ( 1 GND )
+  ( 2 N-000007 )
+  ( 3 N-000005 )
+ )
+ ( /4D0A4341 SOT23EBC Q3 PNP
+  ( 1 N-000001 )
+  ( 2 N-000006 )
+  ( 3 N-000009 )
+ )
+ ( /4D0A4422 SM0805 R1 1M
+  ( 1 N-000009 )
+  ( 2 N-000004 )
+ )
+ ( /4D0A43C8 SM0805 R2 1M
+  ( 1 N-000001 )
+  ( 2 N-000010 )
+ )
+ ( /4D0A43E7 SM0805 R3 10M
+  ( 1 N-000007 )
+  ( 2 N-000010 )
+ )
+ ( /4D0A4417 SM0805 R4 10k
+  ( 1 N-000008 )
+  ( 2 N-000007 )
+ )
+ ( /4D0A4402 SM0805 R5 10k
+  ( 1 N-000006 )
+  ( 2 N-000005 )
+ )
+ ( /4D0A4431 SM0805 R6 10k
+  ( 1 GND )
+  ( 2 N-000009 )
+ )
+ ( /4D0A4448 SM0805 R7 10k
+  ( 1 N-000002 )
+  ( 2 N-000001 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component 100n1
+ SM*
+ C?
+ C1-1
+$endlist
+$component 100u1
+ CP*
+ SM*
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R2
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R3
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R4
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R5
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R6
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$component R7
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}

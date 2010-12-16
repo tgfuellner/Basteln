@@ -1,0 +1,101 @@
+Cmp-Mod V01 Created by CvPCB (2010-05-05 BZR 2356)-stable date = Do 16 Dez 2010 18:18:43 CET
+
+BeginCmp
+TimeStamp = /4D0A4529;
+Reference = 1.5V1;
+ValeurCmp = BATTERY;
+IdModule  = SM2112L;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A4481;
+Reference = 100n1;
+ValeurCmp = C;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A44B1;
+Reference = 100u1;
+ValeurCmp = CP;
+IdModule  = SM1210L;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A450A;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A4373;
+Reference = Q1;
+ValeurCmp = NPN;
+IdModule  = SOT23EBC;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A437B;
+Reference = Q2;
+ValeurCmp = NPN;
+IdModule  = SOT23EBC;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A4341;
+Reference = Q3;
+ValeurCmp = PNP;
+IdModule  = SOT23EBC;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A4422;
+Reference = R1;
+ValeurCmp = 1M;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A43C8;
+Reference = R2;
+ValeurCmp = 1M;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A43E7;
+Reference = R3;
+ValeurCmp = 10M;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A4417;
+Reference = R4;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A4402;
+Reference = R5;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A4431;
+Reference = R6;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /4D0A4448;
+Reference = R7;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+EndListe
