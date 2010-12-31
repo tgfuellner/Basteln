@@ -1,0 +1,57 @@
+# EESchema Netlist Version 1.1 created  Fr 31 Dez 2010 16:11:54 CET
+(
+ ( /4D1DE496 C1 C1 1-10nF
+  ( 1 N-000005 )
+  ( 2 GND )
+ )
+ ( /4D1DE221 LED-5MM D1 LED
+  ( 1 N-000004 )
+  ( 2 GND )
+ )
+ ( /4D1DF1E4 1pin P1 CONN_1
+  ( 1 +1.2V )
+ )
+ ( /4D1DF1FA 1pin P2 CONN_1
+  ( 1 GND )
+ )
+ ( /4D1DE120 TO92 Q1 BC337
+  ( 1 GND )
+  ( 2 N-000003 )
+  ( 3 N-000004 )
+ )
+ ( /4D1DE417 R4 R1 2k7
+  ( 1 N-000005 )
+  ( 2 +1.2V )
+ )
+ ( /4D1DE3AA TRANSF-MICRO T1 TRANSFO
+  ( 1 N-000004 )
+  ( 2 +1.2V )
+  ( 3 N-000005 )
+  ( 4 N-000003 )
+ )
+)
+*
+{ Allowed footprints by component:
+$component C1
+ SM*
+ C?
+ C1-1
+$endlist
+$component D1
+ LED-3MM
+ LED-5MM
+ LED-10MM
+ LED-0603
+ LED-0805
+ LED-1206
+ LEDV
+$endlist
+$component R1
+ R?
+ SM0603
+ SM0805
+ R?-*
+ SM1206
+$endlist
+$endfootprintlist
+}

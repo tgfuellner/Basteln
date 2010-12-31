@@ -1,0 +1,186 @@
+EESchema Schematic File Version 2  date Fr 31 Dez 2010 17:44:51 CET
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:jouleThiefLED-cache
+EELAYER 24  0
+EELAYER END
+$Descr A4 11700 8267
+Sheet 1 1
+Title ""
+Date "31 dec 2010"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Connection ~ 4150 2900
+Wire Wire Line
+	4050 2900 4750 2900
+Wire Wire Line
+	5600 3450 5600 2900
+Wire Wire Line
+	5300 3650 5300 3800
+Wire Wire Line
+	5300 3800 5150 3800
+Wire Wire Line
+	5150 3800 5150 3700
+Connection ~ 4350 3700
+Wire Wire Line
+	4350 3750 4350 3550
+Wire Wire Line
+	4350 3700 4750 3700
+Wire Wire Line
+	4350 3050 4350 2900
+Connection ~ 5600 2900
+Wire Wire Line
+	5150 2900 6250 2900
+Wire Wire Line
+	6250 2900 6250 3450
+Connection ~ 4350 2900
+Wire Wire Line
+	6250 4250 6250 3850
+Wire Wire Line
+	4350 4150 4350 4250
+Wire Wire Line
+	5600 3850 5600 4250
+Wire Wire Line
+	3950 4150 3950 4250
+$Comp
+L GND #PWR01
+U 1 1 4D1DF208
+P 3950 4250
+F 0 "#PWR01" H 3950 4250 30  0001 C CNN
+F 1 "GND" H 3950 4180 30  0001 C CNN
+	1    3950 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_1 P2
+U 1 1 4D1DF1FA
+P 3950 4000
+F 0 "P2" H 4030 4000 40  0000 L CNN
+F 1 "CONN_1" H 3950 4055 30  0001 C CNN
+	1    3950 4000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L CONN_1 P1
+U 1 1 4D1DF1E4
+P 3900 2900
+F 0 "P1" H 3980 2900 40  0000 L CNN
+F 1 "CONN_1" H 3900 2955 30  0001 C CNN
+	1    3900 2900
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 4D1DE4C7
+P 4350 4250
+F 0 "#PWR02" H 4350 4250 30  0001 C CNN
+F 1 "GND" H 4350 4180 30  0001 C CNN
+	1    4350 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 4D1DE496
+P 4350 3950
+F 0 "C1" H 4400 4050 50  0000 L CNN
+F 1 "1-10nF" H 4400 3850 50  0000 L CNN
+	1    4350 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 4D1DE417
+P 4350 3300
+F 0 "R1" V 4430 3300 50  0000 C CNN
+F 1 "2k7" V 4350 3300 50  0000 C CNN
+	1    4350 3300
+	-1   0    0    1   
+$EndComp
+$Comp
+L TRANSFO T1
+U 1 1 4D1DE3AA
+P 4950 3300
+F 0 "T1" H 4950 3550 70  0000 C CNN
+F 1 "TRANSFO" H 4950 3000 70  0000 C CNN
+	1    4950 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR03
+U 1 1 4D1DE22E
+P 6250 4250
+F 0 "#PWR03" H 6250 4250 30  0001 C CNN
+F 1 "GND" H 6250 4180 30  0001 C CNN
+	1    6250 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L LED D1
+U 1 1 4D1DE221
+P 6250 3650
+F 0 "D1" H 6250 3750 50  0000 C CNN
+F 1 "LED" H 6250 3550 50  0000 C CNN
+	1    6250 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L +1.2V #PWR04
+U 1 1 4D1DE200
+P 4150 2900
+F 0 "#PWR04" H 4150 3040 20  0001 C CNN
+F 1 "+1.2V" H 4150 3010 30  0000 C CNN
+	1    4150 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 4D1DE1DA
+P 5600 4250
+F 0 "#PWR05" H 5600 4250 30  0001 C CNN
+F 1 "GND" H 5600 4180 30  0001 C CNN
+	1    5600 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L NPN Q1
+U 1 1 4D1DE120
+P 5500 3650
+F 0 "Q1" H 5500 3500 50  0000 R CNN
+F 1 "BC337" H 5500 3800 50  0000 R CNN
+	1    5500 3650
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
