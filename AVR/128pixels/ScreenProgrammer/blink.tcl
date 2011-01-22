@@ -2,7 +2,7 @@
 # \
 exec wish "$0" ${1+"$@"}
 
-set timeInMs 50
+set timeInMs 100
 
 
 wm protocol . WM_DELETE_WINDOW exit

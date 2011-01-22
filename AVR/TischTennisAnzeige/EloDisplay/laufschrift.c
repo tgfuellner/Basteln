@@ -35,7 +35,7 @@
  * -----------------------------------------*/
 #include <inttypes.h>		                   /* Definition der Datentypen uint8_t usw. */
 #include <avr/interrupt.h>                     /* Interruptbehandlungsroutinen (für Timerinterrupt) */
-#include <avr/delay.h>		                   /* Definition der Verzögerungsfunktionen (_delay_ms) */
+#include <util/delay.h>		                   /* Definition der Verzögerungsfunktionen (_delay_ms) */
 #include <avr/pgmspace.h>                      /* Hilfsfunktionen um Daten aus dem Flash zu lesen */
 #include "font.h"                              /* Definition des Zeichensatzes */
 
@@ -64,6 +64,40 @@ prog_uint8_t text[] =
 void PrintScrollColumn(uint8_t c, int pixelx, int y);
 void ScrollLeft(void);
 
+
+void showText(const char *text) {
+	uint8_t softx;
+    uint8_t moreThanOneChar = 1;
+
+    if (*(text+1) == '\0') {
+        moreThanOneChar =0;
+    }
+
+	for (;*text!='\0';text++)   // Aktuelles Zeichen lesen
+	{
+		  for (softx=0;softx<FONTWIDTH;softx++)       // Pixel des Zeichens abarbeiten
+		  {
+            if (moreThanOneChar) {
+                if (*(text+1)=='\0' && softx == FONTWIDTH-2) { 
+                    // Das letzte Zeichen braucht keinen rechten Rand aber nur wenn es nicht alleine ist
+                    break;
+                }
+                if (softx == FONTWIDTH-1) {
+                    // Zwischenraum nur eine Spalte
+                    continue;
+                }
+                if (*text == '1' && softx == FONTWIDTH-3) {
+                    // Die eins verkleinern
+                    continue;
+                }
+            }
+			ScrollLeft();                             // Platz schaffen und Zeilen nach links schieben
+			PrintScrollColumn(*text,softx,0);         // Ganz rechts eine Spalte des Zeichens ausgeben
+			_delay_ms(35);                            // Ein bischen warten damit es nicht zu schnell wird
+		  }
+	}
+}
+
 /* -------------------------------------------------------------------------
  * Main Funktion
  *
@@ -72,9 +106,6 @@ void ScrollLeft(void);
  * -------------------------------------------------------------------------*/
 int main(void)
 {
-	uint8_t * tpos;
-	uint8_t softx;
-
 	cli();                              // Interrupts sperren (damit keiner dazwischenfunkt)
 
 	/*---------------------------------------------------
@@ -86,7 +117,7 @@ int main(void)
 
 	/*---------------------------------------------------------------------------
 	 * 8-Bit Timer TCCR0 für das Multiplexing der LEDs initialisieren
-	 * Es wird ca. alle 2 Mikrosekunden ein Overflow0 Interrupt ausgelöst
+	 * Es wird ca. alle 2 Millisekunden ein Overflow0 Interrupt ausgelöst
 	 * Berechnung: T = Vorteiler * Wertebereich Zähler / Taktfreuenz
 	 * = 64 * 256 / ( 8000000 Hz ) = 2,048 ms
 	 *---------------------------------------------------------------------------*/
@@ -101,15 +132,8 @@ int main(void)
 	 *---------------------------------------------------*/
 	while(1)                                              // Endlosschleife
 	{
-		for (tpos=text;pgm_read_byte(tpos)!='~';tpos++)   // Aktuelles Zeichen lesen
-		{
-			  for (softx=0;softx<FONTWIDTH;softx++)       // Pixel des Zeichens abarbeiten
-			  {
-				ScrollLeft();                             // Platz schaffen und Zeilen nach links schieben
-				PrintScrollColumn(pgm_read_byte(tpos),softx,0);  // Ganz rechts eine Spalte des Zeichens ausgeben
-				_delay_ms(35);                            // Ein bischen warten damit es nicht zu schnell wird
-			  }
-		}
+        showText("17");
+        while (1);
 	}
 	return 0;
 }
