@@ -67,18 +67,24 @@ void ScrollLeft(void);
 
 void showText(const char *text) {
 	uint8_t softx;
+	uint8_t charPos=0;
+    char firstChar = *text;
     uint8_t moreThanOneChar = 1;
 
     if (*(text+1) == '\0') {
         moreThanOneChar =0;
     }
 
-	for (;*text!='\0';text++)   // Aktuelles Zeichen lesen
+	for (;*text!='\0';text++,charPos++)   // Aktuelles Zeichen lesen
 	{
 		  for (softx=0;softx<FONTWIDTH;softx++)       // Pixel des Zeichens abarbeiten
 		  {
             if (moreThanOneChar) {
-                if (*(text+1)=='\0' && softx == FONTWIDTH-2) { 
+                if (*(text+1)=='\0' && softx == FONTWIDTH-1 && firstChar == '1') { 
+                    // Das letzte Zeichen braucht keinen rechten Rand aber nur wenn es nicht alleine ist
+                    break;
+                }
+                if (*(text+1)=='\0' && softx == FONTWIDTH-2 && firstChar != '1') { 
                     // Das letzte Zeichen braucht keinen rechten Rand aber nur wenn es nicht alleine ist
                     break;
                 }
@@ -86,7 +92,7 @@ void showText(const char *text) {
                     // Zwischenraum nur eine Spalte
                     continue;
                 }
-                if (*text == '1' && softx == FONTWIDTH-3) {
+                if (*text == '1' && (softx == FONTWIDTH-3 || softx == 0)) {
                     // Die eins verkleinern
                     continue;
                 }
@@ -96,6 +102,32 @@ void showText(const char *text) {
 			_delay_ms(35);                            // Ein bischen warten damit es nicht zu schnell wird
 		  }
 	}
+}
+
+/* Wandelt die Zahl im 10er System in einen String.
+ * Die Zahl ist max 2stellig.
+ */
+void numberToString(uint8_t number, char *string)
+{
+    char digit;
+    const char ASCII_OFFSET=0x30;
+
+    digit = number/10;
+    if (digit > 0) {
+        *string++ = digit + ASCII_OFFSET;
+        number -= digit*10;
+    }
+    *string++ = number + ASCII_OFFSET;
+    *string = 0;
+}
+
+/* Display loeschen
+ */
+void clearScreen(void) {
+  uint8_t xcol;                           /* Spaltenzähler */
+  for (xcol=0;xcol<WIDTH;xcol++) {
+      leds[xcol] = 0;
+  }
 }
 
 /* -------------------------------------------------------------------------
@@ -130,10 +162,18 @@ int main(void)
 	/*---------------------------------------------------
 	 * Hauptschleife (Laufschrift erzeugen)
 	 *---------------------------------------------------*/
+
+    char buffer[3];
+    uint8_t n=0;
+
 	while(1)                                              // Endlosschleife
 	{
-        showText("17");
-        while (1);
+        numberToString(n, buffer);
+        showText(buffer);
+        _delay_ms(2000);
+        n++;
+        if (n>99) n=0;
+        clearScreen();
 	}
 	return 0;
 }
@@ -173,6 +213,7 @@ void PrintScrollColumn(uint8_t c, int pixelx, int y)
     }
   }
 }
+
 
 /* -------------------------------------------------------------------------
  * Funktion ScrollLeft
