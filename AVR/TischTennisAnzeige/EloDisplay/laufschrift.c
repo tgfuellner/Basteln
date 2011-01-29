@@ -18,12 +18,12 @@
  * Defines (Präprozessor Makros)
  * -----------------------------------------*/
 
-#define F_CPU 8000000UL	                       /* CPU Takt (für delay-Routine) */
-
 #define WIDTH 12                               /* Breite des Displays */
 #define HEIGHT 10                              /* Höhe des Displays */
 #define FONTWIDTH 8                            /* Breite des Zeichensatzes */
 #define FONTHEIGHT 10                          /* Höhe des Zeichensatzes */
+
+#define TWI_DISPLAY_ID 15                      /* TWI Adress, UNIQUE please */
 
 #define GetPixel(x,y) leds[y]&(1<<x)           /* Makro: Ein "Pixel" auslesen */
 #define SetPixel(x,y) leds[y]|=1<<x            /* Makro: Ein "Pixel" setzen */
@@ -39,6 +39,8 @@
 #include <avr/pgmspace.h>                      /* Hilfsfunktionen um Daten aus dem Flash zu lesen */
 #include "font.h"                              /* Definition des Zeichensatzes */
 
+#include "General.h"
+#include "TWI_Slave.h"
 
 /* -----------------------------------------
  * Globale Variablen
@@ -138,7 +140,8 @@ void clearScreen(void) {
  * -------------------------------------------------------------------------*/
 int main(void)
 {
-	cli();                              // Interrupts sperren (damit keiner dazwischenfunkt)
+	cli();                           // Interrupts sperren (damit keiner dazwischenfunkt)
+    _delay_ms(50);                   // Wait for POR
 
 	/*---------------------------------------------------
 	 * Ports konfigurieren (Ein-/Ausgänge)
@@ -157,6 +160,8 @@ int main(void)
 	TIFR |= (1<<TOV0); 					// Clear overflow flag (TOV0)
 	TIMSK |= (1<<TOIE0); 				// timer0 will create overflow interrupt
 
+    TWIS_Init (TWI_DISPLAY_ID, 100000);
+
 	sei();							    // Interrupts erlauben
 
 	/*---------------------------------------------------
@@ -165,15 +170,23 @@ int main(void)
 
     char buffer[3];
     uint8_t n=0;
+    uint8_t TWIS_ResponseType;
+
+    showText("--");
 
 	while(1)                                              // Endlosschleife
 	{
-        numberToString(n, buffer);
-        showText(buffer);
-        _delay_ms(2000);
-        n++;
-        if (n>99) n=0;
-        clearScreen();
+        if (TWIS_ResonseRequired (&TWIS_ResponseType)) {
+            if (TWIS_ResponseType == TWIS_ReadBytes) {
+                // TWIS_ReadAck();  // Not last Byte
+                n = TWIS_ReadNack();  // The last Byte
+                TWIS_Stop();
+
+                clearScreen();
+                numberToString(n, buffer);
+                showText(buffer);
+            }
+        }
 	}
 	return 0;
 }

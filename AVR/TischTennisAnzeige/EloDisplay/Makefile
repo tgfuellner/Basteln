@@ -60,7 +60,7 @@ TARGET = laufschrift
 
 
 # List C source files here. (C dependencies are automatically generated.)
-SRC = $(TARGET).c  
+SRC = $(TARGET).c TWI_Slave.c
 
 
 # List Assembler source files here.
