@@ -5,6 +5,9 @@
  *
  * Kompilierbar mittels AVR Studio 4 oder WinAVR 
  *
+ * Byte kann uebr TWI gesendet werden. SDA=C4 und SCL=C5
+ * Zwei Ziffern werden dargestellt.
+ *
  * Der Sourcecode und das Hexfile dürfen frei verwendet werden.
  * Nutzung erfolgt auf eigene Gefahr.
  *
