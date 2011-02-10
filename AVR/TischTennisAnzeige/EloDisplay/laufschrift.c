@@ -8,6 +8,12 @@
  * Byte kann uebr TWI gesendet werden. SDA=C4 und SCL=C5
  * Zwei Ziffern werden dargestellt.
  *
+ * LCD wird so angeschlossen:
+ * RS = B6
+ * E  = B7
+ * RW = C6 (P2)
+ * Data4-7 = D0 -D3
+ *
  * Der Sourcecode und das Hexfile dürfen frei verwendet werden.
  * Nutzung erfolgt auf eigene Gefahr.
  *
@@ -44,6 +50,7 @@
 
 #include "General.h"
 #include "TWI_Slave.h"
+#include "lcd.h"
 
 /* -----------------------------------------
  * Globale Variablen
@@ -176,6 +183,14 @@ int main(void)
     uint8_t TWIS_ResponseType;
 
     showText("--");
+
+    /* initialize display, cursor off */
+    lcd_init(LCD_DISP_ON);
+
+    /* clear display and home cursor */
+    lcd_clrscr();
+
+    lcd_puts("*1\n2");
 
 	while(1)                                              // Endlosschleife
 	{
