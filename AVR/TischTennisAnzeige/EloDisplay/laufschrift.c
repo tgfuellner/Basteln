@@ -11,7 +11,7 @@
  * LCD wird so angeschlossen:
  * RS = B6
  * E  = B7
- * RW = C6 (P2)
+ * RW = PB5
  * Data4-7 = D0 -D3
  *
  * Der Sourcecode und das Hexfile dürfen frei verwendet werden.
@@ -156,7 +156,7 @@ int main(void)
 	/*---------------------------------------------------
 	 * Ports konfigurieren (Ein-/Ausgänge)
 	 *---------------------------------------------------*/
-	DDRC = 0x0f;   // ( 0x0f PORTC als AD-Eingang)
+	DDRC = 0x0f;   //  Portc = Output   ADC6 und ADC7 gehen nur fur Analog Messung!
 	DDRB = 0xff;   //  Portb = Output
 	DDRD = 0xff;   //  Portd = Output
 
@@ -172,7 +172,6 @@ int main(void)
 
     TWIS_Init (TWI_DISPLAY_ID, 100000);
 
-	sei();							    // Interrupts erlauben
 
 	/*---------------------------------------------------
 	 * Hauptschleife (Laufschrift erzeugen)
@@ -190,7 +189,9 @@ int main(void)
     /* clear display and home cursor */
     lcd_clrscr();
 
-    lcd_puts("*1\n2");
+    lcd_puts("Servu\ns");
+
+	sei();							    // Interrupts erlauben
 
 	while(1)                                              // Endlosschleife
 	{
@@ -203,6 +204,8 @@ int main(void)
                 clearScreen();
                 numberToString(n, buffer);
                 showText(buffer);
+                lcd_clrscr();
+                lcd_puts(buffer);
             }
         }
 	}
@@ -295,9 +298,9 @@ SIGNAL (SIG_OVERFLOW0)
 	/*--------------------------------------------------
 	 * Ports initialisieren
 	 *--------------------------------------------------*/
-	PORTD = 0;
-	PORTB = 0;
-	PORTC = 0;
+	PORTD &= 0b00001111;  // D0-D3 belong to lcd
+	PORTB &= 0b11100000;  // B5-B7 belong to lcd
+	PORTC &= 0b11110000;  // C6 and C7 are ADC only!  C4 and C5 belong to twi
 
 	/*---------------------------------------------------
 	 * Eine einzelne 0 durch die Schiebergister schieben
@@ -331,7 +334,7 @@ SIGNAL (SIG_OVERFLOW0)
 
 	PORTD = portdout & 0xff;
 	PORTC = portcout & 0xff;
-	PORTB = (ledval >> 8) & 0x03;  /* high byte */
+	PORTB = (PORTB & 0b11100000) | ((ledval >> 8) & 0x03);  /* high byte */
 
 	sei();						   /* Interrupts wieder erlauben */
 }
