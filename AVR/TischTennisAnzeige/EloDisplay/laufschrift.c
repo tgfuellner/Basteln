@@ -178,7 +178,6 @@ int main(void)
 	 *---------------------------------------------------*/
 
     char buffer[3];
-    uint8_t n=0;
     uint8_t TWIS_ResponseType;
 
     showText("--");
@@ -193,19 +192,41 @@ int main(void)
 
 	sei();							    // Interrupts erlauben
 
+    uint8_t mainScore=0;
+    uint8_t slaveScore=0;
+    uint8_t mainToServe=0;
+
 	while(1)                                              // Endlosschleife
 	{
         if (TWIS_ResonseRequired (&TWIS_ResponseType)) {
             if (TWIS_ResponseType == TWIS_ReadBytes) {
-                // TWIS_ReadAck();  // Not last Byte
-                n = TWIS_ReadNack();  // The last Byte
+                mainScore = TWIS_ReadAck();
+                slaveScore = TWIS_ReadAck();
+                mainToServe = TWIS_ReadNack();  // The last Byte
                 TWIS_Stop();
 
-                clearScreen();
-                numberToString(n, buffer);
-                showText(buffer);
+
+                // LCD Display
                 lcd_clrscr();
-                lcd_puts(buffer);
+                if (mainToServe) {
+                    lcd_puts("*");
+                    numberToString(mainScore, buffer);
+                    lcd_puts(buffer);
+                    lcd_puts("\n");
+                    numberToString(slaveScore, buffer);
+                    lcd_puts(buffer);
+                } else {
+                    numberToString(mainScore, buffer);
+                    lcd_puts(buffer);
+                    lcd_puts("\n*");
+                    numberToString(slaveScore, buffer);
+                    lcd_puts(buffer);
+                }
+
+                // Led Display
+                clearScreen();
+                numberToString(slaveScore, buffer);
+                showText(buffer);
             }
         }
 	}

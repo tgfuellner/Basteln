@@ -19,17 +19,27 @@ void setup()
   Serial.begin(9600);
 }
 
-byte x = 0;
+byte mainScore = 0;
+byte slaveScore = 1;
+byte mainToServe = 1;
 
 void loop()
 {
-  Serial.println((int)x);
+  Serial.print((int)mainScore);
+  Serial.print((int)slaveScore);
+  Serial.print((int)mainToServe);
 
   Wire.beginTransmission(15); // transmit to device #15
-  Wire.send(x);              // sends one byte  
-  Wire.endTransmission();    // stop transmitting
+  Wire.send(mainScore);            // sends one byte
+  Wire.send(slaveScore);
+  if (mainScore % 2 == 0) {
+    mainToServe ^= 1;
+  }
+  Wire.send(mainToServe);
+  Wire.endTransmission();     // stop transmitting
   
 
-  x++;
+  mainScore++;
+  slaveScore += 2;
   delay(2000);
 }
