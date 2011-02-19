@@ -142,6 +142,13 @@ void clearScreen(void) {
   }
 }
 
+/* Zeigt Aufschlag an
+ */
+void led_showHaveToServ(void) {
+    leds[0] |= 1 << (HEIGHT-1);
+    leds[1] |= 1 << (HEIGHT-1);
+}
+
 /* -------------------------------------------------------------------------
  * Main Funktion
  *
@@ -205,28 +212,34 @@ int main(void)
                 mainToServe = TWIS_ReadNack();  // The last Byte
                 TWIS_Stop();
 
-
                 // LCD Display
                 lcd_clrscr();
-                if (mainToServe) {
-                    lcd_puts("*");
-                    numberToString(mainScore, buffer);
-                    lcd_puts(buffer);
-                    lcd_puts("\n");
-                    numberToString(slaveScore, buffer);
-                    lcd_puts(buffer);
-                } else {
-                    numberToString(mainScore, buffer);
-                    lcd_puts(buffer);
-                    lcd_puts("\n*");
-                    numberToString(slaveScore, buffer);
-                    lcd_puts(buffer);
+                numberToString(mainScore, buffer);
+                lcd_puts(buffer);
+                if (buffer[1] == 0) {
+                    lcd_puts(" "); // Formatierung bei nur 1 stellig
                 }
+                lcd_puts(mainToServe?"*":" ");
+                lcd_puts("0");  // Saetze main
+
+                lcd_puts("\n");
+
+                numberToString(slaveScore, buffer);
+                lcd_puts(buffer);
+                if (buffer[1] == 0) {
+                    lcd_puts(" "); // Formatierung bei nur 1 stellig
+                }
+                lcd_puts(mainToServe?" ":"*");
+                lcd_puts("0");  // Saetze slave
 
                 // Led Display
                 clearScreen();
+
                 numberToString(slaveScore, buffer);
                 showText(buffer);
+                if (!mainToServe) {
+                    led_showHaveToServ();
+                }
             }
         }
 	}
