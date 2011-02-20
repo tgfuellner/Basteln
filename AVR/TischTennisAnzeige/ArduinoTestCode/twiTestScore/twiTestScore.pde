@@ -22,6 +22,8 @@ void setup()
 byte mainScore = 0;
 byte slaveScore = 1;
 byte mainToServe = 1;
+byte mainGame = 1;
+byte slaveGame = 0;
 
 void loop()
 {
@@ -32,6 +34,8 @@ void loop()
   Wire.beginTransmission(15); // transmit to device #15
   Wire.send(mainScore);            // sends one byte
   Wire.send(slaveScore);
+  Wire.send(mainGame);
+  Wire.send(slaveGame);
   if (mainScore % 2 == 0) {
     mainToServe ^= 1;
   }
@@ -41,5 +45,6 @@ void loop()
 
   mainScore++;
   slaveScore += 2;
+  if (++slaveGame > 3) slaveGame=0;
   delay(2000);
 }

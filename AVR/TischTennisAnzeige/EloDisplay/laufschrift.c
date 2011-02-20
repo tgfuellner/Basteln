@@ -146,7 +146,15 @@ void clearScreen(void) {
  */
 void led_showHaveToServ(void) {
     leds[0] |= 1 << (HEIGHT-1);
-    leds[1] |= 1 << (HEIGHT-1);
+    //leds[1] |= 1 << (HEIGHT-1);
+}
+
+/* Zeigt Saetze an
+ */
+void led_showGames(uint8_t games) {
+    for (; games>0; games--) {
+        leds[WIDTH-1-(games-1)*2] |= 1 << (HEIGHT-1);
+    }
 }
 
 /* -------------------------------------------------------------------------
@@ -202,6 +210,8 @@ int main(void)
     uint8_t mainScore=0;
     uint8_t slaveScore=0;
     uint8_t mainToServe=0;
+    uint8_t mainGames=0;
+    uint8_t slaveGames=0;
 
 	while(1)                                              // Endlosschleife
 	{
@@ -209,6 +219,8 @@ int main(void)
             if (TWIS_ResponseType == TWIS_ReadBytes) {
                 mainScore = TWIS_ReadAck();
                 slaveScore = TWIS_ReadAck();
+                mainGames = TWIS_ReadAck();
+                slaveGames = TWIS_ReadAck();
                 mainToServe = TWIS_ReadNack();  // The last Byte
                 TWIS_Stop();
 
@@ -220,9 +232,10 @@ int main(void)
                     lcd_puts(" "); // Formatierung bei nur 1 stellig
                 }
                 lcd_puts(mainToServe?"*":" ");
-                lcd_puts("0");  // Saetze main
+                numberToString(mainGames, buffer);
+                lcd_puts(buffer);  // Saetze main
 
-                lcd_puts("\n");
+                lcd_puts("<\n>");
 
                 numberToString(slaveScore, buffer);
                 lcd_puts(buffer);
@@ -230,13 +243,15 @@ int main(void)
                     lcd_puts(" "); // Formatierung bei nur 1 stellig
                 }
                 lcd_puts(mainToServe?" ":"*");
-                lcd_puts("0");  // Saetze slave
+                numberToString(slaveGames, buffer);
+                lcd_puts(buffer);  // Saetze slave
 
                 // Led Display
                 clearScreen();
 
                 numberToString(slaveScore, buffer);
                 showText(buffer);
+                led_showGames(slaveGames);
                 if (!mainToServe) {
                     led_showHaveToServ();
                 }
