@@ -1,0 +1,16 @@
+MachineType=0
+TableX1=0
+TableX2=1000
+TableY1=0
+TableY2=440
+X1=0
+X2=1000
+Y1=0
+Y2=440
+MaxHeight=1000
+Origin=6
+tableOrigin=6
+ToolTime=0
+RapidSpeed=2000
+Type=0
+Post=/usr/share/SheetCamTNG/posts/EasyCNC.scpost

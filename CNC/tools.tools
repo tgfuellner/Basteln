@@ -1,0 +1,18 @@
+[Tool0]
+Number=1
+Type=0
+Spindle\ direction=0
+Rampin=1
+Diameter=1,2
+Angle=0,1
+Flute\ length=5
+Feed\ rate=120
+Ramp\ angle=0
+Z\ Increment=3
+Overall\ length=10
+Spindle\ speed=1000
+Plunge\ Rate=30
+Offset=0
+NameString=Mill/router, 1,2 mm diameter
+TextData=
+Comment=
