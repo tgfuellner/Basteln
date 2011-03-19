@@ -1,0 +1,7 @@
+*.hex
+*.eep
+*.elf
+*.lss
+*.o
+.dep/
+tags
