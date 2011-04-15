@@ -4,6 +4,11 @@ plexiInKonsole=15;
 
 BattHalterDicke=32;
 BattHalterLaenge=61;
+BattZ=17;
+
+SchalterBreite=19;
+SchalterLaenge=22;
+SchalterEindringZ=15; // Ohne Bearbeitung 20
 
 Rand=10;
 
