@@ -21,13 +21,13 @@ $DIMGAP
  40
 0.625
   9
-$DIMEXO
- 40
-0.625
-  9
 $INSUNITS
  70
 4
+  9
+$DIMEXO
+ 40
+0.625
   9
 $DIMTXT
  40
@@ -37,17 +37,17 @@ $DIMSTYLE
   2
 Standard
   9
-$PLIMMAX
- 10
-210.0
- 20
-297.0
-  9
 $PLIMMIN
  10
 0.0
  20
 0.0
+  9
+$PLIMMAX
+ 10
+210.0
+ 20
+297.0
   9
 $DIMEXE
  40
@@ -903,7 +903,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-4
+5
   0
 LAYER
   5
@@ -973,7 +973,27 @@ AcDbSymbolTableRecord
 100
 AcDbLayerTableRecord
   2
-Taschen
+PlexiTasche
+ 70
+0
+ 62
+1
+  6
+CONTINUOUS
+370
+0
+390
+F
+  0
+LAYER
+  5
+46
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+SchalterTasche
  70
 0
  62
@@ -1311,7 +1331,7 @@ ENTITIES
   0
 LWPOLYLINE
   5
-46
+47
   8
 0
  62
@@ -1351,7 +1371,7 @@ AcDbPolyline
   0
 DIMENSION
   5
-47
+48
 100
 AcDbEntity
   8
@@ -1381,7 +1401,7 @@ AcDbDimension
  71
 5
  72
-1
+0
  41
 1.0
  42
@@ -1407,7 +1427,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-48
+49
 100
 AcDbEntity
   8
@@ -1437,7 +1457,7 @@ AcDbDimension
  71
 5
  72
-1
+0
  41
 1.0
  42
@@ -1463,7 +1483,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-49
+4A
 100
 AcDbEntity
   8
@@ -1493,7 +1513,7 @@ AcDbDimension
  71
 5
  72
-1
+0
  41
 1.0
  42
@@ -1519,7 +1539,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-4A
+4B
 100
 AcDbEntity
   8
@@ -1549,7 +1569,7 @@ AcDbDimension
  71
 5
  72
-1
+0
  41
 1.0
  42
@@ -1575,7 +1595,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-4B
+4C
 100
 AcDbEntity
   8
@@ -1605,7 +1625,7 @@ AcDbDimension
  71
 5
  72
-1
+0
  41
 1.0
  42
@@ -1631,7 +1651,7 @@ AcDbAlignedDimension
   0
 LINE
   5
-4C
+4D
 100
 AcDbEntity
 100
@@ -1652,34 +1672,6 @@ ByLayer
 0.0
  11
 65.4500000000000028
- 21
-20.2999999999999972
- 31
-0.0
-  0
-LINE
-  5
-4D
-100
-AcDbEntity
-100
-AcDbLine
-  8
-Led
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-55.0499999999999972
- 20
-10.0
- 30
-0.0
- 11
-55.0499999999999972
  21
 20.2999999999999972
  31
@@ -1701,6 +1693,34 @@ Led
   6
 ByLayer
  10
+55.0499999999999972
+ 20
+10.0
+ 30
+0.0
+ 11
+55.0499999999999972
+ 21
+20.2999999999999972
+ 31
+0.0
+  0
+LINE
+  5
+4F
+100
+AcDbEntity
+100
+AcDbLine
+  8
+Led
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
 65.4500000000000028
  20
 10.0
@@ -1715,7 +1735,7 @@ ByLayer
   0
 LINE
   5
-4F
+50
 100
 AcDbEntity
 100
@@ -1743,7 +1763,7 @@ ByLayer
   0
 DIMENSION
   5
-50
+51
 100
 AcDbEntity
   8
@@ -1773,7 +1793,7 @@ AcDbDimension
  71
 5
  72
-1
+0
  41
 1.0
  42
@@ -1799,7 +1819,7 @@ AcDbAlignedDimension
   0
 DIMENSION
   5
-51
+52
 100
 AcDbEntity
   8
@@ -1829,7 +1849,7 @@ AcDbDimension
  71
 5
  72
-0
+1
  41
 1.0
  42
@@ -1855,9 +1875,9 @@ AcDbAlignedDimension
   0
 LWPOLYLINE
   5
-52
+53
   8
-Taschen
+PlexiTasche
  62
 256
 370
@@ -1895,9 +1915,9 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-53
+54
   8
-Taschen
+SchalterTasche
  62
 256
 370
@@ -1971,7 +1991,7 @@ E
   3
 AcDbVariableDictionary
 350
-54
+55
   0
 DICTIONARY
   5
@@ -2435,7 +2455,7 @@ Layout2
   0
 DICTIONARY
   5
-54
+55
 100
 AcDbDictionary
 281
@@ -2443,15 +2463,15 @@ AcDbDictionary
   3
 DIMASSOC
 350
-56
+57
   3
 HIDETEXT
 350
-55
+56
   0
 DICTIONARYVAR
   5
-55
+56
 100
 DictionaryVariables
 280
@@ -2461,7 +2481,7 @@ DictionaryVariables
   0
 DICTIONARYVAR
   5
-56
+57
 100
 DictionaryVariables
 280
