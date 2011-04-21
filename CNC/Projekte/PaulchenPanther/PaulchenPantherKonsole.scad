@@ -59,7 +59,7 @@ module mitte2D() {
   projection(cut=true) translate([0,0,-konsZ+plexiInKonsole+0.1]) konsole();
 }
 
-//konsole();
+konsole();
 //oben2D();
 //unten2D();
-mitte2D();
+//mitte2D();
