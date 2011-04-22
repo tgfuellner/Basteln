@@ -1,4 +1,10 @@
+use <../../../../MCAD/regular_shapes.scad>
+
 EPS=0.01;
+
+Aluminum = [0.77, 0.77, 0.8];
+BlackPaint = [0.2, 0.2, 0.2];
+BrightYellow = [1, 1, 0];
 
 aluRailLength=1660;
 aluRailWidth=22.4;
@@ -18,33 +24,42 @@ module rail() {
   }
 }
 
-rail();
+/* Luxeon Star
+ */
+module luxeonDrill() {
+  DrillCenterDist=9.4;
+  DrillR=1.5;
+  RoundAccuracy=0.1;
+    translate([-DrillCenterDist,0,-EPS]) union() {
+      cylinder(h = 10, r=DrillR, $fs=RoundAccuracy);
+      translate([-5,-DrillR,-EPS]) cube(size = [5,2*DrillR,2]);
+    }
+}
+module luxeonStar() {
+  R=11.547; // So Flat side to side = 20
+  Angles=[0,60,120,180,240,300];
 
-module konsole() {
   difference() {
-    cube(size=[konsX,konsY,konsZ]);
-
-    // Plexi
-    translate([Rand,Rand,konsZ-plexiInKonsole]) {
-        cube(size=[plexiLaenge,plexiDicke,plexiInKonsole+0.2]);
+    union() {
+      color(Aluminum) hexagon_prism(1.5, R);
+      color(BlackPaint) translate([0,0,1.5]) hexagon_prism(0.1, R);
+      color(BrightYellow) translate([0,0,1.6]) cube(size=[5,5, 1.3], center=true);
+      for (a=Angles) {
+	rotate(a=[0,0,a+30]) translate([-7.25,0,1.7]) 
+		color(Aluminum) cube(size=[2.5,4,0.1], center=true);
+      }
+      
     }
-
-    // Schalter
-    translate([Rand, konsY-Rand-SchalterBreite, konsZ-SchalterEindringZ]) {
-        cube(size=[SchalterLaenge, SchalterBreite, SchalterEindringZ+0.1]);
-    }
-
-    // Batteriefach
-    translate([Rand+SchalterLaenge-0.1, Rand+plexiDicke-0.1, -0.01]) {
-        cube(size=[BattHalterLaenge, BattHalterDicke, BattZ]);
-    }
-
-    // Aussparung für LED
-    translate([konsX/2, Rand+plexiDicke/2, konsZ-plexiInKonsole-LEDTiefe/2]) {
-        cube(size=[plexiDicke, plexiDicke, LEDTiefe+0.1], center=true);
+    for (a=Angles) {
+      rotate(a=[0,0,a]) luxeonDrill();
     }
   }
 }
+
+
+luxeonStar();
+
+//rail();
 
 
 // 2D Oben für DXF Export
