@@ -2,14 +2,21 @@ use <../../../../MCAD/regular_shapes.scad>
 
 EPS=0.01;
 
-Aluminum = [0.77, 0.77, 0.8];
-BlackPaint = [0.2, 0.2, 0.2];
-BrightYellow = [1, 1, 0];
 
 aluRailLength=1660;
 aluRailWidth=22.4;
 aluRailDebth=10;
 aluRailBorderWidth=1.5;
+
+LedEdgeOffset=100;
+
+NumLEDs=4;
+DistanceBetweenLEDs=(aluRailLength-2*LedEdgeOffset)/(NumLEDs-1);
+
+// Colors
+Aluminum = [0.77, 0.77, 0.8];
+BlackPaint = [0.2, 0.2, 0.2];
+BrightYellow = [1, 1, 0];
 
 /* aluminum rails
  */
@@ -36,7 +43,7 @@ module luxeonDrill() {
     }
 }
 module luxeonStar() {
-  R=11.547; // So Flat side to side = 20
+  R=11.547; // So that Flat side to side = 20
   Angles=[0,60,120,180,240,300];
 
   difference() {
@@ -57,21 +64,39 @@ module luxeonStar() {
 }
 
 
-luxeonStar();
+module all() {
 
-//rail();
+  rail();
+
+  for(i=[0:NumLEDs-1]) {
+    echo("Led=",LedEdgeOffset+DistanceBetweenLEDs*i);
+    translate([LedEdgeOffset+DistanceBetweenLEDs*i,-aluRailWidth/2,0]) luxeonStar();
+    translate([LedEdgeOffset/2+DistanceBetweenLEDs*i,-aluRailWidth/2,-10]) {
+      echo("DübelL=",LedEdgeOffset/2+DistanceBetweenLEDs*i);
+      cylinder(h = 20, r=1.75, $fs=0.2);
+    }
+    translate([3*LedEdgeOffset/2+DistanceBetweenLEDs*i,-aluRailWidth/2,-10]) {
+      echo("DübelR=",3*LedEdgeOffset/2+DistanceBetweenLEDs*i);
+      cylinder(h = 20, r=1.75, $fs=0.2);
+    }
+  }
+
+  for (i=[1:NumLEDs-1]) {
+    translate([LedEdgeOffset-DistanceBetweenLEDs/2+DistanceBetweenLEDs*i,
+		-aluRailWidth/2,-10]) {
+      echo("DübelM=",LedEdgeOffset-DistanceBetweenLEDs/2+DistanceBetweenLEDs*i);
+      cylinder(h = 20, r=1.75, $fs=0.2);
+    }
+  }
+}
 
 
 // 2D Oben für DXF Export
 module oben2D() {
-  projection(cut=true) translate([0,0,-konsZ+0.1]) konsole();
-}
-// 2D Unten für DXF Export
-module unten2D() {
-  projection(cut=true) translate([0,0,-0.1]) konsole();
-}
-// 2D Mitte für DXF Export
-module mitte2D() {
-  projection(cut=true) translate([0,0,-konsZ+plexiInKonsole+0.1]) konsole();
+  projection(cut=true) translate([0,0,-2]) all();
+  projection(cut=true) translate([0,0,2]) all();
 }
 
+//oben2D();
+
+all();
