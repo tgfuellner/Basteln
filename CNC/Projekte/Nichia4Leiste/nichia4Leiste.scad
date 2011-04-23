@@ -1,6 +1,10 @@
 use <../../../../MCAD/regular_shapes.scad>
+use <../../../../MCAD/boxes.scad>
 
 EPS=0.01;
+$fs=0.2;
+
+DowelR=1.75;
 
 
 aluRailLength=1660;
@@ -17,6 +21,7 @@ DistanceBetweenLEDs=(aluRailLength-2*LedEdgeOffset)/(NumLEDs-1);
 Aluminum = [0.77, 0.77, 0.8];
 BlackPaint = [0.2, 0.2, 0.2];
 BrightYellow = [1, 1, 0];
+Transparent = [0.3, 0.3, 1, 0.8];
 
 /* aluminum rails
  */
@@ -63,6 +68,14 @@ module luxeonStar() {
   }
 }
 
+module lampshade() {
+  difference() {
+    color(Transparent) roundedBox([44, 30, 10.4], 2, true);
+    translate([16,0,-10]) cylinder(h=20, r=DowelR);
+    translate([-16,0,-10]) cylinder(h=20, r=DowelR);
+  }
+}
+
 
 module all() {
 
@@ -71,13 +84,14 @@ module all() {
   for(i=[0:NumLEDs-1]) {
     echo("Led=",LedEdgeOffset+DistanceBetweenLEDs*i);
     translate([LedEdgeOffset+DistanceBetweenLEDs*i,-aluRailWidth/2,0]) luxeonStar();
+    translate([LedEdgeOffset+DistanceBetweenLEDs*i,-aluRailWidth/2,5.2+4]) lampshade();
     translate([LedEdgeOffset/2+DistanceBetweenLEDs*i,-aluRailWidth/2,-10]) {
       echo("DübelL=",LedEdgeOffset/2+DistanceBetweenLEDs*i);
-      cylinder(h = 20, r=1.75, $fs=0.2);
+      cylinder(h = 20, r=DowelR);
     }
     translate([3*LedEdgeOffset/2+DistanceBetweenLEDs*i,-aluRailWidth/2,-10]) {
       echo("DübelR=",3*LedEdgeOffset/2+DistanceBetweenLEDs*i);
-      cylinder(h = 20, r=1.75, $fs=0.2);
+      cylinder(h = 20, r=DowelR);
     }
   }
 
@@ -85,7 +99,7 @@ module all() {
     translate([LedEdgeOffset-DistanceBetweenLEDs/2+DistanceBetweenLEDs*i,
 		-aluRailWidth/2,-10]) {
       echo("DübelM=",LedEdgeOffset-DistanceBetweenLEDs/2+DistanceBetweenLEDs*i);
-      cylinder(h = 20, r=1.75, $fs=0.2);
+      cylinder(h = 20, r=DowelR);
     }
   }
 }
@@ -93,10 +107,12 @@ module all() {
 
 // 2D Oben für DXF Export
 module oben2D() {
-  projection(cut=true) translate([0,0,-2]) all();
-  projection(cut=true) translate([0,0,2]) all();
+  //projection(cut=true) translate([0,0,-2]) all();
+  //projection(cut=true) translate([0,0,2]) all();
+  projection(cut=true) translate([0,0,2]) lampshade();
 }
 
-//oben2D();
+oben2D();
 
-all();
+//all();
+//lampshade();
