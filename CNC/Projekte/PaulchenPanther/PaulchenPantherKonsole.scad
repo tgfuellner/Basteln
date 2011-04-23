@@ -61,5 +61,4 @@ module mitte2D() {
 
 konsole();
 //oben2D();
-unten2D();
 //mitte2D();
