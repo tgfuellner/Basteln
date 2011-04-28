@@ -16,7 +16,7 @@ BoardHeight=200;
 BoardMiddleWidth=15;
 
 PocketEdge=(BoardWidth-BoardMiddleWidth)/2;
-RestBoardWidth=BoardThickness-AADiameter/2+Gap;
+RestBoardWidth=BoardThickness-AADiameter/2-Gap;
 BatAngle=20;
 BottomEdge=10;
 
