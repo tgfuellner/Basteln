@@ -4,10 +4,10 @@
 // 201005291027
 
 // variables
-$fs=0.2;
+//$fs=0.2;
 
 // boss
-shaft_size =  5;
+shaft_size =  8;
 grub_size = 3;
 boss_height = 10;
 
@@ -16,10 +16,10 @@ wheel_radius = 17;
 wheel_height = 10;
 
 // grips 
-finger_size = 7;
+finger_size = 3;
 grip_count = 7;
 grip_flatten = 0.7;
-cap_scale = 1.1;
+cap_scale = 2.1;
 
 // constants 
 PI = 3.1415927;
