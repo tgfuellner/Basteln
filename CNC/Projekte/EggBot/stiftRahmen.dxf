@@ -21,13 +21,13 @@ $DIMGAP
  40
 0.625
   9
-$INSUNITS
- 70
-4
-  9
 $DIMEXO
  40
 0.625
+  9
+$INSUNITS
+ 70
+4
   9
 $DIMTXT
  40
@@ -37,17 +37,17 @@ $DIMSTYLE
   2
 Standard
   9
-$PLIMMIN
- 10
-0.0
- 20
-0.0
-  9
 $PLIMMAX
  10
 210.0
  20
 297.0
+  9
+$PLIMMIN
+ 10
+0.0
+ 20
+0.0
   9
 $DIMEXE
  40
@@ -20041,54 +20041,6 @@ AcDbEntity
 100
 AcDbCircle
   8
-zwischen-cut-full-inside
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-72.2000000000000028
- 20
-45.0
- 30
-0.0
- 40
-3.0499999999999998
-  0
-CIRCLE
-  5
-2DB
-100
-AcDbEntity
-100
-AcDbCircle
-  8
-zwischen-cut-full-inside
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-72.2000000000000028
- 20
-125.7680000000000007
- 30
-0.0
- 40
-3.0499999999999998
-  0
-CIRCLE
-  5
-2DC
-100
-AcDbEntity
-100
-AcDbCircle
-  8
 hilf
  62
 256
@@ -20107,7 +20059,7 @@ ByLayer
   0
 LINE
   5
-2DD
+2DB
 100
 AcDbEntity
 100
@@ -20135,31 +20087,7 @@ ByLayer
   0
 CIRCLE
   5
-2DE
-100
-AcDbEntity
-100
-AcDbCircle
-  8
-pocket-1.0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-72.2000000000000028
- 20
-45.0
- 30
-0.0
- 40
-10.0500000000000007
-  0
-CIRCLE
-  5
-2DF
+2DC
 100
 AcDbEntity
 100
@@ -20183,7 +20111,7 @@ ByLayer
   0
 CIRCLE
   5
-2E0
+2DD
 100
 AcDbEntity
 100
@@ -20207,6 +20135,78 @@ ByLayer
   0
 CIRCLE
   5
+2DE
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+zwischen-cut-full-inside
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+72.5999999999999943
+ 20
+45.0
+ 30
+0.0
+ 40
+3.0499999999999998
+  0
+CIRCLE
+  5
+2DF
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+zwischen-cut-full-inside
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+72.5999999999999943
+ 20
+125.7680000000000007
+ 30
+0.0
+ 40
+3.0499999999999998
+  0
+CIRCLE
+  5
+2E0
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+pocket-1.0
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+72.5999999999999943
+ 20
+45.0
+ 30
+0.0
+ 40
+10.0500000000000007
+  0
+CIRCLE
+  5
 2E1
 100
 AcDbEntity
@@ -20221,7 +20221,7 @@ pocket-4.5
   6
 ByLayer
  10
-72.2000000000000028
+72.5999999999999943
  20
 125.7680000000000007
  30
