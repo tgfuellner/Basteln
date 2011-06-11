@@ -499,3 +499,4 @@ void drawArc(double centerX, double centerY, double endpointX, double endpointY,
   }
 }
 
+/* vim:set filetype=cpp: */
