@@ -903,7 +903,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-5
+7
   0
 LAYER
   5
@@ -998,6 +998,46 @@ fit-outer-cut-1
 0
  62
 2
+  6
+CONTINUOUS
+370
+0
+390
+F
+  0
+LAYER
+  5
+47
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+loch-cut-15
+ 70
+0
+ 62
+7
+  6
+CONTINUOUS
+370
+0
+390
+F
+  0
+LAYER
+  5
+48
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+bohren
+ 70
+0
+ 62
+7
   6
 CONTINUOUS
 370
@@ -1331,31 +1371,7 @@ ENTITIES
   0
 CIRCLE
   5
-47
-100
-AcDbEntity
-100
-AcDbCircle
-  8
-loch-cut-all
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0000000000000001
- 20
--0.0000000000000001
- 30
-0.0
- 40
-3.0499999999999998
-  0
-CIRCLE
-  5
-48
+49
 100
 AcDbEntity
 100
@@ -1379,7 +1395,7 @@ ByLayer
   0
 CIRCLE
   5
-49
+4A
 100
 AcDbEntity
 100
@@ -1403,7 +1419,7 @@ ByLayer
   0
 CIRCLE
   5
-4A
+4B
 100
 AcDbEntity
 100
@@ -1427,7 +1443,7 @@ ByLayer
   0
 CIRCLE
   5
-4B
+4C
 100
 AcDbEntity
 100
@@ -1451,7 +1467,7 @@ ByLayer
   0
 CIRCLE
   5
-4C
+4D
 100
 AcDbEntity
 100
@@ -1472,6 +1488,98 @@ ByLayer
 0.0
  40
 4.0
+  0
+CIRCLE
+  5
+4E
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+loch-cut-15
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+0.0000000000000001
+ 20
+-0.0000000000000001
+ 30
+0.0
+ 40
+3.0499999999999998
+  0
+CIRCLE
+  5
+4F
+100
+AcDbEntity
+100
+AcDbCircle
+  8
+loch-cut-all
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+ 40
+2.98
+  0
+POINT
+  5
+50
+100
+AcDbEntity
+100
+AcDbPoint
+  8
+bohren
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+0.0000000000000001
+ 20
+16.0
+ 30
+0.0
+  0
+POINT
+  5
+51
+100
+AcDbEntity
+100
+AcDbPoint
+  8
+bohren
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
   0
 ENDSEC
   0
@@ -1511,7 +1619,7 @@ E
   3
 AcDbVariableDictionary
 350
-4D
+52
   0
 DICTIONARY
   5
@@ -1975,7 +2083,7 @@ Layout2
   0
 DICTIONARY
   5
-4D
+52
 100
 AcDbDictionary
 281
@@ -1983,15 +2091,15 @@ AcDbDictionary
   3
 DIMASSOC
 350
-4F
+54
   3
 HIDETEXT
 350
-4E
+53
   0
 DICTIONARYVAR
   5
-4E
+53
 100
 DictionaryVariables
 280
@@ -2001,7 +2109,7 @@ DictionaryVariables
   0
 DICTIONARYVAR
   5
-4F
+54
 100
 DictionaryVariables
 280
