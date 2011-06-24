@@ -60,7 +60,7 @@
 #define YAXIS_ENABLE_PIN 7
 #define YAXIS_ENDSTOP_PIN -1 // <0 0> No Endstop!
 
-#define SERVO_PIN 9
+#define SERVO_PIN 5
 
 /*
  * Other Configuration
