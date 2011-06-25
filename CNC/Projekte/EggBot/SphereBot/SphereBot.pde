@@ -66,17 +66,19 @@
  * Other Configuration
  */
 
-#define DEFAULT_PEN_UP_POSITION 50
-#define XAXIS_MIN_STEPCOUNT -467
-#define XAXIS_MAX_STEPCOUNT 467
+#define DEFAULT_PEN_UP_POSITION 90
+#define XAXIS_MIN_STEPCOUNT -100
+#define XAXIS_MAX_STEPCOUNT 100
 #define DEFAULT_ZOOM_FACTOR 1. // With a Zoom-Faktor of .65, I can print gcode for Makerbot Unicorn without changes. 
                                // The zoom factor can be also manipulated by the propretiary code M402
 
 
 /* --------- */
 
-StepperModel xAxisStepper(XAXIS_DIR_PIN, XAXIS_STEP_PIN, XAXIS_ENABLE_PIN, XAXIS_ENDSTOP_PIN, XAXIS_MIN_STEPCOUNT, XAXIS_MAX_STEPCOUNT);
-StepperModel rotationStepper(YAXIS_DIR_PIN, YAXIS_STEP_PIN, YAXIS_ENABLE_PIN, YAXIS_ENDSTOP_PIN, 0, 0);
+StepperModel xAxisStepper(XAXIS_DIR_PIN, XAXIS_STEP_PIN, XAXIS_ENABLE_PIN, XAXIS_ENDSTOP_PIN,
+        XAXIS_MIN_STEPCOUNT, XAXIS_MAX_STEPCOUNT, 48.0, 16);
+StepperModel rotationStepper(YAXIS_DIR_PIN, YAXIS_STEP_PIN, YAXIS_ENABLE_PIN, YAXIS_ENDSTOP_PIN,
+        0, 0, 198.0, 2);
 
 SoftwareServo servo;
 boolean servoEnabled=true;
@@ -106,7 +108,7 @@ const double maxFeedrate = 6000.;
 
 void setup()
 {
-    Serial.begin(115200);
+    Serial.begin(9600);
 
     clear_buffer();
 
@@ -126,11 +128,12 @@ void setup()
     Timer1.initialize(TIMER_DELAY); // Timer for updating pwm pins
     Timer1.attachInterrupt(doInterrupt);
   
-    xAxisStepper.autoHoming();
+    //xAxisStepper.autoHoming();
     xAxisStepper.setTargetPosition(0.);
     commitSteppers(maxFeedrate);
     delay(2000);
     xAxisStepper.enableStepper(false);
+    Serial.print("SphereBot\n");
 }
 
 void loop() // input loop, looks for manual input and then checks to see if and serial commands are coming in
@@ -219,7 +222,8 @@ void commitSteppers(double speedrate)
 
 void get_command() // gets commands from serial connection and then calls up subsequent functions to deal with them
 {
-  if (!isRunning && Serial.available() > 0) // each time we see something
+  // if (!isRunning && Serial.available() > 0) // each time we see something
+  if (Serial.available() > 0) // each time we see something
   {
     serial_char = Serial.read(); // read individual byte from serial connection
     

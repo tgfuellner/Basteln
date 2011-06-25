@@ -29,3 +29,4 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>
 Part of this code is based on/inspired by the Helium Frog Delta Robot Firmware
 by Martin Price <http://www.HeliumFrog.com>
 
+To create tags File: ctags --langmap="C++:+.pde" S*
