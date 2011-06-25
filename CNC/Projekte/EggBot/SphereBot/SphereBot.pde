@@ -129,10 +129,11 @@ void setup()
     Timer1.attachInterrupt(doInterrupt);
   
     //xAxisStepper.autoHoming();
-    xAxisStepper.setTargetPosition(0.);
-    commitSteppers(maxFeedrate);
-    delay(2000);
-    xAxisStepper.enableStepper(false);
+    //xAxisStepper.setTargetPosition(0.);
+    //commitSteppers(maxFeedrate);
+    //delay(2000);
+    //xAxisStepper.enableStepper(false);
+
     Serial.print("SphereBot\n");
 }
 
@@ -222,8 +223,7 @@ void commitSteppers(double speedrate)
 
 void get_command() // gets commands from serial connection and then calls up subsequent functions to deal with them
 {
-  // if (!isRunning && Serial.available() > 0) // each time we see something
-  if (Serial.available() > 0) // each time we see something
+  if (!isRunning && Serial.available() > 0) // each time we see something
   {
     serial_char = Serial.read(); // read individual byte from serial connection
     
