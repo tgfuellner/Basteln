@@ -33,7 +33,8 @@ private:
 
   double kStepsPerRevolution;
   int kMicroStepping;
-  
+
+public:  //Fuer prints  
   volatile long currentStepcount;
   volatile long targetStepcount;
 
