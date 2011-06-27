@@ -24,6 +24,7 @@
  * !!!!!!!!
  */
 
+#include <math.h>
 #include <TimerOne.h>
 #include <SoftwareServo.h>
 #include "StepperModel.h"
@@ -76,9 +77,9 @@
 /* --------- */
 
 StepperModel xAxisStepper(XAXIS_DIR_PIN, XAXIS_STEP_PIN, XAXIS_ENABLE_PIN, XAXIS_ENDSTOP_PIN,
-        XAXIS_MIN_STEPCOUNT, XAXIS_MAX_STEPCOUNT, 48.0, 16);
+        XAXIS_MIN_STEPCOUNT, XAXIS_MAX_STEPCOUNT, 198.0, 2);
 StepperModel rotationStepper(YAXIS_DIR_PIN, YAXIS_STEP_PIN, YAXIS_ENABLE_PIN, YAXIS_ENDSTOP_PIN,
-        0, 0, 198.0, 2);
+        0, 0, 48.0, 16);
 
 SoftwareServo servo;
 boolean servoEnabled=true;
