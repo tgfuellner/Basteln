@@ -30,3 +30,23 @@ Part of this code is based on/inspired by the Helium Frog Delta Robot Firmware
 by Martin Price <http://www.HeliumFrog.com>
 
 To create tags File: ctags --langmap="C++:+.pde" S*
+
+
+For Testings:
+Absolut modus:
+    G90
+Icremental modus:
+    G91
+
+Servo:
+    M300S0
+    M300S90
+
+Stepper off
+    M18
+
+Y = egg rotation Stepper:
+    G0X0Y40
+
+X = pen Stepper:
+    G0X40Y0
