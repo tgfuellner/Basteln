@@ -21,29 +21,33 @@ $DIMGAP
  40
 0.625
   9
-$DIMEXO
- 40
-0.625
-  9
 $INSUNITS
  70
 4
+  9
+$DIMEXO
+ 40
+0.625
   9
 $DIMTXT
  40
 2.5
   9
-$PLIMMAX
- 10
-210.0
- 20
-297.0
+$DIMSTYLE
+  2
+Standard
   9
 $PLIMMIN
  10
 0.0
  20
 0.0
+  9
+$PLIMMAX
+ 10
+210.0
+ 20
+297.0
   9
 $DIMEXE
  40
