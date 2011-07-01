@@ -67,9 +67,9 @@
  * Other Configuration
  */
 
-#define DEFAULT_PEN_UP_POSITION 90
-#define XAXIS_MIN_STEPCOUNT -100
-#define XAXIS_MAX_STEPCOUNT 100
+#define DEFAULT_PEN_UP_POSITION 60
+#define XAXIS_MIN_STEPCOUNT -25
+#define XAXIS_MAX_STEPCOUNT 22
 #define DEFAULT_ZOOM_FACTOR 1. // With a Zoom-Faktor of .65, I can print gcode for Makerbot Unicorn without changes. 
                                // The zoom factor can be also manipulated by the propretiary code M402
 
@@ -192,6 +192,7 @@ void commitSteppers(double speedrate)
   rotationStepper.counter = negative_half_interval;
   xAxisStepper.counter = negative_half_interval;
 
+/*
   Serial.print("Speedrate:");
   Serial.print(speedrate, 6);
   Serial.print(" dX:");
@@ -218,7 +219,7 @@ void commitSteppers(double speedrate)
   Serial.print(rotationStepper.currentStepcount);
   Serial.print(" targetStepCount:");
   Serial.println(rotationStepper.targetStepcount);
-
+*/
   isRunning=true;
 }
 

@@ -55,7 +55,7 @@ public:
   
   void resetSteppersForObjectDiameter(double diameter);
   
-  void autoHoming();
+  //void autoHoming();
 
   
   void setTargetPosition(double pos);
