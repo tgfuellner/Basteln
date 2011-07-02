@@ -49,14 +49,14 @@ StepperModel::StepperModel(int inDirPin, int inStepPin, int inEnablePin, int inE
   currentStepcount=0;
   targetStepcount=0;
 
-  steps_per_mm = (int)((kStepsPerRevolution/(45.*M_PI))*kMicroStepping); // default value for a "normal" egg (45 mm diameter)
+  steps_per_mm = (int)((kStepsPerRevolution/(45.*M_PI))*kMicroStepping+0.5); // default value for a "normal" egg (45 mm diameter)
   enableStepper(false);
 }
 
 void StepperModel::resetSteppersForObjectDiameter(double diameter)
 {
   // Calculate the motor steps required to move per mm.
-  steps_per_mm = (int)((kStepsPerRevolution/(diameter*M_PI))*kMicroStepping);
+  steps_per_mm = (int)((kStepsPerRevolution/(diameter*M_PI))*kMicroStepping+0.5);
   if(endStopPin>=0)
   {
     //autoHoming();
@@ -100,7 +100,7 @@ void StepperModel::setTargetPosition(double pos)
 {
    targetPosition = pos;
    targetStepcount = getStepsForMM(targetPosition);
-   Serial.print("pos=");Serial.print(pos);
+   //Serial.print("pos=");Serial.print(pos);
    Serial.print(" targetStepCount=");Serial.println(targetStepcount);
    delta = targetStepcount-currentStepcount;
    direction = true;
