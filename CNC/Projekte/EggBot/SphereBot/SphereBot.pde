@@ -68,8 +68,8 @@
  */
 
 #define DEFAULT_PEN_UP_POSITION 60
-#define XAXIS_MIN_STEPCOUNT -25
-#define XAXIS_MAX_STEPCOUNT 22
+#define XAXIS_MIN_STEPCOUNT -50
+#define XAXIS_MAX_STEPCOUNT 50
 #define DEFAULT_ZOOM_FACTOR 1. // With a Zoom-Faktor of .65, I can print gcode for Makerbot Unicorn without changes. 
                                // The zoom factor can be also manipulated by the propretiary code M402
 
