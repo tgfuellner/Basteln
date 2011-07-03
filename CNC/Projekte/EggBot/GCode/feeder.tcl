@@ -10,9 +10,15 @@ set fdOut [open /dev/ttyUSB1 r+]
 
 
 while {[gets $fdIn line] >= 0} {
+    puts $line
     puts $fdOut $line
     flush $fdOut
-    after 2000
+    while {[gets $fdOut answer]} {
+        puts "\t$answer"
+        if {[regexp {^ok:} $answer]} {
+            break
+        }
+    }
 }
 
 close $fdIn
