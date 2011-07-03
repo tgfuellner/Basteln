@@ -1,5 +1,5 @@
 999
-dxflib 2.2.0.0
+dxflib 2.0.4.8
   0
 SECTION
   2
@@ -21,13 +21,9 @@ $UCSYDIR
  30
 0.0
   9
-$UCSXDIR
- 10
-1.0
- 20
-0.0
- 30
-0.0
+$DIMASZ
+ 40
+2.5
   9
 $EXTMIN
  10
@@ -37,9 +33,13 @@ $EXTMIN
  30
 0.0
   9
-$DIMASZ
- 40
-2.5
+$UCSXDIR
+ 10
+1.0
+ 20
+0.0
+ 30
+0.0
   9
 $DIMGAP
  40
@@ -55,15 +55,31 @@ $LUNITS
  70
 2
   9
-$UNITMODE
- 70
-0
-  9
 $INSBASE
  10
 0.0
  20
 0.0
+ 30
+0.0
+  9
+$UNITMODE
+ 70
+0
+  9
+$INSUNITS
+ 70
+4
+  9
+$DIMEXO
+ 40
+0.625
+  9
+$EXTMAX
+ 10
+980.0
+ 20
+806.0
  30
 0.0
   9
@@ -75,39 +91,23 @@ $UCSORG
  30
 0.0
   9
-$EXTMAX
- 10
-980.0
- 20
-806.0
- 30
-0.0
-  9
-$DIMEXO
- 40
-0.625
-  9
-$INSUNITS
- 70
-4
-  9
-$WORLDVIEW
- 70
-1
-  9
 $LIMMAX
  10
 980.0
  20
 806.0
   9
-$LIMCHECK
+$WORLDVIEW
  70
-0
+1
   9
 $DIMTXT
  40
 2.5
+  9
+$LIMCHECK
+ 70
+0
   9
 $LUPREC
  70
@@ -117,9 +117,11 @@ $DIMSTYLE
   2
 Standard
   9
-$LTSCALE
- 40
-1.0
+$PLIMMIN
+ 10
+0.0
+ 20
+0.0
   9
 $PLIMMAX
  10
@@ -127,11 +129,9 @@ $PLIMMAX
  20
 297.0
   9
-$PLIMMIN
- 10
-0.0
- 20
-0.0
+$LTSCALE
+ 40
+1.0
   9
 $DIMEXE
  40
@@ -987,7 +987,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-2
+3
   0
 LAYER
   5
@@ -1016,6 +1016,26 @@ AcDbSymbolTableRecord
 AcDbLayerTableRecord
   2
 Hilf
+ 70
+0
+ 62
+7
+  6
+CONTINUOUS
+370
+0
+390
+F
+  0
+LAYER
+  5
+44
+100
+AcDbSymbolTableRecord
+100
+AcDbLayerTableRecord
+  2
+Text
  70
 0
  62
@@ -1353,7 +1373,7 @@ ENTITIES
   0
 LWPOLYLINE
   5
-44
+45
   8
 0
  62
@@ -1381,7 +1401,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-45
+46
   8
 0
  62
@@ -1409,7 +1429,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-46
+47
   8
 0
  62
@@ -1501,7 +1521,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-47
+48
   8
 0
  62
@@ -1613,7 +1633,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-48
+49
   8
 0
  62
@@ -1717,7 +1737,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-49
+4A
   8
 0
  62
@@ -1841,7 +1861,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-4A
+4B
   8
 0
  62
@@ -1869,7 +1889,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-4B
+4C
   8
 0
  62
@@ -1897,7 +1917,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-4C
+4D
   8
 0
  62
@@ -1997,7 +2017,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-4D
+4E
   8
 0
  62
@@ -2089,7 +2109,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-4E
+4F
   8
 0
  62
@@ -2437,7 +2457,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-4F
+50
   8
 0
  62
@@ -2465,7 +2485,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-50
+51
   8
 0
  62
@@ -2493,7 +2513,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-51
+52
   8
 0
  62
@@ -2625,7 +2645,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-52
+53
   8
 0
  62
@@ -2757,7 +2777,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-53
+54
   8
 0
  62
@@ -2785,7 +2805,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-54
+55
   8
 0
  62
@@ -2821,7 +2841,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-55
+56
   8
 0
  62
@@ -2941,7 +2961,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-56
+57
   8
 0
  62
@@ -3077,7 +3097,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-57
+58
   8
 0
  62
@@ -3189,7 +3209,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-58
+59
   8
 0
  62
@@ -3321,7 +3341,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-59
+5A
   8
 0
  62
@@ -3437,7 +3457,7 @@ AcDbPolyline
   0
 LWPOLYLINE
   5
-5A
+5B
   8
 0
  62
@@ -4415,46 +4435,6 @@ AcDbPolyline
  20
 -1.3397730291891978
   0
-MTEXT
-  5
-5B
-100
-AcDbEntity
-100
-AcDbMText
-  8
-0
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--3.0891249493436597
- 20
-14.6460584621235785
- 30
-0.0
- 40
-1.7424000000000002
- 41
-4.3560000000000008
- 71
-5
- 72
-0
-  1
-Herzlichen\~\PGl\U+00fcckwunsch\Pzu\~Deinem\PGeburtstag
-  7
-standard
- 50
-90.0
- 73
-1
- 44
-1.0
-  0
 LINE
   5
 5C
@@ -4482,6 +4462,926 @@ ByLayer
 14.7447282162162647
  31
 0.0
+  0
+MTEXT
+  5
+5D
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-6.8929113247362359
+ 20
+5.6270782088504472
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+A
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+5E
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-6.8929113247362306
+ 20
+8.1271059866282229
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+l
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+5F
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-6.8929113247362324
+ 20
+9.2382170977393354
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+l
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+60
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-6.8929113247362288
+ 20
+10.3493282088504461
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+e
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+61
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-6.8929113247362315
+ 20
+12.2937726532948908
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+s
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+62
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-6.8929113247362297
+ 20
+16.1132253433183941
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+L
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+63
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-6.8929113247362288
+ 20
+18.0576420099850594
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+i
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+64
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-6.8929113247362297
+ 20
+18.8909475655406141
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+e
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+65
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-6.8929113247362279
+ 20
+20.8353920099850569
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+b
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+66
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-6.8929113247362288
+ 20
+22.7798364544295069
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+e
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+67
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-3.1915879953106714
+ 20
+11.9812489983066435
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+z
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+68
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-3.1915879953106718
+ 20
+13.9256656649733088
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+u
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+69
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+-3.1915879953106714
+ 20
+15.8701101094177535
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+m
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+6A
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+0.1858695427901476
+ 20
+5.6850477783437388
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+G
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+6B
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+0.1858695427901451
+ 20
+7.9072700005659611
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+e
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+6C
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+0.1858695427901493
+ 20
+9.8517144450104048
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+b
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+6D
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+0.1858695427901511
+ 20
+11.7961588894548512
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+u
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+6E
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+0.1858695427901518
+ 20
+13.7406033338992959
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+r
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+6F
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+0.1858695427901518
+ 20
+15.4072422227881844
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+t
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+70
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+0.1858695427901527
+ 20
+17.0738811116770712
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+s
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+71
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+0.1858695427901511
+ 20
+19.0183338017005781
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+t
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+72
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+0.1858695427901547
+ 20
+20.6849726905894613
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+a
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
+  0
+MTEXT
+  5
+73
+100
+AcDbEntity
+100
+AcDbMText
+  8
+0
+ 62
+7
+370
+-1
+  6
+CONTINUOUS
+ 10
+0.185869542790148
+ 20
+22.6293893572561302
+ 30
+0.0
+ 40
+2.5
+ 41
+100.0
+ 71
+7
+ 72
+0
+  1
+g
+  7
+normallatin1
+ 50
+90.0
+ 73
+1
+ 44
+1.0
   0
 ENDSEC
   0
@@ -4521,7 +5421,7 @@ E
   3
 AcDbVariableDictionary
 350
-5D
+74
   0
 DICTIONARY
   5
@@ -4985,7 +5885,7 @@ Layout2
   0
 DICTIONARY
   5
-5D
+74
 100
 AcDbDictionary
 281
@@ -4993,15 +5893,15 @@ AcDbDictionary
   3
 DIMASSOC
 350
-5F
+76
   3
 HIDETEXT
 350
-5E
+75
   0
 DICTIONARYVAR
   5
-5E
+75
 100
 DictionaryVariables
 280
@@ -5011,7 +5911,7 @@ DictionaryVariables
   0
 DICTIONARYVAR
   5
-5F
+76
 100
 DictionaryVariables
 280
