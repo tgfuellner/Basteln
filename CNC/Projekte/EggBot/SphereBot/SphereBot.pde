@@ -68,8 +68,8 @@
  */
 
 #define DEFAULT_PEN_UP_POSITION 60
-#define XAXIS_MIN_STEPCOUNT -50
-#define XAXIS_MAX_STEPCOUNT 50
+#define XAXIS_MIN_STEPCOUNT -200
+#define XAXIS_MAX_STEPCOUNT 200
 #define DEFAULT_ZOOM_FACTOR 1. // With a Zoom-Faktor of .65, I can print gcode for Makerbot Unicorn without changes. 
                                // The zoom factor can be also manipulated by the propretiary code M402
 
@@ -77,9 +77,9 @@
 /* --------- */
 
 StepperModel xAxisStepper(XAXIS_DIR_PIN, XAXIS_STEP_PIN, XAXIS_ENABLE_PIN, XAXIS_ENDSTOP_PIN,
-        XAXIS_MIN_STEPCOUNT, XAXIS_MAX_STEPCOUNT, 198.0, 2);
+        XAXIS_MIN_STEPCOUNT, XAXIS_MAX_STEPCOUNT, 198.0, 16);
 StepperModel rotationStepper(YAXIS_DIR_PIN, YAXIS_STEP_PIN, YAXIS_ENABLE_PIN, YAXIS_ENDSTOP_PIN,
-        0, 0, 48.0, 16);
+        0, 0, 200.0, 16);
 
 SoftwareServo servo;
 boolean servoEnabled=true;
