@@ -28,12 +28,12 @@ sphereBot = serial.Serial(DEVICE, BAUDRATE, timeout=30)
 
 line = gcode.readline()
 while line:
-    print line
+    print line,
     sphereBot.write(line)
 
     response = sphereBot.readline()
     while response[:3] != "ok:":
-        print "  ", response
+        print "  ", response,
         response = sphereBot.readline()
 
     line = gcode.readline()

@@ -2,10 +2,17 @@
 ## \
 exec tclsh "$0" ${1+"$@"}
 
+# Feeds a gcode File to the SphereBot.
+# 
+# Write a line to the serial device and wait for an "ok" response.
+#
+# Configure:
 
 set BAUDRATE 57600
 set DEVICE /dev/ttyUSB1
 
+
+# End configuration
 
 
 set fileToFeed [lindex $argv 0]
