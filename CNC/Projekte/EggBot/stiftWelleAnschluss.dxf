@@ -21,13 +21,13 @@ $DIMGAP
  40
 0.625
   9
-$INSUNITS
- 70
-4
-  9
 $DIMEXO
  40
 0.625
+  9
+$INSUNITS
+ 70
+4
   9
 $DIMTXT
  40
@@ -37,17 +37,17 @@ $DIMSTYLE
   2
 Standard
   9
-$PLIMMIN
- 10
-0.0
- 20
-0.0
-  9
 $PLIMMAX
  10
 210.0
  20
 297.0
+  9
+$PLIMMIN
+ 10
+0.0
+ 20
+0.0
   9
 $DIMEXE
  40
@@ -903,7 +903,7 @@ LAYER
 100
 AcDbSymbolTable
  70
-8
+3
   0
 LAYER
   5
@@ -958,106 +958,6 @@ rand-outercut-all
 0
  62
 2
-  6
-CONTINUOUS
-370
-0
-390
-F
-  0
-LAYER
-  5
-45
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-fuehrung-pocket-4mm
- 70
-0
- 62
-7
-  6
-CONTINUOUS
-370
-0
-390
-F
-  0
-LAYER
-  5
-46
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-MutterM6-pocket-4mm
- 70
-0
- 62
-3
-  6
-CONTINUOUS
-370
-0
-390
-F
-  0
-LAYER
-  5
-47
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-MutterM4-pocket-2.5mm
- 70
-0
- 62
-3
-  6
-CONTINUOUS
-370
-0
-390
-F
-  0
-LAYER
-  5
-48
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-BohrungZumWenden
- 70
-0
- 62
-7
-  6
-CONTINUOUS
-370
-0
-390
-F
-  0
-LAYER
-  5
-49
-100
-AcDbSymbolTableRecord
-100
-AcDbLayerTableRecord
-  2
-BohrungZumWenden2
- 70
-0
- 62
-7
   6
 CONTINUOUS
 370
@@ -1391,7 +1291,7 @@ ENTITIES
   0
 CIRCLE
   5
-4A
+45
 100
 AcDbEntity
 100
@@ -1411,775 +1311,11 @@ ByLayer
  30
 0.0
  40
-3.0
-  0
-CIRCLE
-  5
-4B
-100
-AcDbEntity
-100
-AcDbCircle
-  8
-loecher-innercut-all
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--10.0
- 20
-0.0
- 30
-0.0
- 40
-2.0
-  0
-CIRCLE
-  5
-4C
-100
-AcDbEntity
-100
-AcDbCircle
-  8
-loecher-innercut-all
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-10.0
- 20
-0.0
- 30
-0.0
- 40
-2.0
+2.1000000000000001
   0
 LINE
   5
-4D
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM6-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0000000000000004
- 20
-5.7735029999999998
- 30
-0.0
- 11
-5.0
- 21
-2.886750999999999
- 31
-0.0
-  0
-LINE
-  5
-4E
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM6-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-5.0
- 20
-2.886750999999999
- 30
-0.0
- 11
-4.9999999999999991
- 21
--2.8867510000000012
- 31
-0.0
-  0
-LINE
-  5
-4F
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM6-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-4.9999999999999991
- 20
--2.8867510000000012
- 30
-0.0
- 11
--0.0000000000000011
- 21
--5.7735029999999998
- 31
-0.0
-  0
-LINE
-  5
-50
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM6-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--5.0
- 20
--2.886750999999999
- 30
-0.0
- 11
--0.0000000000000011
- 21
--5.7735029999999998
- 31
-0.0
-  0
-LINE
-  5
-51
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM6-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0000000000000004
- 20
-5.7735029999999998
- 30
-0.0
- 11
--4.9999999999999991
- 21
-2.8867510000000003
- 31
-0.0
-  0
-LINE
-  5
-52
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM6-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--4.9999999999999991
- 20
-2.8867510000000003
- 30
-0.0
- 11
--5.0
- 21
--2.886750999999999
- 31
-0.0
-  0
-LINE
-  5
-53
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--14.0
- 20
-15.0
- 30
-0.0
- 11
--15.0
- 21
-15.0
- 31
-0.0
-  0
-LINE
-  5
-54
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--15.0
- 20
-15.0
- 30
-0.0
- 11
--15.0
- 21
--15.0
- 31
-0.0
-  0
-LINE
-  5
-55
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--15.0
- 20
--15.0
- 30
-0.0
- 11
--14.0
- 21
--15.0
- 31
-0.0
-  0
-LINE
-  5
-56
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-14.0
- 20
--15.0
- 30
-0.0
- 11
-15.0
- 21
--15.0
- 31
-0.0
-  0
-LINE
-  5
-57
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-15.0
- 20
--15.0
- 30
-0.0
- 11
-15.0
- 21
-15.0
- 31
-0.0
-  0
-LINE
-  5
-58
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-15.0
- 20
-15.0
- 30
-0.0
- 11
-14.0
- 21
-15.0
- 31
-0.0
-  0
-POINT
-  5
-59
-100
-AcDbEntity
-100
-AcDbPoint
-  8
-BohrungZumWenden
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0
- 20
-11.0
- 30
-0.0
-  0
-POINT
-  5
-5A
-100
-AcDbEntity
-100
-AcDbPoint
-  8
-BohrungZumWenden
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0
- 20
--11.0
- 30
-0.0
-  0
-LINE
-  5
-5B
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-10.0
- 20
-4.0414519999999996
- 30
-0.0
- 11
-13.5
- 21
-2.0207259999999998
- 31
-0.0
-  0
-LINE
-  5
-5C
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-13.5
- 20
-2.0207259999999998
- 30
-0.0
- 11
-13.5
- 21
--2.0207259999999998
- 31
-0.0
-  0
-LINE
-  5
-5D
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-13.5
- 20
--2.0207259999999998
- 30
-0.0
- 11
-10.0
- 21
--4.0414519999999996
- 31
-0.0
-  0
-LINE
-  5
-5E
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-10.0
- 20
-4.0414519999999996
- 30
-0.0
- 11
-6.5
- 21
-2.0207260000000007
- 31
-0.0
-  0
-LINE
-  5
-5F
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-6.5
- 20
-2.0207260000000007
- 30
-0.0
- 11
-6.5
- 21
--2.0207259999999998
- 31
-0.0
-  0
-LINE
-  5
-60
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-6.5
- 20
--2.0207259999999998
- 30
-0.0
- 11
-10.0
- 21
--4.0414519999999996
- 31
-0.0
-  0
-LINE
-  5
-61
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--10.0
- 20
-4.0414519999999996
- 30
-0.0
- 11
--6.5
- 21
-2.0207259999999998
- 31
-0.0
-  0
-LINE
-  5
-62
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--6.5
- 20
-2.0207259999999998
- 30
-0.0
- 11
--6.5
- 21
--2.0207259999999998
- 31
-0.0
-  0
-LINE
-  5
-63
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--6.5
- 20
--2.0207259999999998
- 30
-0.0
- 11
--10.0
- 21
--4.0414519999999996
- 31
-0.0
-  0
-LINE
-  5
-64
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--10.0
- 20
-4.0414519999999996
- 30
-0.0
- 11
--13.5
- 21
-2.0207260000000007
- 31
-0.0
-  0
-LINE
-  5
-65
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--13.5
- 20
-2.0207260000000007
- 30
-0.0
- 11
--13.5
- 21
--2.0207259999999998
- 31
-0.0
-  0
-LINE
-  5
-66
-100
-AcDbEntity
-100
-AcDbLine
-  8
-MutterM4-pocket-2.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--13.5
- 20
--2.0207259999999998
- 30
-0.0
- 11
--10.0
- 21
--4.0414519999999996
- 31
-0.0
-  0
-LINE
-  5
-67
+46
 100
 AcDbEntity
 100
@@ -2193,13 +1329,13 @@ rand-outercut-all
   6
 ByLayer
  10
--15.0
+-6.0999999999999996
  20
--15.0
+15.0
  30
 0.0
  11
--15.0
+6.0999999999999996
  21
 15.0
  31
@@ -2207,7 +1343,7 @@ ByLayer
   0
 LINE
   5
-68
+47
 100
 AcDbEntity
 100
@@ -2221,21 +1357,21 @@ rand-outercut-all
   6
 ByLayer
  10
--15.0
+6.0999999999999996
  20
 15.0
  30
 0.0
  11
-15.0
+6.0999999999999996
  21
-15.0
+-15.0
  31
 0.0
   0
 LINE
   5
-69
+48
 100
 AcDbEntity
 100
@@ -2249,13 +1385,13 @@ rand-outercut-all
   6
 ByLayer
  10
-15.0
+6.0999999999999996
  20
-15.0
+-15.0
  30
 0.0
  11
-15.0
+-6.0999999999999996
  21
 -15.0
  31
@@ -2263,7 +1399,7 @@ ByLayer
   0
 LINE
   5
-6A
+49
 100
 AcDbEntity
 100
@@ -2277,231 +1413,15 @@ rand-outercut-all
   6
 ByLayer
  10
-15.0
+-6.0999999999999996
  20
 -15.0
  30
 0.0
  11
--15.0
- 21
--15.0
- 31
-0.0
-  0
-CIRCLE
-  5
-6B
-100
-AcDbEntity
-100
-AcDbCircle
-  8
-BohrungZumWenden2
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0
- 20
-11.0
- 30
-0.0
- 40
-1.55
-  0
-CIRCLE
-  5
-6C
-100
-AcDbEntity
-100
-AcDbCircle
-  8
-BohrungZumWenden2
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0
- 20
--11.0
- 30
-0.0
- 40
-1.55
-  0
-LINE
-  5
-6D
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--6.0
- 20
-15.0
- 30
-0.0
- 11
--6.0
- 21
--15.0
- 31
-0.0
-  0
-LINE
-  5
-6E
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-6.0
- 20
-15.0
- 30
-0.0
- 11
-6.0
- 21
--15.0
- 31
-0.0
-  0
-LINE
-  5
-6F
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--6.0
- 20
-15.0
- 30
-0.0
- 11
--14.0
+-6.0999999999999996
  21
 15.0
- 31
-0.0
-  0
-LINE
-  5
-70
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
--14.0
- 20
--15.0
- 30
-0.0
- 11
--6.0
- 21
--15.0
- 31
-0.0
-  0
-LINE
-  5
-71
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-14.0
- 20
-15.0
- 30
-0.0
- 11
-6.0
- 21
-15.0
- 31
-0.0
-  0
-LINE
-  5
-72
-100
-AcDbEntity
-100
-AcDbLine
-  8
-fuehrung-pocket-4mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-6.0
- 20
--15.0
- 30
-0.0
- 11
-14.0
- 21
--15.0
  31
 0.0
   0
@@ -2543,7 +1463,7 @@ E
   3
 AcDbVariableDictionary
 350
-73
+4A
   0
 DICTIONARY
   5
@@ -3007,7 +1927,7 @@ Layout2
   0
 DICTIONARY
   5
-73
+4A
 100
 AcDbDictionary
 281
@@ -3015,15 +1935,15 @@ AcDbDictionary
   3
 DIMASSOC
 350
-75
+4C
   3
 HIDETEXT
 350
-74
+4B
   0
 DICTIONARYVAR
   5
-74
+4B
 100
 DictionaryVariables
 280
@@ -3033,7 +1953,7 @@ DictionaryVariables
   0
 DICTIONARYVAR
   5
-75
+4C
 100
 DictionaryVariables
 280
