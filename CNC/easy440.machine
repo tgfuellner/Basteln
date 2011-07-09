@@ -1,4 +1,3 @@
-MachineType=0
 TableX1=0
 TableX2=1000
 TableY1=0
@@ -12,5 +11,4 @@ Origin=6
 tableOrigin=6
 ToolTime=0
 RapidSpeed=2000
-Type=0
-Post=/usr/share/SheetCamTNG/posts/EasyCNC.scpost
+Post=/home/thomas/bin/sheecamTNG/posts/EasyCNC.scpost

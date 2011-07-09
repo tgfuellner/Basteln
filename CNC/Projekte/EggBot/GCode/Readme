@@ -1,0 +1,3 @@
+Durchmesser setzen:
+M400 S40 (Tischtennisball Durchmesser X)
+M401 S40 (Tischtennisball Durchmesser Y)

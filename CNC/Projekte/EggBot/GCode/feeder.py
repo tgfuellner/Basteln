@@ -27,9 +27,12 @@ fileToFeed = sys.argv[1]
 gcode = open(fileToFeed, "r")
 sphereBot = serial.Serial(DEVICE, BAUDRATE, timeout=30)
 
-line = gcode.readline()
-while line:
-    print line,
+currentLine = 0.0
+lines = gcode.readlines()
+totalLines = len(lines)
+for line in lines:
+    currentLine = currentLine + 1
+    print line, "({0:.1f}%)".format((currentLine / totalLines)*100),
     sphereBot.write(line)
 
     response = sphereBot.readline()
@@ -37,7 +40,6 @@ while line:
         print "  ", response,
         response = sphereBot.readline()
 
-    line = gcode.readline()
 
 gcode.close()
 sphereBot.close()
