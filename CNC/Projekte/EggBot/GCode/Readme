@@ -1,3 +1,15 @@
+Parameter X, Y, F (Forschub 600)
+Kommandos:
+
+G0 rapid movement
+G1 X Y F linear interpoaltion movement
+G4 P 110  Pause
+G90 Absolut
+G91 Incremental
+
 Durchmesser setzen:
+M18  Strom weg
+M300 S 60 Servo Pos
 M400 S40 (Tischtennisball Durchmesser X)
 M401 S40 (Tischtennisball Durchmesser Y)
+M402 S   Global zoom factor
