@@ -12,8 +12,8 @@
 
 # Configure:
 BAUDRATE = 57600
-#DEVICE = "/dev/ttyUSB1"
-DEVICE = "/dev/tty.PL2303-00004006"
+DEVICE = "/dev/ttyUSB1"
+#DEVICE = "/dev/tty.PL2303-00004006"
 
 # End configuration
 
