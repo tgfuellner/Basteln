@@ -1,5 +1,5 @@
-(Scribbled version of /var/folders/iN/iN0sITN7GcyxLiyWjUzhs++++TI/-Tmp-/ink_ext_XXXXXX.svgX849XV @ 600.00)
-( unicorn.py --tab="plotter_setup" --pen-up-angle=60 --pen-down-angle=12 --start-delay=110 --stop-delay=110 --xy-feedrate=600 --z-feedrate=150 --z-height=0 --finished-height=0 --register-pen=false --x-home=0 --y-home=0 --num-copies=1 --continuous=false --pause-on-layer-change=true /var/folders/iN/iN0sITN7GcyxLiyWjUzhs++++TI/-Tmp-/ink_ext_XXXXXX.svgX849XV )
+(Scribbled version of /var/folders/iN/iN0sITN7GcyxLiyWjUzhs++++TI/-Tmp-/ink_ext_XXXXXX.svgPOZHYV @ 600.00)
+( unicorn.py --tab="plotter_setup" --pen-up-angle=60 --pen-down-angle=12 --start-delay=110 --stop-delay=110 --xy-feedrate=600 --z-feedrate=150 --z-height=0 --finished-height=0 --register-pen=false --x-home=0 --y-home=0 --num-copies=1 --continuous=false --pause-on-layer-change=true /var/folders/iN/iN0sITN7GcyxLiyWjUzhs++++TI/-Tmp-/ink_ext_XXXXXX.svgPOZHYV )
 G21 (metric ftw)
 G90 (absolute mode)
 G92 X0.00 Y0.00 Z0.00 (you are here)
@@ -2560,6 +2560,17 @@ G1 X-6.37 Y60.81 F600.00
 G1 X-6.96 Y59.10 F600.00
 G1 X-7.33 Y59.86 F600.00
 G1 X-8.16 Y60.81 F600.00
+M300 S60.00 (pen up)
+G4 P110 (wait 110ms)
+
+(Polyline consisting of 1 segments.)
+G1 X-20.31 Y-60.69 F600.00
+M300 S12.00 (pen down)
+G4 P110 (wait 110ms)
+G1 X-20.31 Y-17.76 F600.00
+G1 X23.09 Y-17.76 F600.00
+G1 X23.09 Y-60.69 F600.00
+G1 X-20.31 Y-60.69 F600.00
 M300 S60.00 (pen up)
 G4 P110 (wait 110ms)
 

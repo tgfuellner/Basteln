@@ -23,7 +23,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.0180159"
-     inkscape:cx="79.724411"
+     inkscape:cx="-74.988302"
      inkscape:cy="248.03149"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -36,6 +36,34 @@
      inkscape:window-maximized="0" />
   <defs
      id="defs4">
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3223"
+       is_visible="true"
+       pattern="M 0,0 1,0"
+       copytype="repeated"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
+    <inkscape:path-effect
+       effect="skeletal"
+       id="path-effect3207"
+       is_visible="true"
+       pattern="M 0,0 1,0"
+       copytype="repeated"
+       prop_scale="1"
+       scale_y_rel="false"
+       spacing="0"
+       normal_offset="0"
+       tang_offset="0"
+       prop_units="false"
+       vertical_pattern="false"
+       fuse_tolerance="0" />
     <clipPath
        id="clipPath3022">
       <rect
@@ -652,6 +680,15 @@
          d="m 115.81539,3740.2082 c -1.56755,-0.9635 -3.09419,-6.0562 -3.09419,-6.0562 -0.68145,1.1454 -1.27249,3.3361 -1.51112,6.0562 0.23863,2.7201 0.82967,4.9108 1.51112,6.0561 0,0 1.52664,-5.0926 3.09419,-6.0561 z"
          id="path3393" />
     </g>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:0.85180384;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       id="rect3414"
+       width="152.13284"
+       height="153.75714"
+       x="-4176.4795"
+       y="7.7696662"
+       transform="matrix(0,-1,1,0,0,0)"
+       ry="40.054382" />
   </g>
   <g
      id="g5440"
