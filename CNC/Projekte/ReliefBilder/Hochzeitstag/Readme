@@ -1,0 +1,6 @@
+Aus Inkscape exportiert
+Mit Gimp invertiert und vertikal spiegeln!
+in PGM umgewandelt
+Header editiert; breite hoehe jeweils in einer Zeile
+
+~/GitHub/Software/imagecarve/imagecarve --toolsize=3 --stepover=1 --scale=0.18 --clear=7 --zdepth=6 --zoffset=-0.5 <2011-Hochzeitstag.pgm >tt.tap
