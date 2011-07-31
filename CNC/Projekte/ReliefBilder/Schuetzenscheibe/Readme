@@ -1,0 +1,10 @@
+./imagecarve --toolsize=2 --stepover=0.5 --scale=0.153 --clear=5 --zdepth=4.5 --zoffset=-0.9 huette.pgm >huette.tap
+Output will be 219.4mm x 219.4mm
+
+qcad:
+    skalliert nach inkscape export mit 25
+    Mittelpunkt: 186.6, 186.6
+
+Motivnullpunkt (zum Werkstuecknullpunkt verschoben):
+    x = 186.6 - 219.4/2 = 76.9
+    y =                 = 76.9
