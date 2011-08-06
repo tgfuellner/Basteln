@@ -1,5 +1,9 @@
-./imagecarve --toolsize=2 --stepover=0.5 --scale=0.153 --clear=5 --zdepth=4.5 --zoffset=-0.9 huette.pgm >huette.tap
+./imagecarve --toolsize=2 --stepover=0.5 --scale=0.153 --clear=5 --zdepth=4.5 --zoffset=-0.5 huette.pgm >huette.tap
 Output will be 219.4mm x 219.4mm
+
+./imagecarve --toolsize=2 --stepover=0.5 --scale=0.153 --clear=5 --zdepth=4.5 --zoffset=-0.5 --xoffset=76.9 --yoffset=76.9 huette.pgm >huette.ta
+
+F600 Eintragen  (10mm/s)
 
 qcad:
     skalliert nach inkscape export mit 25
