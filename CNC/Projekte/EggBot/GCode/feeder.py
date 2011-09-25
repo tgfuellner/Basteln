@@ -70,6 +70,12 @@ def penChange(lineIn):
     if penChangePattern.match(lineIn):
         raw_input('Change pen ... press <Return> when finished ')
     
+def waitForOkResponse(sphereBotInFile):
+    response = sphereBotInFile.readline()
+
+    while response[:3] != "ok:":
+        print "  ", response,
+        response = sphereBotInFile.readline()
 
 ######################## Main #########################
 
@@ -80,8 +86,21 @@ parser.add_option("-e", "--egg-displace", dest="wantDisplaceCorrection",
 parser.add_option("-d", "--dont-send", dest="wantToSend",
                   action="store_false", default=True,
                   help="Dont send GCode to SphereBot")
+parser.add_option("-s", "--servo-angle", dest="servoAngle", type="float",
+                  help="Set angle of Servo and exit. 0 is pen down.")
 
 (options, args) = parser.parse_args()
+
+
+if options.wantToSend:
+    sphereBot = serial.Serial(DEVICE, BAUDRATE, timeout=30)
+
+    if options.servoAngle != None:
+        line = "M300 S{0}\n".format(options.servoAngle)
+        print line,
+        sphereBot.write(line)
+        waitForOkResponse(sphereBot)
+        sys.exit();
 
 
 
@@ -96,9 +115,6 @@ penChangePattern = re.compile('^M01')
 
 fileToFeed = args[0]
 gcode = open(fileToFeed, "r")
-
-if options.wantToSend:
-    sphereBot = serial.Serial(DEVICE, BAUDRATE, timeout=30)
 
 currentLine = 0.0
 lines = gcode.readlines()
@@ -117,9 +133,5 @@ for line in lines:
 
     if options.wantToSend:
         sphereBot.write(line)
-
-        response = sphereBot.readline()
-        while response[:3] != "ok:":
-            print "  ", response,
-            response = sphereBot.readline()
+        waitForOkResponse(sphereBot)
 
