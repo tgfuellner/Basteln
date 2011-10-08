@@ -9,7 +9,7 @@ Servo myservo;
 
 void arm(){
   // arm the speed controller, modify as necessary for your ESC  
-  setSpeed(0);
+  myservo.write(0);    
   delay(1000); //delay 1 second,  some speed controllers may need longer
 }
 
@@ -17,18 +17,24 @@ void setSpeed(int speed){
   // speed is from 0 to 100 where 0 is off and 100 is maximum speed
   //the following maps speed values of 0-100 to angles from 0-180,
   // some speed controllers may need different values, see the ESC instructions
-  int angle = map(speed, 0, 100, 0, 180);
+  int angle = map(speed, 0, 100, 63, 117);
   myservo.write(angle);    
+  Serial.print("Speed=");
+  Serial.print(speed);
+  Serial.print(" Angle=");
+  Serial.println(angle);
 }
 
 void setup()
 {
+  Serial.begin(115200);
   myservo.attach(3);
   arm();  
+  Serial.println("Armed");
 }
 
 
-void loop()
+void schnellLangsam()
 {
   int speed;
 
@@ -45,5 +51,11 @@ void loop()
   setSpeed(0);  
   delay(5000); // stop the motor for 5 seconds
 }  
+
+
+void loop() {
+    schnellLangsam();
+}
+
 
 /* vim:set filetype=cpp: */
