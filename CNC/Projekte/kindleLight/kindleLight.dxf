@@ -21,29 +21,33 @@ $DIMGAP
  40
 0.625
   9
-$DIMEXO
- 40
-0.625
-  9
 $INSUNITS
  70
 4
+  9
+$DIMEXO
+ 40
+0.625
   9
 $DIMTXT
  40
 2.5
   9
-$PLIMMAX
- 10
-210.0
- 20
-297.0
+$DIMSTYLE
+  2
+Standard
   9
 $PLIMMIN
  10
 0.0
  20
 0.0
+  9
+$PLIMMAX
+ 10
+210.0
+ 20
+297.0
   9
 $DIMEXE
  40
@@ -4295,93 +4299,9 @@ ByLayer
  31
 0.0
   0
-LINE
-  5
-AD
-100
-AcDbEntity
-100
-AcDbLine
-  8
-pocket-3.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0000000000000013
- 20
-20.0
- 30
-0.0
- 11
-0.0000000000000009
- 21
-16.0
- 31
-0.0
-  0
-LINE
-  5
-AE
-100
-AcDbEntity
-100
-AcDbLine
-  8
-pocket-3.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0000000000000009
- 20
-16.0
- 30
-0.0
- 11
-12.0000000000000018
- 21
-16.0
- 31
-0.0
-  0
-LINE
-  5
-AF
-100
-AcDbEntity
-100
-AcDbLine
-  8
-pocket-3.5mm
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-12.0000000000000018
- 20
-16.0
- 30
-0.0
- 11
-12.0000000000000053
- 21
-20.0
- 31
-0.0
-  0
 CIRCLE
   5
-B0
+AD
 100
 AcDbEntity
 100
@@ -4402,6 +4322,258 @@ ByLayer
 0.0
  40
 1.6000000000000001
+  0
+LINE
+  5
+AE
+100
+AcDbEntity
+100
+AcDbLine
+  8
+pocket-3.5mm
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+0.0
+ 20
+20.0
+ 30
+0.0
+ 11
+0.0
+ 21
+15.0
+ 31
+0.0
+  0
+LINE
+  5
+AF
+100
+AcDbEntity
+100
+AcDbLine
+  8
+pocket-3.5mm
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+0.0
+ 20
+15.0
+ 30
+0.0
+ 11
+12.0
+ 21
+15.0
+ 31
+0.0
+  0
+LINE
+  5
+B0
+100
+AcDbEntity
+100
+AcDbLine
+  8
+pocket-3.5mm
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+12.0
+ 20
+15.0
+ 30
+0.0
+ 11
+12.0
+ 21
+20.0
+ 31
+0.0
+  0
+LINE
+  5
+B1
+100
+AcDbEntity
+100
+AcDbLine
+  8
+pocket-3.5mm
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+2.0
+ 20
+16.0
+ 30
+0.0
+ 11
+0.5
+ 21
+13.0
+ 31
+0.0
+  0
+LINE
+  5
+B2
+100
+AcDbEntity
+100
+AcDbLine
+  8
+pocket-3.5mm
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+0.5
+ 20
+13.0
+ 30
+0.0
+ 11
+0.5
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+B3
+100
+AcDbEntity
+100
+AcDbLine
+  8
+pocket-3.5mm
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+0.5
+ 20
+0.0
+ 30
+0.0
+ 11
+11.5
+ 21
+0.0
+ 31
+0.0
+  0
+LINE
+  5
+B4
+100
+AcDbEntity
+100
+AcDbLine
+  8
+pocket-3.5mm
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+11.5
+ 20
+0.0
+ 30
+0.0
+ 11
+11.5
+ 21
+13.0
+ 31
+0.0
+  0
+LINE
+  5
+B5
+100
+AcDbEntity
+100
+AcDbLine
+  8
+pocket-3.5mm
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+11.5
+ 20
+13.0
+ 30
+0.0
+ 11
+10.0
+ 21
+16.0
+ 31
+0.0
+  0
+LINE
+  5
+B6
+100
+AcDbEntity
+100
+AcDbLine
+  8
+pocket-3.5mm
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+10.0
+ 20
+16.0
+ 30
+0.0
+ 11
+2.0
+ 21
+16.0
+ 31
+0.0
   0
 ENDSEC
   0
@@ -4441,7 +4613,7 @@ E
   3
 AcDbVariableDictionary
 350
-B1
+B7
   0
 DICTIONARY
   5
@@ -4905,7 +5077,7 @@ Layout2
   0
 DICTIONARY
   5
-B1
+B7
 100
 AcDbDictionary
 281
@@ -4913,15 +5085,15 @@ AcDbDictionary
   3
 DIMASSOC
 350
-B3
+B9
   3
 HIDETEXT
 350
-B2
+B8
   0
 DICTIONARYVAR
   5
-B2
+B8
 100
 DictionaryVariables
 280
@@ -4931,7 +5103,7 @@ DictionaryVariables
   0
 DICTIONARYVAR
   5
-B3
+B9
 100
 DictionaryVariables
 280
