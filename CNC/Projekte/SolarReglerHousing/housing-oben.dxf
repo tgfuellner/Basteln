@@ -2077,118 +2077,6 @@ AcDbEntity
 100
 AcDbLine
   8
-aussen-full-cut
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0
- 20
-0.0
- 30
-0.0
- 11
-99.0
- 21
-0.0
- 31
-0.0
-  0
-LINE
-  5
-64
-100
-AcDbEntity
-100
-AcDbLine
-  8
-aussen-full-cut
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-99.0
- 20
-0.0
- 30
-0.0
- 11
-99.0
- 21
-50.0
- 31
-0.0
-  0
-LINE
-  5
-65
-100
-AcDbEntity
-100
-AcDbLine
-  8
-aussen-full-cut
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-99.0
- 20
-50.0
- 30
-0.0
- 11
-0.0
- 21
-50.0
- 31
-0.0
-  0
-LINE
-  5
-66
-100
-AcDbEntity
-100
-AcDbLine
-  8
-aussen-full-cut
- 62
-256
-370
--1
-  6
-ByLayer
- 10
-0.0
- 20
-50.0
- 30
-0.0
- 11
-0.0
- 21
-0.0
- 31
-0.0
-  0
-LINE
-  5
-67
-100
-AcDbEntity
-100
-AcDbLine
-  8
 temp
  62
 256
@@ -2204,6 +2092,118 @@ ByLayer
 0.0
  11
 95.7999999999999972
+ 21
+3.0
+ 31
+0.0
+  0
+LINE
+  5
+64
+100
+AcDbEntity
+100
+AcDbLine
+  8
+temp
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+95.7999999999999972
+ 20
+3.0
+ 30
+0.0
+ 11
+95.7999999999999972
+ 21
+47.0378181818181815
+ 31
+0.0
+  0
+LINE
+  5
+65
+100
+AcDbEntity
+100
+AcDbLine
+  8
+temp
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+95.7999999999999972
+ 20
+47.0378181818181815
+ 30
+0.0
+ 11
+3.0
+ 21
+47.0378181818181815
+ 31
+0.0
+  0
+LINE
+  5
+66
+100
+AcDbEntity
+100
+AcDbLine
+  8
+temp
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+3.0
+ 20
+47.0378181818181815
+ 30
+0.0
+ 11
+3.0
+ 21
+3.0
+ 31
+0.0
+  0
+LINE
+  5
+67
+100
+AcDbEntity
+100
+AcDbLine
+  8
+aussen-full-cut
+ 62
+256
+370
+-1
+  6
+ByLayer
+ 10
+0.0
+ 20
+47.0
+ 30
+0.0
+ 11
+0.0
  21
 3.0
  31
@@ -2217,7 +2217,7 @@ AcDbEntity
 100
 AcDbLine
   8
-temp
+aussen-full-cut
  62
 256
 370
@@ -2225,15 +2225,15 @@ temp
   6
 ByLayer
  10
-95.7999999999999972
- 20
 3.0
+ 20
+0.0
  30
 0.0
  11
-95.7999999999999972
+96.0
  21
-47.0378181818181815
+0.0
  31
 0.0
   0
@@ -2245,7 +2245,7 @@ AcDbEntity
 100
 AcDbLine
   8
-temp
+aussen-full-cut
  62
 256
 370
@@ -2253,15 +2253,15 @@ temp
   6
 ByLayer
  10
-95.7999999999999972
+99.0
  20
-47.0378181818181815
+3.0
  30
 0.0
  11
-3.0
+99.0
  21
-47.0378181818181815
+47.0
  31
 0.0
   0
@@ -2273,7 +2273,7 @@ AcDbEntity
 100
 AcDbLine
   8
-temp
+aussen-full-cut
  62
 256
 370
@@ -2281,17 +2281,137 @@ temp
   6
 ByLayer
  10
-3.0
+96.0
  20
-47.0378181818181815
+50.0
  30
 0.0
  11
 3.0
  21
-3.0
+50.0
  31
 0.0
+  0
+ARC
+  5
+6B
+100
+AcDbEntity
+  8
+aussen-full-cut
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+3.0000000000000018
+ 20
+47.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+90.0000000000000426
+ 51
+180.0
+  0
+ARC
+  5
+6C
+100
+AcDbEntity
+  8
+aussen-full-cut
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+3.0
+ 20
+3.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+180.0
+ 51
+270.0
+  0
+ARC
+  5
+6D
+100
+AcDbEntity
+  8
+aussen-full-cut
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+96.0
+ 20
+3.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+270.0
+ 51
+0.0
+  0
+ARC
+  5
+6E
+100
+AcDbEntity
+  8
+aussen-full-cut
+ 62
+256
+370
+-1
+  6
+ByLayer
+100
+AcDbCircle
+ 10
+96.0
+ 20
+47.0
+ 30
+0.0
+ 40
+3.0
+100
+AcDbArc
+ 50
+0.0
+ 51
+90.0
   0
 ENDSEC
   0
@@ -2331,7 +2451,7 @@ E
   3
 AcDbVariableDictionary
 350
-6B
+6F
   0
 DICTIONARY
   5
@@ -2795,7 +2915,7 @@ Layout2
   0
 DICTIONARY
   5
-6B
+6F
 100
 AcDbDictionary
 281
@@ -2803,15 +2923,15 @@ AcDbDictionary
   3
 DIMASSOC
 350
-6D
+71
   3
 HIDETEXT
 350
-6C
+70
   0
 DICTIONARYVAR
   5
-6C
+70
 100
 DictionaryVariables
 280
@@ -2821,7 +2941,7 @@ DictionaryVariables
   0
 DICTIONARYVAR
   5
-6D
+71
 100
 DictionaryVariables
 280
