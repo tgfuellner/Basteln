@@ -66,7 +66,7 @@ G1 X-14.83 Y-12.34 F600.00
 G1 X-14.83 Y-12.30 F600.00
 G1 X-14.85 Y-12.20 F600.00
 G1 X-14.85 Y-12.20 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -122,7 +122,7 @@ G1 X-14.07 Y0.69 F600.00
 G1 X-14.11 Y0.61 F600.00
 G1 X-14.07 Y0.71 F600.00
 G1 X-14.07 Y0.71 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -176,7 +176,7 @@ G1 X-13.17 Y-14.63 F600.00
 G1 X-13.24 Y-14.58 F600.00
 G1 X-13.31 Y-14.57 F600.00
 G1 X-13.31 Y-14.57 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -226,7 +226,7 @@ G1 X-12.84 Y-10.78 F600.00
 G1 X-12.90 Y-10.74 F600.00
 G1 X-13.10 Y-10.66 F600.00
 G1 X-13.10 Y-10.66 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -248,7 +248,7 @@ G1 X-10.54 Y-11.88 F600.00
 G1 X-10.50 Y-11.90 F600.00
 G1 X-10.49 Y-11.90 F600.00
 G1 X-10.47 Y-11.92 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -264,7 +264,7 @@ G1 X-9.35 Y-11.08 F600.00
 G1 X-9.37 Y-10.99 F600.00
 G1 X-9.39 Y-10.94 F600.00
 G1 X-9.41 Y-10.90 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -312,7 +312,7 @@ G1 X-14.98 Y19.78 F600.00
 G1 X-15.21 Y20.70 F600.00
 G1 X-15.61 Y22.08 F600.00
 G1 X-15.61 Y22.61 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -363,7 +363,7 @@ G1 X-17.46 Y-49.25 F600.00
 G1 X-17.92 Y-50.79 F600.00
 G1 X-17.99 Y-51.63 F600.00
 G1 X-17.84 Y-52.23 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -439,7 +439,7 @@ G1 X4.88 Y-5.44 F600.00
 G1 X6.23 Y-5.28 F600.00
 G1 X7.32 Y-5.20 F600.00
 G1 X7.35 Y-5.20 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -471,7 +471,7 @@ G1 X2.98 Y-23.86 F600.00
 G1 X2.81 Y-23.93 F600.00
 G1 X2.80 Y-23.78 F600.00
 G1 X2.80 Y-23.77 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -491,7 +491,7 @@ G1 X1.86 Y-22.03 F600.00
 G1 X1.85 Y-22.08 F600.00
 G1 X1.85 Y-21.94 F600.00
 G1 X1.77 Y-21.94 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -505,7 +505,7 @@ G1 X3.90 Y-11.74 F600.00
 G1 X5.85 Y-11.74 F600.00
 G1 X5.85 Y-11.78 F600.00
 G1 X5.99 Y-11.82 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -513,7 +513,7 @@ G1 X4.00 Y-13.25 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X4.00 Y-10.30 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -541,7 +541,7 @@ G1 X3.56 Y1.01 F600.00
 G1 X3.47 Y1.14 F600.00
 G1 X3.45 Y1.22 F600.00
 G1 X3.44 Y1.17 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -603,7 +603,7 @@ G1 X6.40 Y-8.25 F600.00
 G1 X6.91 Y-8.48 F600.00
 G1 X7.34 Y-8.55 F600.00
 G1 X7.67 Y-8.55 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -619,7 +619,7 @@ G1 X-19.35 Y-4.33 F600.00
 G1 X-19.86 Y-3.79 F600.00
 G1 X-19.83 Y-3.77 F600.00
 G1 X-19.91 Y-3.77 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -630,7 +630,7 @@ G1 X-20.78 Y-6.20 F600.00
 G1 X-21.21 Y-5.63 F600.00
 G1 X-21.18 Y-5.60 F600.00
 G1 X-21.26 Y-5.60 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -641,7 +641,7 @@ G1 X-21.24 Y-9.23 F600.00
 G1 X-21.18 Y-9.51 F600.00
 G1 X-21.74 Y-8.75 F600.00
 G1 X-21.98 Y-8.55 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -650,7 +650,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-22.06 Y-12.94 F600.00
 G1 X-22.62 Y-13.17 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -659,7 +659,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-22.30 Y-16.28 F600.00
 G1 X-22.46 Y-16.44 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -671,7 +671,7 @@ G1 X-21.50 Y-19.43 F600.00
 G1 X-21.80 Y-19.98 F600.00
 G1 X-21.80 Y-20.01 F600.00
 G1 X-21.90 Y-20.03 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -680,7 +680,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-20.47 Y-21.70 F600.00
 G1 X-21.03 Y-22.82 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -690,7 +690,7 @@ G4 P150 (wait 150ms)
 G1 X-19.27 Y-24.33 F600.00
 G1 X-19.27 Y-24.37 F600.00
 G1 X-19.27 Y-24.41 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -757,7 +757,7 @@ G1 X-14.28 Y-21.98 F600.00
 G1 X-14.42 Y-22.31 F600.00
 G1 X-14.49 Y-22.66 F600.00
 G1 X-14.49 Y-22.66 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -812,7 +812,7 @@ G1 X-15.13 Y-31.00 F600.00
 G1 X-15.21 Y-31.27 F600.00
 G1 X-15.05 Y-31.66 F600.00
 G1 X-15.05 Y-31.66 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -869,7 +869,7 @@ G1 X-12.18 Y-36.69 F600.00
 G1 X-12.34 Y-36.61 F600.00
 G1 X-12.74 Y-36.61 F600.00
 G1 X-12.74 Y-36.61 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -920,7 +920,7 @@ G1 X-15.70 Y-42.34 F600.00
 G1 X-15.78 Y-42.46 F600.00
 G1 X-15.77 Y-42.66 F600.00
 G1 X-15.77 Y-42.66 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -964,7 +964,7 @@ G1 X-15.29 Y-47.30 F600.00
 G1 X-15.46 Y-47.73 F600.00
 G1 X-15.53 Y-48.08 F600.00
 G1 X-15.53 Y-48.08 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1011,7 +1011,7 @@ G1 X-15.76 Y-51.44 F600.00
 G1 X-15.77 Y-51.51 F600.00
 G1 X-15.77 Y-51.83 F600.00
 G1 X-15.77 Y-51.83 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1062,7 +1062,7 @@ G1 X-13.86 Y8.17 F600.00
 G1 X-13.93 Y7.84 F600.00
 G1 X-13.93 Y7.47 F600.00
 G1 X-13.93 Y7.47 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1118,7 +1118,7 @@ G1 X-13.14 Y14.56 F600.00
 G1 X-13.17 Y14.23 F600.00
 G1 X-13.14 Y14.08 F600.00
 G1 X-13.14 Y14.08 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1173,7 +1173,7 @@ G1 X-12.98 Y19.82 F600.00
 G1 X-13.22 Y19.65 F600.00
 G1 X-13.45 Y19.34 F600.00
 G1 X-13.45 Y19.34 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1222,7 +1222,7 @@ G1 X-13.66 Y24.67 F600.00
 G1 X-13.85 Y24.40 F600.00
 G1 X-13.77 Y24.05 F600.00
 G1 X-13.77 Y24.05 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1265,7 +1265,7 @@ G1 X-12.89 Y28.15 F600.00
 G1 X-12.94 Y27.73 F600.00
 G1 X-12.90 Y27.55 F600.00
 G1 X-12.90 Y27.55 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1307,7 +1307,7 @@ G1 X-0.07 Y-2.97 F600.00
 G1 X0.25 Y-2.97 F600.00
 G1 X0.46 Y-2.98 F600.00
 G1 X0.41 Y-2.97 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1334,7 +1334,7 @@ G1 X5.67 Y3.64 F600.00
 G1 X7.03 Y3.64 F600.00
 G1 X7.90 Y3.72 F600.00
 G1 X8.07 Y3.72 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1348,7 +1348,7 @@ G1 X6.86 Y-2.33 F600.00
 G1 X7.15 Y-2.33 F600.00
 G1 X7.43 Y-2.33 F600.00
 G1 X7.51 Y-2.33 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1361,7 +1361,7 @@ G1 X3.05 Y0.07 F600.00
 G1 X3.18 Y0.75 F600.00
 G1 X3.28 Y0.92 F600.00
 G1 X3.28 Y1.09 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1387,7 +1387,7 @@ G1 X6.39 Y5.00 F600.00
 G1 X6.52 Y6.15 F600.00
 G1 X6.86 Y6.46 F600.00
 G1 X7.51 Y6.43 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1409,7 +1409,7 @@ G1 X6.55 Y9.07 F600.00
 G1 X7.27 Y8.98 F600.00
 G1 X7.25 Y9.02 F600.00
 G1 X7.35 Y9.06 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1428,7 +1428,7 @@ G1 X-0.86 Y12.49 F600.00
 G1 X4.64 Y12.49 F600.00
 G1 X5.71 Y12.11 F600.00
 G1 X6.87 Y11.93 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1447,7 +1447,7 @@ G1 X5.76 Y15.92 F600.00
 G1 X6.12 Y15.64 F600.00
 G1 X6.63 Y15.60 F600.00
 G1 X6.87 Y15.60 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1467,7 +1467,7 @@ G1 X-4.13 Y17.75 F600.00
 G1 X0.30 Y17.98 F600.00
 G1 X4.72 Y17.83 F600.00
 G1 X6.63 Y17.67 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1484,7 +1484,7 @@ G1 X2.17 Y21.97 F600.00
 G1 X3.85 Y21.83 F600.00
 G1 X5.28 Y21.34 F600.00
 G1 X5.83 Y21.10 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1502,7 +1502,7 @@ G1 X-3.65 Y23.41 F600.00
 G1 X-1.06 Y23.54 F600.00
 G1 X1.53 Y23.25 F600.00
 G1 X5.44 Y22.69 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1520,7 +1520,7 @@ G1 X3.46 Y26.50 F600.00
 G1 X4.24 Y26.52 F600.00
 G1 X4.48 Y26.52 F600.00
 G1 X4.48 Y26.52 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1537,7 +1537,7 @@ G1 X2.65 Y28.35 F600.00
 G1 X2.48 Y28.77 F600.00
 G1 X2.97 Y28.87 F600.00
 G1 X4.32 Y28.75 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1552,7 +1552,7 @@ G1 X-2.41 Y31.21 F600.00
 G1 X0.29 Y31.23 F600.00
 G1 X2.88 Y31.46 F600.00
 G1 X3.28 Y31.38 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1600,7 +1600,7 @@ G1 X-0.22 Y-20.19 F600.00
 G1 X-0.27 Y-20.14 F600.00
 G1 X-0.01 Y-20.12 F600.00
 G1 X-0.06 Y-20.11 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1615,7 +1615,7 @@ G1 X6.17 Y-20.03 F600.00
 G1 X6.97 Y-20.03 F600.00
 G1 X7.13 Y-20.11 F600.00
 G1 X7.43 Y-20.11 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1634,7 +1634,7 @@ G1 X2.33 Y-27.68 F600.00
 G1 X4.08 Y-28.24 F600.00
 G1 X5.28 Y-28.96 F600.00
 G1 X6.71 Y-29.19 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1670,7 +1670,7 @@ G1 X5.28 Y-32.54 F600.00
 G1 X5.20 Y-32.94 F600.00
 G1 X5.43 Y-33.22 F600.00
 G1 X5.91 Y-33.26 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1689,7 +1689,7 @@ G1 X0.32 Y-37.56 F600.00
 G1 X1.99 Y-37.72 F600.00
 G1 X4.22 Y-37.88 F600.00
 G1 X4.72 Y-37.88 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1712,7 +1712,7 @@ G1 X-0.47 Y-39.24 F600.00
 G1 X1.09 Y-39.32 F600.00
 G1 X3.68 Y-39.40 F600.00
 G1 X4.08 Y-39.40 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1732,7 +1732,7 @@ G1 X-0.90 Y-43.06 F600.00
 G1 X0.57 Y-43.32 F600.00
 G1 X2.17 Y-43.86 F600.00
 G1 X2.81 Y-43.94 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1758,7 +1758,7 @@ G1 X1.61 Y-47.42 F600.00
 G1 X1.48 Y-47.88 F600.00
 G1 X1.67 Y-47.98 F600.00
 G1 X2.25 Y-47.68 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1780,7 +1780,7 @@ G1 X0.71 Y-49.04 F600.00
 G1 X1.05 Y-48.88 F600.00
 G1 X1.77 Y-48.00 F600.00
 G1 X2.09 Y-47.84 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1801,7 +1801,7 @@ G1 X1.32 Y-50.31 F600.00
 G1 X1.70 Y-50.31 F600.00
 G1 X1.83 Y-50.31 F600.00
 G1 X1.69 Y-50.31 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1819,7 +1819,7 @@ G1 X-1.50 Y-52.91 F600.00
 G1 X-0.62 Y-53.18 F600.00
 G1 X1.45 Y-53.26 F600.00
 G1 X1.53 Y-53.26 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1842,7 +1842,7 @@ G1 X0.65 Y-54.78 F600.00
 G1 X1.53 Y-54.78 F600.00
 G1 X1.45 Y-54.78 F600.00
 G1 X1.45 Y-54.78 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1861,7 +1861,7 @@ G1 X-3.18 Y-57.09 F600.00
 G1 X0.73 Y-57.09 F600.00
 G1 X2.09 Y-57.17 F600.00
 G1 X1.93 Y-57.17 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1871,7 +1871,7 @@ G4 P150 (wait 150ms)
 G1 X-14.25 Y-53.34 F600.00
 G1 X-14.09 Y-53.66 F600.00
 G1 X-14.41 Y-53.18 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1880,7 +1880,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-14.02 Y-52.43 F600.00
 G1 X-13.93 Y-52.55 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1888,7 +1888,7 @@ G1 X-12.66 Y-53.82 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-12.58 Y-53.10 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1898,7 +1898,7 @@ G4 P150 (wait 150ms)
 G1 X-11.86 Y-48.64 F600.00
 G1 X-11.86 Y-48.56 F600.00
 G1 X-11.86 Y-48.64 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1906,7 +1906,7 @@ G1 X-14.17 Y-49.04 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-14.09 Y-48.64 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1915,7 +1915,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-13.63 Y-47.88 F600.00
 G1 X-13.69 Y-48.00 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1926,7 +1926,7 @@ G1 X-12.66 Y-44.18 F600.00
 G1 X-12.58 Y-44.18 F600.00
 G1 X-12.58 Y-44.10 F600.00
 G1 X-12.58 Y-44.18 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1934,7 +1934,7 @@ G1 X-14.73 Y-44.97 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-14.73 Y-44.50 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1942,7 +1942,7 @@ G1 X-14.17 Y-43.46 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-14.25 Y-43.06 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1965,7 +1965,7 @@ G1 X-12.50 Y-38.76 F600.00
 G1 X-12.58 Y-38.76 F600.00
 G1 X-12.98 Y-38.92 F600.00
 G1 X-12.98 Y-38.92 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1976,7 +1976,7 @@ G1 X-14.41 Y-38.92 F600.00
 G1 X-14.41 Y-39.24 F600.00
 G1 X-14.49 Y-38.84 F600.00
 G1 X-14.49 Y-38.76 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1987,7 +1987,7 @@ G1 X-13.42 Y-37.68 F600.00
 G1 X-13.53 Y-37.40 F600.00
 G1 X-13.45 Y-37.40 F600.00
 G1 X-13.53 Y-37.40 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -1999,7 +1999,7 @@ G1 X-13.53 Y-32.94 F600.00
 G1 X-13.53 Y-32.86 F600.00
 G1 X-13.53 Y-32.94 F600.00
 G1 X-13.53 Y-32.78 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2011,7 +2011,7 @@ G1 X-13.37 Y-30.87 F600.00
 G1 X-13.29 Y-30.87 F600.00
 G1 X-13.21 Y-30.87 F600.00
 G1 X-13.29 Y-30.87 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2029,7 +2029,7 @@ G1 X-11.86 Y-32.14 F600.00
 G1 X-11.89 Y-32.33 F600.00
 G1 X-12.26 Y-32.22 F600.00
 G1 X-12.26 Y-32.22 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2050,7 +2050,7 @@ G1 X-12.58 Y-24.73 F600.00
 G1 X-12.62 Y-24.61 F600.00
 G1 X-12.98 Y-24.65 F600.00
 G1 X-12.98 Y-24.65 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2063,7 +2063,7 @@ G1 X-13.03 Y-22.97 F600.00
 G1 X-12.82 Y-22.98 F600.00
 G1 X-12.90 Y-22.82 F600.00
 G1 X-13.29 Y-22.82 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2083,7 +2083,7 @@ G1 X-11.46 Y-23.06 F600.00
 G1 X-11.54 Y-23.06 F600.00
 G1 X-11.54 Y-23.14 F600.00
 G1 X-11.54 Y-23.69 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2091,7 +2091,7 @@ G1 X-12.26 Y-23.69 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-12.34 Y-24.01 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2112,7 +2112,7 @@ G1 X-12.58 Y-0.42 F600.00
 G1 X-12.66 Y-0.42 F600.00
 G1 X-13.06 Y-0.42 F600.00
 G1 X-13.06 Y-0.42 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2139,7 +2139,7 @@ G1 X-12.66 Y2.37 F600.00
 G1 X-12.74 Y2.37 F600.00
 G1 X-12.74 Y2.29 F600.00
 G1 X-13.14 Y2.05 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2150,7 +2150,7 @@ G1 X-10.50 Y1.33 F600.00
 G1 X-10.50 Y1.41 F600.00
 G1 X-10.50 Y1.49 F600.00
 G1 X-10.58 Y1.57 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2158,7 +2158,7 @@ G1 X-12.42 Y6.75 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-12.58 Y6.75 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2176,7 +2176,7 @@ G1 X-12.42 Y8.27 F600.00
 G1 X-12.42 Y8.35 F600.00
 G1 X-12.50 Y8.35 F600.00
 G1 X-12.90 Y8.19 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2187,7 +2187,7 @@ G1 X-10.90 Y8.03 F600.00
 G1 X-10.90 Y8.11 F600.00
 G1 X-10.90 Y8.03 F600.00
 G1 X-10.98 Y8.19 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2204,7 +2204,7 @@ G1 X-11.14 Y13.21 F600.00
 G1 X-11.30 Y13.29 F600.00
 G1 X-11.30 Y13.37 F600.00
 G1 X-11.30 Y13.29 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2216,7 +2216,7 @@ G1 X-11.78 Y11.93 F600.00
 G1 X-11.78 Y12.09 F600.00
 G1 X-11.78 Y12.01 F600.00
 G1 X-12.18 Y11.93 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2225,7 +2225,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-12.42 Y13.84 F600.00
 G1 X-12.58 Y13.53 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2244,7 +2244,7 @@ G1 X-10.58 Y19.18 F600.00
 G1 X-10.66 Y19.18 F600.00
 G1 X-10.74 Y19.26 F600.00
 G1 X-11.14 Y19.18 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2261,7 +2261,7 @@ G1 X-11.62 Y17.83 F600.00
 G1 X-12.02 Y17.51 F600.00
 G1 X-11.96 Y17.64 F600.00
 G1 X-12.02 Y17.51 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2274,7 +2274,7 @@ G1 X-12.50 Y18.71 F600.00
 G1 X-12.74 Y19.02 F600.00
 G1 X-12.50 Y18.71 F600.00
 G1 X-12.74 Y19.02 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2287,7 +2287,7 @@ G1 X-12.26 Y22.77 F600.00
 G1 X-12.26 Y22.85 F600.00
 G1 X-12.34 Y22.85 F600.00
 G1 X-12.74 Y22.69 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2303,7 +2303,7 @@ G1 X-12.74 Y23.97 F600.00
 G1 X-12.90 Y23.97 F600.00
 G1 X-12.90 Y24.05 F600.00
 G1 X-13.29 Y23.97 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2315,7 +2315,7 @@ G1 X-11.62 Y23.97 F600.00
 G1 X-11.30 Y23.57 F600.00
 G1 X-11.30 Y23.40 F600.00
 G1 X-11.30 Y23.41 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2330,7 +2330,7 @@ G1 X-11.06 Y27.47 F600.00
 G1 X-11.14 Y27.47 F600.00
 G1 X-11.14 Y27.55 F600.00
 G1 X-11.54 Y27.71 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2339,7 +2339,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-11.74 Y28.35 F600.00
 G1 X-11.86 Y28.35 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2351,7 +2351,7 @@ G1 X-9.95 Y27.63 F600.00
 G1 X-9.95 Y27.71 F600.00
 G1 X-9.95 Y27.63 F600.00
 G1 X-9.95 Y27.95 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2385,7 +2385,7 @@ G1 X2.41 Y-49.12 F600.00
 G1 X1.93 Y-53.66 F600.00
 G1 X1.69 Y-57.57 F600.00
 G1 X1.69 Y-57.49 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2440,7 +2440,7 @@ G1 X7.02 Y-43.97 F600.00
 G1 X6.82 Y-44.49 F600.00
 G1 X7.03 Y-45.05 F600.00
 G1 X7.03 Y-45.05 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2478,7 +2478,7 @@ G1 X11.33 Y-44.66 F600.00
 G1 X10.93 Y-43.70 F600.00
 G1 X10.85 Y-43.27 F600.00
 G1 X10.78 Y-42.58 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2538,7 +2538,7 @@ G1 X20.22 Y-33.98 F600.00
 G1 X20.42 Y-34.14 F600.00
 G1 X20.67 Y-34.29 F600.00
 G1 X20.98 Y-34.45 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2574,7 +2574,7 @@ G1 X13.41 Y-34.85 F600.00
 G1 X12.86 Y-35.09 F600.00
 G1 X12.61 Y-35.09 F600.00
 G1 X12.61 Y-35.09 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2605,7 +2605,7 @@ G1 X13.25 Y-17.40 F600.00
 G1 X12.45 Y-15.72 F600.00
 G1 X11.81 Y-14.21 F600.00
 G1 X11.81 Y-14.21 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2625,7 +2625,7 @@ G1 X17.05 Y-13.08 F600.00
 G1 X16.51 Y-13.09 F600.00
 G1 X15.48 Y-12.62 F600.00
 G1 X15.48 Y-12.62 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2640,7 +2640,7 @@ G1 X13.47 Y4.57 F600.00
 G1 X13.01 Y5.32 F600.00
 G1 X12.60 Y5.83 F600.00
 G1 X12.13 Y6.19 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2660,7 +2660,7 @@ G1 X21.27 Y4.97 F600.00
 G1 X21.53 Y5.19 F600.00
 G1 X21.85 Y5.08 F600.00
 G1 X21.93 Y5.08 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2678,7 +2678,7 @@ G1 X14.55 Y-0.57 F600.00
 G1 X13.17 Y-0.66 F600.00
 G1 X12.66 Y-0.21 F600.00
 G1 X12.21 Y0.30 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2690,7 +2690,7 @@ G1 X11.75 Y1.78 F600.00
 G1 X11.57 Y3.16 F600.00
 G1 X10.85 Y4.68 F600.00
 G1 X10.30 Y5.56 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2700,7 +2700,7 @@ G4 P150 (wait 150ms)
 G1 X21.03 Y-0.34 F600.00
 G1 X21.53 Y-0.82 F600.00
 G1 X22.57 Y-1.38 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2733,7 +2733,7 @@ G1 X12.37 Y12.33 F600.00
 G1 X11.65 Y13.84 F600.00
 G1 X11.33 Y14.96 F600.00
 G1 X11.33 Y14.96 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2761,7 +2761,7 @@ G1 X11.55 Y19.34 F600.00
 G1 X11.91 Y18.73 F600.00
 G1 X12.45 Y18.15 F600.00
 G1 X12.45 Y18.15 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2796,7 +2796,7 @@ G1 X18.19 Y25.08 F600.00
 G1 X17.34 Y27.94 F600.00
 G1 X16.59 Y30.02 F600.00
 G1 X15.80 Y31.22 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2843,7 +2843,7 @@ G1 X8.62 Y25.40 F600.00
 G1 X8.11 Y27.41 F600.00
 G1 X7.67 Y29.39 F600.00
 G1 X7.35 Y29.78 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2852,7 +2852,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X10.95 Y27.79 F600.00
 G1 X11.33 Y27.63 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2862,7 +2862,7 @@ G4 P150 (wait 150ms)
 G1 X13.97 Y25.40 F600.00
 G1 X14.29 Y25.82 F600.00
 G1 X15.40 Y26.04 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2873,7 +2873,7 @@ G1 X12.31 Y25.82 F600.00
 G1 X12.28 Y26.37 F600.00
 G1 X12.61 Y26.92 F600.00
 G1 X13.72 Y27.39 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2914,7 +2914,7 @@ G1 X5.28 Y-53.58 F600.00
 G1 X4.51 Y-53.26 F600.00
 G1 X4.29 Y-53.28 F600.00
 G1 X4.24 Y-53.10 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2928,7 +2928,7 @@ G1 X7.15 Y-52.95 F600.00
 G1 X7.91 Y-53.46 F600.00
 G1 X8.46 Y-53.98 F600.00
 G1 X8.46 Y-54.06 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2945,7 +2945,7 @@ G1 X14.40 Y-54.38 F600.00
 G1 X14.00 Y-54.78 F600.00
 G1 X13.45 Y-54.89 F600.00
 G1 X13.09 Y-54.38 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2958,7 +2958,7 @@ G1 X11.81 Y-55.81 F600.00
 G1 X12.39 Y-55.50 F600.00
 G1 X12.38 Y-55.42 F600.00
 G1 X12.45 Y-55.34 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2970,7 +2970,7 @@ G1 X8.62 Y-55.84 F600.00
 G1 X9.14 Y-55.34 F600.00
 G1 X9.70 Y-54.95 F600.00
 G1 X9.98 Y-54.78 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2981,7 +2981,7 @@ G1 X6.31 Y-54.94 F600.00
 G1 X7.09 Y-54.53 F600.00
 G1 X7.08 Y-54.50 F600.00
 G1 X7.11 Y-54.46 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2990,7 +2990,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-6.48 Y29.38 F600.00
 G1 X-7.40 Y30.18 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -2999,7 +2999,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-4.61 Y29.39 F600.00
 G1 X-6.36 Y30.58 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3009,7 +3009,7 @@ G4 P150 (wait 150ms)
 G1 X-2.56 Y29.50 F600.00
 G1 X-3.49 Y30.02 F600.00
 G1 X-4.53 Y30.90 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3018,7 +3018,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-1.58 Y30.02 F600.00
 G1 X-2.61 Y30.90 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3027,7 +3027,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X0.10 Y30.42 F600.00
 G1 X-0.62 Y30.98 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3036,7 +3036,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X2.18 Y30.37 F600.00
 G1 X1.21 Y30.98 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3044,7 +3044,7 @@ G1 X3.36 Y30.66 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X2.41 Y31.46 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3055,7 +3055,7 @@ G1 X-8.42 Y24.43 F600.00
 G1 X-7.80 Y25.16 F600.00
 G1 X-7.84 Y25.41 F600.00
 G1 X-7.72 Y25.48 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3063,7 +3063,7 @@ G1 X-4.93 Y24.13 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-6.84 Y25.64 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3073,7 +3073,7 @@ G4 P150 (wait 150ms)
 G1 X-4.11 Y24.97 F600.00
 G1 X-4.77 Y25.40 F600.00
 G1 X-5.32 Y25.72 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3085,7 +3085,7 @@ G1 X-2.97 Y25.45 F600.00
 G1 X-3.29 Y25.63 F600.00
 G1 X-3.65 Y25.77 F600.00
 G1 X-3.65 Y25.80 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3094,7 +3094,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-1.82 Y25.72 F600.00
 G1 X-2.06 Y25.88 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3102,7 +3102,7 @@ G1 X2.57 Y23.89 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X0.10 Y26.20 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3113,7 +3113,7 @@ G1 X3.48 Y24.84 F600.00
 G1 X2.33 Y25.80 F600.00
 G1 X2.19 Y25.90 F600.00
 G1 X2.17 Y25.88 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3121,7 +3121,7 @@ G1 X4.88 Y25.08 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X3.52 Y26.36 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3136,7 +3136,7 @@ G1 X-7.59 Y18.66 F600.00
 G1 X-7.42 Y18.89 F600.00
 G1 X-7.48 Y19.50 F600.00
 G1 X-7.64 Y19.90 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3146,7 +3146,7 @@ G4 P150 (wait 150ms)
 G1 X-6.47 Y19.52 F600.00
 G1 X-7.16 Y20.78 F600.00
 G1 X-7.16 Y20.70 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3156,7 +3156,7 @@ G4 P150 (wait 150ms)
 G1 X-5.22 Y19.74 F600.00
 G1 X-6.20 Y20.46 F600.00
 G1 X-6.84 Y21.10 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3166,7 +3166,7 @@ G4 P150 (wait 150ms)
 G1 X-3.09 Y19.98 F600.00
 G1 X-4.19 Y20.70 F600.00
 G1 X-5.80 Y21.89 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3177,7 +3177,7 @@ G1 X-1.37 Y19.88 F600.00
 G1 X-2.93 Y20.94 F600.00
 G1 X-4.69 Y22.21 F600.00
 G1 X-4.61 Y22.13 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3186,7 +3186,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-0.86 Y20.62 F600.00
 G1 X-2.85 Y22.13 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3196,7 +3196,7 @@ G4 P150 (wait 150ms)
 G1 X1.74 Y19.98 F600.00
 G1 X0.10 Y21.10 F600.00
 G1 X-0.86 Y22.13 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3206,7 +3206,7 @@ G4 P150 (wait 150ms)
 G1 X3.55 Y20.12 F600.00
 G1 X2.17 Y21.18 F600.00
 G1 X1.13 Y21.97 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3216,7 +3216,7 @@ G4 P150 (wait 150ms)
 G1 X4.32 Y20.30 F600.00
 G1 X3.76 Y20.96 F600.00
 G1 X3.20 Y21.58 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3230,7 +3230,7 @@ G1 X-8.27 Y13.45 F600.00
 G1 X-7.96 Y13.28 F600.00
 G1 X-7.75 Y13.53 F600.00
 G1 X-7.80 Y14.24 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3240,7 +3240,7 @@ G4 P150 (wait 150ms)
 G1 X-7.08 Y12.08 F600.00
 G1 X-7.00 Y13.85 F600.00
 G1 X-7.00 Y15.12 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3248,7 +3248,7 @@ G1 X-5.09 Y12.49 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-6.44 Y13.84 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3259,7 +3259,7 @@ G1 X-4.20 Y13.75 F600.00
 G1 X-5.17 Y14.80 F600.00
 G1 X-5.44 Y15.12 F600.00
 G1 X-5.64 Y15.12 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3269,7 +3269,7 @@ G4 P150 (wait 150ms)
 G1 X-3.04 Y14.59 F600.00
 G1 X-4.29 Y15.68 F600.00
 G1 X-4.29 Y15.76 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3278,7 +3278,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-1.82 Y15.36 F600.00
 G1 X-2.30 Y15.76 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3288,7 +3288,7 @@ G4 P150 (wait 150ms)
 G1 X1.68 Y14.22 F600.00
 G1 X0.73 Y14.88 F600.00
 G1 X-0.70 Y15.92 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3297,7 +3297,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X2.09 Y15.44 F600.00
 G1 X1.37 Y16.16 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3309,7 +3309,7 @@ G1 X4.41 Y14.68 F600.00
 G1 X3.52 Y16.00 F600.00
 G1 X3.57 Y16.24 F600.00
 G1 X3.44 Y16.32 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3318,7 +3318,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X5.28 Y15.44 F600.00
 G1 X4.72 Y15.92 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3335,7 +3335,7 @@ G1 X-8.57 Y7.99 F600.00
 G1 X-8.91 Y7.71 F600.00
 G1 X-8.84 Y7.70 F600.00
 G1 X-8.99 Y7.63 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3345,7 +3345,7 @@ G4 P150 (wait 150ms)
 G1 X-6.45 Y7.02 F600.00
 G1 X-7.16 Y7.87 F600.00
 G1 X-7.80 Y8.58 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3355,7 +3355,7 @@ G4 P150 (wait 150ms)
 G1 X-5.32 Y7.65 F600.00
 G1 X-6.21 Y8.95 F600.00
 G1 X-7.00 Y9.54 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3365,7 +3365,7 @@ G4 P150 (wait 150ms)
 G1 X-4.46 Y7.76 F600.00
 G1 X-5.56 Y9.22 F600.00
 G1 X-5.96 Y9.86 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3375,7 +3375,7 @@ G4 P150 (wait 150ms)
 G1 X-2.22 Y7.47 F600.00
 G1 X-4.21 Y9.14 F600.00
 G1 X-4.77 Y10.18 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3385,7 +3385,7 @@ G4 P150 (wait 150ms)
 G1 X-0.33 Y7.51 F600.00
 G1 X-1.50 Y8.74 F600.00
 G1 X-3.17 Y10.26 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3395,7 +3395,7 @@ G4 P150 (wait 150ms)
 G1 X0.10 Y9.30 F600.00
 G1 X-0.61 Y10.11 F600.00
 G1 X-1.42 Y10.58 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3409,7 +3409,7 @@ G1 X1.36 Y10.29 F600.00
 G1 X0.41 Y10.74 F600.00
 G1 X0.31 Y10.87 F600.00
 G1 X0.33 Y10.90 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3418,7 +3418,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X1.87 Y8.90 F600.00
 G1 X1.13 Y9.62 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3429,7 +3429,7 @@ G1 X4.80 Y7.27 F600.00
 G1 X3.84 Y8.42 F600.00
 G1 X2.73 Y10.26 F600.00
 G1 X2.33 Y10.98 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3440,7 +3440,7 @@ G1 X5.64 Y8.23 F600.00
 G1 X4.40 Y9.54 F600.00
 G1 X4.12 Y9.92 F600.00
 G1 X4.00 Y10.42 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3449,7 +3449,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X5.83 Y9.30 F600.00
 G1 X5.59 Y9.70 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3465,7 +3465,7 @@ G1 X-6.91 Y1.28 F600.00
 G1 X-6.68 Y0.85 F600.00
 G1 X-5.80 Y-1.14 F600.00
 G1 X-5.56 Y-1.86 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3475,7 +3475,7 @@ G4 P150 (wait 150ms)
 G1 X-4.77 Y-0.29 F600.00
 G1 X-5.40 Y1.33 F600.00
 G1 X-6.04 Y2.13 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3486,7 +3486,7 @@ G1 X-3.06 Y-0.78 F600.00
 G1 X-2.30 Y-1.46 F600.00
 G1 X-1.90 Y-1.91 F600.00
 G1 X-1.66 Y-2.10 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3499,7 +3499,7 @@ G1 X-0.30 Y-0.90 F600.00
 G1 X0.28 Y-1.20 F600.00
 G1 X0.51 Y-1.39 F600.00
 G1 X0.41 Y-1.38 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3513,7 +3513,7 @@ G1 X0.57 Y0.22 F600.00
 G1 X1.06 Y-0.24 F600.00
 G1 X1.25 Y-0.44 F600.00
 G1 X1.13 Y-0.42 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3523,7 +3523,7 @@ G4 P150 (wait 150ms)
 G1 X0.03 Y2.19 F600.00
 G1 X1.29 Y1.33 F600.00
 G1 X2.65 Y0.85 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3535,7 +3535,7 @@ G1 X6.39 Y-0.18 F600.00
 G1 X7.21 Y-0.45 F600.00
 G1 X7.49 Y-0.62 F600.00
 G1 X7.35 Y-0.66 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3545,7 +3545,7 @@ G4 P150 (wait 150ms)
 G1 X4.63 Y-1.19 F600.00
 G1 X5.83 Y-1.70 F600.00
 G1 X6.23 Y-1.94 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3556,7 +3556,7 @@ G1 X6.67 Y1.41 F600.00
 G1 X5.59 Y2.13 F600.00
 G1 X3.28 Y2.85 F600.00
 G1 X1.93 Y3.40 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3565,7 +3565,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X6.45 Y3.04 F600.00
 G1 X5.44 Y3.56 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3598,7 +3598,7 @@ G1 X-6.20 Y-8.87 F600.00
 G1 X-5.74 Y-9.83 F600.00
 G1 X-5.09 Y-10.46 F600.00
 G1 X-3.97 Y-10.78 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3628,7 +3628,7 @@ G1 X-6.20 Y-9.83 F600.00
 G1 X-5.24 Y-11.34 F600.00
 G1 X-4.87 Y-11.69 F600.00
 G1 X-4.37 Y-11.82 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3637,7 +3637,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-4.33 Y-12.84 F600.00
 G1 X-3.73 Y-12.86 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3645,7 +3645,7 @@ G1 X-4.13 Y-14.05 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-2.06 Y-14.37 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3654,7 +3654,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-0.46 Y-16.20 F600.00
 G1 X0.33 Y-17.48 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3664,7 +3664,7 @@ G4 P150 (wait 150ms)
 G1 X0.22 Y-18.54 F600.00
 G1 X0.71 Y-18.59 F600.00
 G1 X0.65 Y-18.59 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3674,7 +3674,7 @@ G4 P150 (wait 150ms)
 G1 X-1.15 Y-16.45 F600.00
 G1 X-0.58 Y-16.45 F600.00
 G1 X-0.70 Y-16.36 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3685,7 +3685,7 @@ G1 X-3.18 Y-15.13 F600.00
 G1 X-2.79 Y-15.06 F600.00
 G1 X-2.44 Y-14.98 F600.00
 G1 X-2.46 Y-14.77 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3693,7 +3693,7 @@ G1 X-3.57 Y-11.98 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-1.58 Y-12.14 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3703,7 +3703,7 @@ G4 P150 (wait 150ms)
 G1 X-2.60 Y-10.73 F600.00
 G1 X-2.17 Y-10.62 F600.00
 G1 X-2.14 Y-10.46 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3714,7 +3714,7 @@ G1 X-1.80 Y-9.08 F600.00
 G1 X-1.10 Y-9.51 F600.00
 G1 X-1.18 Y-9.51 F600.00
 G1 X-1.18 Y-9.43 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3724,7 +3724,7 @@ G4 P150 (wait 150ms)
 G1 X-0.96 Y-8.25 F600.00
 G1 X0.02 Y-8.87 F600.00
 G1 X-0.06 Y-8.71 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3735,7 +3735,7 @@ G1 X-0.69 Y-7.16 F600.00
 G1 X0.02 Y-7.60 F600.00
 G1 X1.13 Y-8.39 F600.00
 G1 X0.97 Y-8.39 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3745,7 +3745,7 @@ G4 P150 (wait 150ms)
 G1 X0.88 Y-5.83 F600.00
 G1 X1.45 Y-6.56 F600.00
 G1 X2.25 Y-7.75 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3755,7 +3755,7 @@ G4 P150 (wait 150ms)
 G1 X1.74 Y-5.78 F600.00
 G1 X2.96 Y-5.52 F600.00
 G1 X2.88 Y-5.52 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3764,7 +3764,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X2.33 Y-4.81 F600.00
 G1 X2.01 Y-4.73 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3775,7 +3775,7 @@ G1 X2.20 Y-3.17 F600.00
 G1 X2.96 Y-3.61 F600.00
 G1 X2.82 Y-3.61 F600.00
 G1 X2.73 Y-3.53 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3783,7 +3783,7 @@ G1 X1.45 Y-1.54 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X2.81 Y-1.94 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3792,7 +3792,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X2.65 Y-6.16 F600.00
 G1 X2.25 Y-5.84 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3802,7 +3802,7 @@ G4 P150 (wait 150ms)
 G1 X5.48 Y-6.95 F600.00
 G1 X4.56 Y-6.40 F600.00
 G1 X3.68 Y-5.52 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3810,7 +3810,7 @@ G1 X7.19 Y-7.44 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X5.12 Y-5.60 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3818,7 +3818,7 @@ G1 X7.35 Y-5.76 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X5.83 Y-5.52 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3827,7 +3827,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X0.89 Y-16.66 F600.00
 G1 X1.53 Y-18.04 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3837,7 +3837,7 @@ G4 P150 (wait 150ms)
 G1 X1.89 Y-16.44 F600.00
 G1 X2.52 Y-16.99 F600.00
 G1 X3.84 Y-17.96 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3850,7 +3850,7 @@ G1 X4.88 Y-17.16 F600.00
 G1 X5.32 Y-17.37 F600.00
 G1 X5.48 Y-17.47 F600.00
 G1 X5.51 Y-17.24 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3861,7 +3861,7 @@ G1 X5.64 Y-16.47 F600.00
 G1 X6.39 Y-17.16 F600.00
 G1 X6.70 Y-17.33 F600.00
 G1 X6.63 Y-17.00 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3872,7 +3872,7 @@ G1 X7.13 Y-15.44 F600.00
 G1 X7.59 Y-16.12 F600.00
 G1 X7.51 Y-16.04 F600.00
 G1 X7.51 Y-15.96 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3883,7 +3883,7 @@ G1 X-8.25 Y-23.68 F600.00
 G1 X-7.74 Y-23.69 F600.00
 G1 X-7.48 Y-23.38 F600.00
 G1 X-7.32 Y-22.90 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3892,7 +3892,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-8.15 Y-24.60 F600.00
 G1 X-7.95 Y-23.93 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3903,7 +3903,7 @@ G1 X-6.48 Y-25.70 F600.00
 G1 X-6.54 Y-25.19 F600.00
 G1 X-7.16 Y-24.33 F600.00
 G1 X-7.32 Y-23.85 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3912,7 +3912,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-5.48 Y-25.21 F600.00
 G1 X-6.76 Y-24.33 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3923,7 +3923,7 @@ G1 X-2.85 Y-25.13 F600.00
 G1 X-4.05 Y-23.49 F600.00
 G1 X-5.24 Y-22.10 F600.00
 G1 X-6.36 Y-21.46 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3934,7 +3934,7 @@ G1 X-3.75 Y-25.58 F600.00
 G1 X-4.77 Y-24.41 F600.00
 G1 X-6.28 Y-22.74 F600.00
 G1 X-6.92 Y-22.26 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3945,7 +3945,7 @@ G1 X-1.80 Y-23.99 F600.00
 G1 X-2.57 Y-22.95 F600.00
 G1 X-3.49 Y-22.26 F600.00
 G1 X-4.85 Y-20.98 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3955,7 +3955,7 @@ G4 P150 (wait 150ms)
 G1 X0.10 Y-23.69 F600.00
 G1 X-2.06 Y-21.70 F600.00
 G1 X-2.85 Y-20.91 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3969,7 +3969,7 @@ G1 X0.84 Y-22.82 F600.00
 G1 X0.02 Y-22.17 F600.00
 G1 X-0.94 Y-21.62 F600.00
 G1 X-1.26 Y-21.30 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3978,7 +3978,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X4.72 Y-25.13 F600.00
 G1 X3.44 Y-24.09 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3987,7 +3987,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X4.25 Y-25.63 F600.00
 G1 X3.60 Y-24.81 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -3998,7 +3998,7 @@ G1 X5.04 Y-23.46 F600.00
 G1 X4.20 Y-22.81 F600.00
 G1 X3.52 Y-21.94 F600.00
 G1 X2.96 Y-21.14 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4008,7 +4008,7 @@ G4 P150 (wait 150ms)
 G1 X6.31 Y-22.81 F600.00
 G1 X5.44 Y-21.94 F600.00
 G1 X5.04 Y-21.54 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4020,7 +4020,7 @@ G1 X5.28 Y-20.45 F600.00
 G1 X6.07 Y-20.59 F600.00
 G1 X6.59 Y-20.81 F600.00
 G1 X7.03 Y-20.83 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4036,7 +4036,7 @@ G1 X-10.02 Y-33.02 F600.00
 G1 X-9.71 Y-32.38 F600.00
 G1 X-9.63 Y-32.38 F600.00
 G1 X-9.63 Y-32.30 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4050,7 +4050,7 @@ G1 X-8.64 Y-32.32 F600.00
 G1 X-7.87 Y-31.90 F600.00
 G1 X-7.80 Y-31.90 F600.00
 G1 X-7.80 Y-31.82 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4063,7 +4063,7 @@ G1 X-7.60 Y-28.75 F600.00
 G1 X-7.87 Y-27.84 F600.00
 G1 X-7.92 Y-27.60 F600.00
 G1 X-7.95 Y-27.52 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4074,7 +4074,7 @@ G1 X-5.31 Y-33.83 F600.00
 G1 X-6.44 Y-31.74 F600.00
 G1 X-6.75 Y-30.67 F600.00
 G1 X-6.92 Y-29.51 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4086,7 +4086,7 @@ G1 X-4.69 Y-33.66 F600.00
 G1 X-5.24 Y-31.35 F600.00
 G1 X-5.24 Y-31.43 F600.00
 G1 X-5.32 Y-31.35 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4097,7 +4097,7 @@ G1 X-2.83 Y-35.04 F600.00
 G1 X-3.41 Y-33.66 F600.00
 G1 X-3.70 Y-32.63 F600.00
 G1 X-3.49 Y-31.82 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4107,7 +4107,7 @@ G4 P150 (wait 150ms)
 G1 X-1.26 Y-34.56 F600.00
 G1 X-2.14 Y-32.86 F600.00
 G1 X-2.14 Y-31.66 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4119,7 +4119,7 @@ G1 X1.09 Y-35.03 F600.00
 G1 X0.73 Y-34.53 F600.00
 G1 X-0.38 Y-32.62 F600.00
 G1 X-0.78 Y-31.74 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4131,7 +4131,7 @@ G1 X1.93 Y-34.14 F600.00
 G1 X0.89 Y-32.30 F600.00
 G1 X0.85 Y-32.06 F600.00
 G1 X0.81 Y-31.82 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4141,7 +4141,7 @@ G4 P150 (wait 150ms)
 G1 X2.73 Y-33.58 F600.00
 G1 X2.35 Y-32.88 F600.00
 G1 X2.17 Y-32.14 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4151,7 +4151,7 @@ G4 P150 (wait 150ms)
 G1 X4.32 Y-33.18 F600.00
 G1 X4.17 Y-32.85 F600.00
 G1 X4.08 Y-32.46 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4162,7 +4162,7 @@ G1 X-9.38 Y-38.99 F600.00
 G1 X-8.86 Y-38.73 F600.00
 G1 X-8.59 Y-38.28 F600.00
 G1 X-8.51 Y-37.32 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4175,7 +4175,7 @@ G1 X-8.22 Y-41.47 F600.00
 G1 X-8.05 Y-41.26 F600.00
 G1 X-8.11 Y-39.84 F600.00
 G1 X-8.11 Y-38.44 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4184,7 +4184,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-7.08 Y-40.59 F600.00
 G1 X-7.80 Y-39.48 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4193,7 +4193,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-5.48 Y-39.95 F600.00
 G1 X-6.28 Y-38.52 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4202,7 +4202,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-4.13 Y-40.11 F600.00
 G1 X-4.69 Y-38.92 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4213,7 +4213,7 @@ G1 X-1.97 Y-41.32 F600.00
 G1 X-2.61 Y-40.11 F600.00
 G1 X-2.80 Y-39.56 F600.00
 G1 X-3.09 Y-39.16 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4223,7 +4223,7 @@ G4 P150 (wait 150ms)
 G1 X-0.30 Y-41.73 F600.00
 G1 X-1.42 Y-39.40 F600.00
 G1 X-1.42 Y-39.48 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4232,7 +4232,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X0.73 Y-40.43 F600.00
 G1 X0.41 Y-39.79 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4242,7 +4242,7 @@ G4 P150 (wait 150ms)
 G1 X3.09 Y-39.62 F600.00
 G1 X2.81 Y-39.14 F600.00
 G1 X2.49 Y-39.00 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4256,7 +4256,7 @@ G1 X-9.18 Y-45.56 F600.00
 G1 X-9.51 Y-45.38 F600.00
 G1 X-9.92 Y-45.07 F600.00
 G1 X-10.43 Y-45.05 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4267,7 +4267,7 @@ G1 X-7.78 Y-47.04 F600.00
 G1 X-8.10 Y-46.65 F600.00
 G1 X-8.19 Y-46.01 F600.00
 G1 X-8.67 Y-44.42 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4278,7 +4278,7 @@ G1 X-6.68 Y-45.45 F600.00
 G1 X-7.14 Y-44.72 F600.00
 G1 X-7.64 Y-44.18 F600.00
 G1 X-7.24 Y-43.78 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4291,7 +4291,7 @@ G1 X-5.57 Y-45.09 F600.00
 G1 X-5.96 Y-44.34 F600.00
 G1 X-5.96 Y-44.42 F600.00
 G1 X-5.96 Y-44.50 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4302,7 +4302,7 @@ G1 X-2.31 Y-47.24 F600.00
 G1 X-2.77 Y-46.73 F600.00
 G1 X-3.81 Y-45.13 F600.00
 G1 X-4.21 Y-44.66 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4312,7 +4312,7 @@ G4 P150 (wait 150ms)
 G1 X-0.36 Y-47.60 F600.00
 G1 X-1.26 Y-46.65 F600.00
 G1 X-2.46 Y-44.97 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4322,7 +4322,7 @@ G4 P150 (wait 150ms)
 G1 X0.02 Y-46.17 F600.00
 G1 X-0.51 Y-45.81 F600.00
 G1 X-0.78 Y-45.21 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4332,7 +4332,7 @@ G4 P150 (wait 150ms)
 G1 X0.98 Y-45.72 F600.00
 G1 X0.81 Y-45.21 F600.00
 G1 X0.81 Y-45.13 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4343,7 +4343,7 @@ G1 X-8.38 Y-49.39 F600.00
 G1 X-7.92 Y-49.59 F600.00
 G1 X-7.87 Y-50.00 F600.00
 G1 X-8.83 Y-50.08 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4356,7 +4356,7 @@ G1 X-6.99 Y-50.72 F600.00
 G1 X-7.48 Y-49.68 F600.00
 G1 X-7.45 Y-49.57 F600.00
 G1 X-7.56 Y-49.52 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4366,7 +4366,7 @@ G4 P150 (wait 150ms)
 G1 X-6.76 Y-49.28 F600.00
 G1 X-7.01 Y-49.25 F600.00
 G1 X-7.08 Y-49.20 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4374,7 +4374,7 @@ G1 X-6.36 Y-50.87 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-6.92 Y-49.52 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4384,7 +4384,7 @@ G4 P150 (wait 150ms)
 G1 X-4.85 Y-50.58 F600.00
 G1 X-5.25 Y-49.72 F600.00
 G1 X-5.80 Y-49.12 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4395,7 +4395,7 @@ G1 X-2.59 Y-50.94 F600.00
 G1 X-3.21 Y-50.49 F600.00
 G1 X-3.97 Y-50.31 F600.00
 G1 X-4.77 Y-49.44 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4407,7 +4407,7 @@ G1 X-1.72 Y-51.35 F600.00
 G1 X-2.14 Y-50.79 F600.00
 G1 X-2.62 Y-50.22 F600.00
 G1 X-2.93 Y-49.76 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4418,7 +4418,7 @@ G1 X-0.16 Y-50.93 F600.00
 G1 X-1.18 Y-50.39 F600.00
 G1 X-1.28 Y-50.23 F600.00
 G1 X-1.34 Y-50.08 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4427,7 +4427,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-10.24 Y-53.96 F600.00
 G1 X-10.58 Y-53.42 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4435,7 +4435,7 @@ G1 X-9.79 Y-54.14 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-8.91 Y-53.74 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4449,7 +4449,7 @@ G1 X-6.59 Y-55.19 F600.00
 G1 X-5.96 Y-55.81 F600.00
 G1 X-4.69 Y-56.61 F600.00
 G1 X-4.85 Y-56.45 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4458,7 +4458,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-6.52 Y-53.62 F600.00
 G1 X-6.60 Y-53.10 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4470,7 +4470,7 @@ G1 X-4.25 Y-56.67 F600.00
 G1 X-4.01 Y-56.89 F600.00
 G1 X-3.73 Y-56.77 F600.00
 G1 X-3.73 Y-56.85 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4484,7 +4484,7 @@ G1 X-5.00 Y-54.29 F600.00
 G1 X-5.96 Y-53.58 F600.00
 G1 X-6.04 Y-53.50 F600.00
 G1 X-6.12 Y-53.42 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4493,7 +4493,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-1.34 Y-55.26 F600.00
 G1 X-2.69 Y-54.46 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4502,7 +4502,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-0.06 Y-55.42 F600.00
 G1 X-0.70 Y-54.94 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4511,7 +4511,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X1.17 Y-54.94 F600.00
 G1 X0.89 Y-54.78 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4521,7 +4521,7 @@ G4 P150 (wait 150ms)
 G1 X11.81 Y3.64 F600.00
 G1 X11.09 Y5.16 F600.00
 G1 X10.85 Y5.48 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4534,7 +4534,7 @@ G1 X12.51 Y5.31 F600.00
 G1 X11.89 Y5.79 F600.00
 G1 X11.35 Y5.71 F600.00
 G1 X10.93 Y5.48 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4543,7 +4543,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X21.31 Y1.68 F600.00
 G1 X20.90 Y3.24 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4552,7 +4552,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X21.93 Y2.96 F600.00
 G1 X21.61 Y4.84 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4596,7 +4596,7 @@ G1 X14.57 Y15.75 F600.00
 G1 X15.08 Y15.04 F600.00
 G1 X16.04 Y13.53 F600.00
 G1 X16.59 Y12.73 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4613,7 +4613,7 @@ G1 X8.73 Y26.67 F600.00
 G1 X9.18 Y25.56 F600.00
 G1 X9.60 Y24.93 F600.00
 G1 X10.22 Y24.36 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4626,7 +4626,7 @@ G1 X16.17 Y23.01 F600.00
 G1 X16.89 Y22.11 F600.00
 G1 X17.55 Y21.26 F600.00
 G1 X17.63 Y21.26 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4638,7 +4638,7 @@ G1 X9.79 Y30.16 F600.00
 G1 X10.29 Y30.32 F600.00
 G1 X11.17 Y29.94 F600.00
 G1 X11.41 Y29.55 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4675,7 +4675,7 @@ G1 X18.98 Y-11.34 F600.00
 G1 X19.02 Y-9.99 F600.00
 G1 X18.82 Y-8.71 F600.00
 G1 X18.75 Y-8.71 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4707,7 +4707,7 @@ G1 X19.54 Y-33.10 F600.00
 G1 X18.40 Y-32.64 F600.00
 G1 X16.99 Y-32.54 F600.00
 G1 X16.51 Y-33.18 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4720,7 +4720,7 @@ G1 X11.73 Y-35.33 F600.00
 G1 X12.37 Y-34.06 F600.00
 G1 X12.73 Y-33.40 F600.00
 G1 X12.85 Y-32.46 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4730,7 +4730,7 @@ G4 P150 (wait 150ms)
 G1 X13.17 Y-28.32 F600.00
 G1 X13.25 Y-28.32 F600.00
 G1 X13.25 Y-28.24 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4746,7 +4746,7 @@ G1 X8.37 Y-43.76 F600.00
 G1 X9.10 Y-43.22 F600.00
 G1 X9.09 Y-43.10 F600.00
 G1 X9.18 Y-43.06 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4774,7 +4774,7 @@ G1 X13.49 Y-42.08 F600.00
 G1 X15.24 Y-41.95 F600.00
 G1 X16.19 Y-43.38 F600.00
 G1 X16.43 Y-44.66 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4789,7 +4789,7 @@ G1 X12.05 Y-50.36 F600.00
 G1 X12.00 Y-50.90 F600.00
 G1 X11.65 Y-51.35 F600.00
 G1 X9.82 Y-52.07 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4799,7 +4799,7 @@ G4 P150 (wait 150ms)
 G1 X9.26 Y-50.38 F600.00
 G1 X10.52 Y-50.55 F600.00
 G1 X11.33 Y-50.55 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4829,7 +4829,7 @@ G1 X8.68 Y-46.67 F600.00
 G1 X8.37 Y-46.34 F600.00
 G1 X8.30 Y-45.77 F600.00
 G1 X8.30 Y-45.37 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4838,7 +4838,7 @@ M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X14.68 Y-55.45 F600.00
 G1 X15.48 Y-55.81 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4846,7 +4846,7 @@ G1 X-12.66 Y-13.89 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-12.58 Y-14.05 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4854,7 +4854,7 @@ G1 X-12.58 Y-10.07 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-12.58 Y-10.15 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4862,7 +4862,7 @@ G1 X-12.82 Y6.59 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-12.58 Y6.75 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 (Polyline consisting of 1 segments.)
@@ -4870,12 +4870,12 @@ G1 X-12.10 Y0.69 F600.00
 M300 S13.00 (pen down)
 G4 P150 (wait 150ms)
 G1 X-11.62 Y0.69 F600.00
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 
 
 (end of print job)
-M300 S60.00 (pen up)
+M300 S90.00 (pen up)
 G4 P150 (wait 150ms)
 M300 S255 (turn off servo)
 G1 X0 Y0 F600.00
