@@ -77,6 +77,22 @@ def waitForOkResponse(sphereBotInFile):
         print "  ", response,
         response = sphereBotInFile.readline()
 
+
+penIsUp=None
+def penUpAcceleration(line):
+    global penIsUp
+
+    if penUpIndication.search(line):
+        penIsUp=True
+    if penDownIndication.search(line):
+        penIsUp=False
+
+    if options.liftOffSpeed and penIsUp and line[0:2] == "G1":
+        line = penSpeedPattern.sub("F{0}".format(options.liftOffSpeed), line)
+
+    return line
+
+
 ######################## Main #########################
 
 parser = OptionParser(usage="usage: %prog [options] gcode-file")
@@ -88,9 +104,10 @@ parser.add_option("-d", "--dont-send", dest="wantToSend",
                   help="Dont send GCode to SphereBot")
 parser.add_option("-s", "--servo-angle", dest="servoAngle", type="float",
                   help="Set angle of Servo and exit. 0 is pen down.")
+parser.add_option("-l", "--liftOff-speed", dest="liftOffSpeed", type="float", default=None,
+                  help="Force speed if pen is up (600 is good).")
 
 (options, args) = parser.parse_args()
-
 
 if options.wantToSend:
     sphereBot = serial.Serial(DEVICE, BAUDRATE, timeout=30)
@@ -100,7 +117,7 @@ if options.wantToSend:
         print line,
         sphereBot.write(line)
         waitForOkResponse(sphereBot)
-        sys.exit();
+        sys.exit()
 
 
 
@@ -112,6 +129,11 @@ if options.wantDisplaceCorrection:
     pattern = re.compile('([(!;].*|\s+|[a-zA-Z0-9_:](?:[+-])?\d*(?:\.\d*)?|\w\#\d+|\(.*?\)|\#\d+\=(?:[+-])?\d*(?:\.\d*)?)')
 
 penChangePattern = re.compile('^M01')
+penUpIndication =  re.compile('pen up')
+penDownIndication =  re.compile('pen down')
+penSpeedPattern = re.compile('F[0-9\.]+')
+
+blockedLinePattern = re.compile('turn off servo')
 
 fileToFeed = args[0]
 gcode = open(fileToFeed, "r")
@@ -122,6 +144,10 @@ totalLines = len(lines)
 for line in lines:
     currentLine = currentLine + 1
 
+    if blockedLinePattern.search(line):
+        continue
+
+    line = penUpAcceleration(line)
     print line, "({0:.1f}%)".format((currentLine / totalLines)*100),
 
     penChange(line)
