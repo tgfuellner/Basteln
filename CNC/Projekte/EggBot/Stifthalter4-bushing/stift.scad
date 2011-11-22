@@ -51,7 +51,7 @@ module penSlider() {
     difference() {
       union() {
         linear_extrude(convexity = 10, center = false, height=BoardThickness)
-          import(file = "penSlider.dxf", layer = "servoSupport");
+          import(file = "penSlider.dxf", layer = "servoSupport-outer-cut-full");
         translate([0,0,BoardThickness])
           linear_extrude(convexity = 10, center = false, height=2*BoardThickness)
             import(file = "penSlider.dxf", layer = "outer-cut-full");
@@ -84,7 +84,7 @@ module servo(angle) {
         translate([0,0,22.1]) cylinder(r=5.75, h=4.3);
       }
 
-      rotate(a = [0,0,-angle]) translate([0,-20,26.4])
+      color(Transparent) rotate(a = [0,0,-angle]) translate([0,-20,26.4])
         linear_extrude(convexity = 10, center = false, height=2)
           import(file = "penSlider.dxf", layer = "servoArm");
     }
@@ -101,6 +101,6 @@ module horizontalArm() {
 
 pen();
 translate([0,0,BoardThickness]) penSlider();
-horizontalArm();
+color(Aluminum) horizontalArm();
 
-translate ([28,0,-ServoY/2]) rotate(a=[90,180,0]) servo(90);
+translate ([28,-12,-ServoY/2]) rotate(a=[90,180,0]) servo(17);
