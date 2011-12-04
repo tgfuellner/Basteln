@@ -28,8 +28,8 @@ from math import sin, pi
 # Document height x width
 Height = 140.0
 Width  = 50.0
-Height *= 3
-Width  *= 3
+#Height *= 3
+#Width  *= 3
 
 # n is number of steps-1!
 def frange(start, stop, n):
@@ -43,16 +43,26 @@ def frange(start, stop, n):
 def sinf(x):
     return 8*sin(x+pi/2.0)
 
-def draw(func, periods, xStart, periodParts=20):
+def draw(func, periods, xStart, periodParts=20, reverse=False):
     dy = Height / (periods*periodParts)
-    xPre = func(0)
-    path = 'M %f,%f' % ( xStart+xPre, 0 )
+    if reverse:
+        dy *= -1
+        YStart = Height
+    else:
+        YStart = 0.0
 
     listOfAngles = []
     for p in range(0,periods):
         listOfAngles += frange(0,2*pi, periodParts+1)
-    # move first to the end to close
-    listOfAngles = listOfAngles[1:] + listOfAngles[0:1]
+
+    xPre = func(listOfAngles[0])
+    path = 'M %f,%f' % ( xStart+xPre, YStart )
+
+    if reverse:
+        listOfAngles.reverse()
+    else:
+        # move first to the end to close
+        listOfAngles = listOfAngles[1:] + listOfAngles[0:1]
             
     for t in listOfAngles:
         x = func(t)
@@ -61,26 +71,47 @@ def draw(func, periods, xStart, periodParts=20):
 
     print('<path d="%s"/>' % path)
 
+def drawLine(x, reverse=False):
+    if reverse:
+        print( '<path d="M %s,%s l 0,-%s"/>' %(x, Height, Height))
+    else:
+        print( '<path d="M %s,0 l 0,%s"/>' % (x,Height))
+
+def printLayer(color):
+    print('<g inkscape:groupmode="layer" inkscape:label="L-%s"' % color )
+    print('   transform="scale(%f,%f)" fill="none" stroke="%s"' % ( 1, 1, color ) )
+    print('   stroke-width="%f">\n' % ( 0.2 ) )
+
 
 print(
 '<svg xmlns="http://www.w3.org/2000/svg"\n' +
 '     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"\n' +
 '     width="%d" height="%d">\n' % ( Width, Height ) )
 
-color = 'black'
-
-print('<g inkscape:groupmode="layer" inkscape:label="2 - %s"' % color )
-print('   transform="scale(%f,%f)" fill="none" stroke="%s"' % ( 1, 1, color ) )
-print('   stroke-width="%f">\n' % ( 0.2 ) )
+printLayer('black')
 
 
-print( '<path d="M 20,0 l 0,%s"/>' % Height)
-print( '<path d="M 45,%s l 0,-%s"/>' %(Height, Height))
-draw(func=lambda x: 4*sin(x), periods=40,xStart=20,periodParts=3)
-draw(func=lambda x: 8*sin(x), periods=10,xStart=20)
-draw(func=lambda x: 8*sin(x+pi), periods=10,xStart=20)
-draw(func=lambda x: 8*sin(x+pi/2.0), periods=10,xStart=20)
-draw(func=lambda x: 8*sin(x-pi/2.0), periods=10,xStart=20)
+drawLine(5)
+draw(func=lambda x: 2.5*sin(x+pi/2), periods=40,xStart=7.5,periodParts=2,reverse=True)
+drawLine(10)
+drawLine(15,reverse=True)
 
+drawLine(35)
+drawLine(40,reverse=True)
+draw(func=lambda x: 2.5*sin(x+pi/2), periods=40,xStart=42.5,periodParts=2)
+drawLine(45,reverse=True)
+
+print('\n</g>')
+
+printLayer('red')
+
+draw(func=lambda x: 10*sin(x), periods=10,xStart=25)
+draw(func=lambda x: 10*sin(x+pi), periods=10,xStart=25,reverse=True)
+drawLine(25)
+
+draw(func=lambda x: 5*sin(x), periods=10,xStart=25,reverse=True)
+draw(func=lambda x: 5*sin(x+pi), periods=10,xStart=25)
+draw(func=lambda x: 2.5*sin(x), periods=10,xStart=25,reverse=True)
+draw(func=lambda x: 2.5*sin(x+pi), periods=10,xStart=25)
 
 print( '\n</g>\n</svg>' )
