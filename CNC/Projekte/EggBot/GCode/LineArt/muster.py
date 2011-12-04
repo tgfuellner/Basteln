@@ -43,21 +43,21 @@ def frange(start, stop, n):
 def sinf(x):
     return 8*sin(x+pi/2.0)
 
-def draw(func, Periods, xStart):
-    NumberOfSinParts = 20
-    dy = Height / (Periods*NumberOfSinParts)
+def draw(func, periods, xStart, periodParts=20):
+    dy = Height / (periods*periodParts)
     xPre = func(0)
-    yPre = dy
     path = 'M %f,%f' % ( xStart+xPre, 0 )
 
-    for p in range(0,Periods):
-        for t in frange(0,2*pi, NumberOfSinParts+1):
-            x = func(t)
-            path += ' l %f,%f' % (x-xPre, dy-yPre)
-            xPre = x
-            yPre = 0
-    x = func(0)
-    path += ' l %f,%f' % (x-xPre, dy-yPre)
+    listOfAngles = []
+    for p in range(0,periods):
+        listOfAngles += frange(0,2*pi, periodParts+1)
+    # move first to the end to close
+    listOfAngles = listOfAngles[1:] + listOfAngles[0:1]
+            
+    for t in listOfAngles:
+        x = func(t)
+        path += ' l %f,%f' % (x-xPre, dy)
+        xPre = x
 
     print('<path d="%s"/>' % path)
 
@@ -76,11 +76,11 @@ print('   stroke-width="%f">\n' % ( 0.2 ) )
 
 print( '<path d="M 20,0 l 0,%s"/>' % Height)
 print( '<path d="M 45,%s l 0,-%s"/>' %(Height, Height))
-draw(func=lambda x: 4*sin(x), Periods=40,xStart=20)
-draw(func=lambda x: 8*sin(x), Periods=10,xStart=20)
-draw(func=lambda x: 8*sin(x+pi), Periods=10,xStart=20)
-draw(func=lambda x: 8*sin(x+pi/2.0), Periods=10,xStart=20)
-draw(func=lambda x: 8*sin(x-pi/2.0), Periods=10,xStart=20)
+draw(func=lambda x: 4*sin(x), periods=40,xStart=20,periodParts=3)
+draw(func=lambda x: 8*sin(x), periods=10,xStart=20)
+draw(func=lambda x: 8*sin(x+pi), periods=10,xStart=20)
+draw(func=lambda x: 8*sin(x+pi/2.0), periods=10,xStart=20)
+draw(func=lambda x: 8*sin(x-pi/2.0), periods=10,xStart=20)
 
 
 print( '\n</g>\n</svg>' )
