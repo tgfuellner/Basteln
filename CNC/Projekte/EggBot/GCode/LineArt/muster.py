@@ -24,6 +24,8 @@
 import sys
 from math import sin, pi
 
+# Scale to mm
+MM = 3.5433068
 
 # Document height x width
 Height = 140.0
@@ -79,14 +81,14 @@ def drawLine(x, reverse=False):
 
 def printLayer(color):
     print('<g inkscape:groupmode="layer" inkscape:label="L-%s"' % color )
-    print('   transform="scale(%f,%f)" fill="none" stroke="%s"' % ( 1, 1, color ) )
+    print('   transform="scale(%f,%f)" fill="none" stroke="%s"' % ( MM, MM, color ) )
     print('   stroke-width="%f">\n' % ( 0.2 ) )
 
 
 print(
 '<svg xmlns="http://www.w3.org/2000/svg"\n' +
 '     xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"\n' +
-'     width="%d" height="%d">\n' % ( Width, Height ) )
+'     width="%d" height="%d">\n' % ( Width*MM, Height*MM ) )
 
 printLayer('black')
 
