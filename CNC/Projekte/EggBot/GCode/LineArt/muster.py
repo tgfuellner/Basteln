@@ -28,31 +28,36 @@ from math import sin, pi
 # Document height x width
 Height = 140.0
 Width  = 50.0
+Height *= 3
+Width  *= 3
 
-# n is number of steps!
+# n is number of steps-1!
 def frange(start, stop, n):
-    L = [0.0] * n
+    L = [0.0] * (n-1)
     nm1 = n - 1
     nm1inv = 1.0 / nm1
-    for i in range(n):
+    for i in range(n-1):
         L[i] = nm1inv * (start*(nm1 - i) + stop*i)
     return L
 
 def sinf(x):
-    return 3*sin(x)
+    return 8*sin(x+pi/2.0)
 
-def draw_sin(xStart):
-    path = 'M %f,%f' % ( xStart, 0 )
-    Periods = 10
-    NumberOfSinParts = 40
+def draw(func, Periods, xStart):
+    NumberOfSinParts = 20
     dy = Height / (Periods*NumberOfSinParts)
-    xPre = 0
+    xPre = func(0)
+    yPre = dy
+    path = 'M %f,%f' % ( xStart+xPre, 0 )
 
     for p in range(0,Periods):
-        for t in frange(0,2*pi, NumberOfSinParts):
-            x = sinf(t)
-            path += ' l %f,%f' % (x-xPre, dy)
+        for t in frange(0,2*pi, NumberOfSinParts+1):
+            x = func(t)
+            path += ' l %f,%f' % (x-xPre, dy-yPre)
             xPre = x
+            yPre = 0
+    x = func(0)
+    path += ' l %f,%f' % (x-xPre, dy-yPre)
 
     print('<path d="%s"/>' % path)
 
@@ -69,9 +74,13 @@ print('   transform="scale(%f,%f)" fill="none" stroke="%s"' % ( 1, 1, color ) )
 print('   stroke-width="%f">\n' % ( 0.2 ) )
 
 
-print( '<path d="M 5,0 l 0,140"/>')
-print( '<path d="M 45,140 l 0,-140"/>')
-draw_sin(10)
+print( '<path d="M 20,0 l 0,%s"/>' % Height)
+print( '<path d="M 45,%s l 0,-%s"/>' %(Height, Height))
+draw(func=lambda x: 4*sin(x), Periods=40,xStart=20)
+draw(func=lambda x: 8*sin(x), Periods=10,xStart=20)
+draw(func=lambda x: 8*sin(x+pi), Periods=10,xStart=20)
+draw(func=lambda x: 8*sin(x+pi/2.0), Periods=10,xStart=20)
+draw(func=lambda x: 8*sin(x-pi/2.0), Periods=10,xStart=20)
 
 
 print( '\n</g>\n</svg>' )
