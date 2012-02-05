@@ -8,7 +8,7 @@ use <OpenScadFont.scad>;
 tube_thickness = 1.6;	// Thickness of opening
 tube_width = 64;	// Width of opening
 squeezer_width = 5;	// Width of walls of squeezer
-squeezer_height = 20;	// Height of squeezer
+squeezer_height = 15;	// Height of squeezer
 roundness = 0.80; // 1 for rectangular, lower numbers are rounder
 
 tube_inc=2;
@@ -39,7 +39,7 @@ intersection() {
 }
 
 translate([squeezer_width+tube_thickness-1.5,-27,0]) rotate(90,[0,1,0])
-scale([1.5,1.4,1]) {
+scale([1.3,1.4,1]) {
     fnt_str(["D", "a", "u", "m"],4,2,1);
     translate([0, 8*2.5+1.5,0])
     fnt_str(["o", "o", "s", "e", "r"],5,2,1);
