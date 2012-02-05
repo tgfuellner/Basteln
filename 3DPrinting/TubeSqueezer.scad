@@ -5,8 +5,8 @@
 use <OpenScadFont.scad>;
 
 // VARIABLES
-tube_thickness = 2;	// Thickness of opening
-tube_width = 60;	// Width of opening
+tube_thickness = 1.6;	// Thickness of opening
+tube_width = 64;	// Width of opening
 squeezer_width = 5;	// Width of walls of squeezer
 squeezer_height = 20;	// Height of squeezer
 roundness = 0.80; // 1 for rectangular, lower numbers are rounder
