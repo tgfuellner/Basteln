@@ -38,7 +38,7 @@ intersection() {
   }
 }
 
-translate([squeezer_width+tube_thickness-1,-27,0]) rotate(90,[0,1,0])
+translate([squeezer_width+tube_thickness-1.5,-27,0]) rotate(90,[0,1,0])
 scale([1.5,1.4,1]) {
     fnt_str(["D", "a", "u", "m"],4,2,1);
     translate([0, 8*2.5+1.5,0])
