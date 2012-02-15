@@ -4,7 +4,7 @@ EPS=0.01;
 $fs=0.2;
 
 StandX=80;
-StandY=40;
+StandY=50;
 StandZ=10.7;
 Inset=7.5;
 
@@ -30,8 +30,8 @@ module desire() {
 
 difference() {
   cube(size=[StandX-EPS,StandY,StandZ]);
-  translate([0,14,4.5]) desire();
-  //translate([0,14,6]) samsung();
+  //translate([0,14,4.5]) desire();
+  translate([0,14,6]) samsung();
   translate([-EPS,20,3.3]) cube(size=[StandX+2*EPS,StandY,StandZ]);
   translate([Inset,20,-EPS]) cube(size=[StandX-Inset*2,15,StandZ]);
 }
