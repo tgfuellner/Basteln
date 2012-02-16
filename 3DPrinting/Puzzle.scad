@@ -7,6 +7,7 @@ $fs=0.2;
 RadiusOfHole=3;
 ClearanceRod=0.5;
 ClearanceRodLength=2;
+ClearenceGroove=0.4;
 
 Height=20;
 Width=10;
@@ -23,14 +24,21 @@ module thing() {
     translate([0,Width/2+EPS,-Height/4]) rotate(90,[1,0,0])
         cylinder(h=Width+2*EPS, r=RadiusOfHole);
     translate([0,0,Height/2]) rotate(90, [0,0,1])
-        cube(size=[Length,Width,Height], center=true);
+        cube(size=[Length,Width+ClearenceGroove,Height], center=true);
     translate([-HoleLength/2,0,Height/4]) rotate(90,[0,1,0])
         cylinder(h=HoleLength, r=RadiusOfHole);
   }
 }
 
 module rod() {
-    cylinder(h=(HoleLength-Width)/2-ClearanceRodLength, r=RadiusOfHole-ClearanceRod/2);
+    R=RadiusOfHole-ClearanceRod/2;
+
+    translate([0,0,4*R/5]) rotate(-90,[0,1,0])
+        intersection() {
+            cylinder(h=(HoleLength-Width)/2-ClearanceRodLength, r=R);
+            translate([R/5,0,0])
+                cube(size=[R*2,R*2,HoleLength], center=true);
+        }
 }
 
 module cut() {
@@ -55,9 +63,9 @@ module cutInTwoPartsForAssembly() {
 }
 
 
-translate([-Width,-Width,0]) rod();
+translate([0,-Width,0]) rod();
+translate([HoleLength/2,-Width,0]) rod();
+translate([0,Width,0]) rod();
+translate([HoleLength/2,Width,0]) rod();
 cutInTwoPartsForAssembly();
-translate([Width,-Width,0]) rod();
 translate([0,2*Width,0]) cutInTwoPartsForAssembly();
-translate([-Width,-Width*2,0]) rod();
-translate([Width,-Width*2,0]) rod();
