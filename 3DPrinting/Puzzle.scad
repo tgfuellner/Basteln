@@ -11,11 +11,15 @@ ClearenceGroove=0.4;
 
 Height=20;
 Width=10;
-Length=80;
+Length=70;
 
-MaterialAfterHole=10;
+MaterialAfterHole=3;
 
 HoleLength=Length-2*MaterialAfterHole;
+
+JoinSmall=3;
+JoinWide=5;
+JoinHight=5;
 
 module thing() {
 
@@ -41,9 +45,19 @@ module rod() {
         }
 }
 
+module join() {
+    rotate(-90, [0,0,1]) rotate(-90, [1,0,0])
+    linear_extrude(height = Length, center = false)
+    polygon(points = [ [-JoinSmall/2, 0], [JoinSmall/2,0],
+        [JoinWide/2,JoinHight], [-JoinWide/2,JoinHight] ]);
+}
+
 module cut() {
-    translate([Width/2-EPS,-Width/2-EPS,-EPS])
+    translate([(Width+ClearenceGroove)/2-EPS,-Width/2-EPS,Height/2])
+    union() {
         cube(size=[Length,Width+2*EPS,Height+2*EPS], center=false);
+        translate([0, (Width+2*EPS)/2,EPS]) join();
+    }
 }
 
 module cutInTwoPartsForAssembly() {
