@@ -8,6 +8,7 @@ RadiusOfHole=3;
 ClearanceRod=0.5;
 ClearanceRodLength=2;
 ClearenceGroove=0.4;
+ClearanceJoin=0.3;
 
 Height=20;
 Width=10;
@@ -45,18 +46,19 @@ module rod() {
         }
 }
 
-module join() {
+module join(Clearance) {
     rotate(-90, [0,0,1]) rotate(-90, [1,0,0])
     linear_extrude(height = Length, center = false)
-    polygon(points = [ [-JoinSmall/2, 0], [JoinSmall/2,0],
-        [JoinWide/2,JoinHight], [-JoinWide/2,JoinHight] ]);
+    polygon(points = [ [(-JoinSmall+Clearance)/2, 0], [(JoinSmall-Clearance)/2,0],
+        [(JoinWide-Clearance)/2,JoinHight-Clearance],
+        [(-JoinWide+Clearance)/2,JoinHight-Clearance] ]);
 }
 
-module cut() {
+module cut(clearanceJoin) {
     translate([(Width+ClearenceGroove)/2-EPS,-Width/2-EPS,Height/2])
     union() {
         cube(size=[Length,Width+2*EPS,Height+2*EPS], center=false);
-        translate([0, (Width+2*EPS)/2,EPS]) join();
+        translate([0, (Width+2*EPS)/2,EPS]) join(clearanceJoin);
     }
 }
 
@@ -65,17 +67,16 @@ module cutInTwoPartsForAssembly() {
         rotate(-90,[0,1,0])
           difference() {
             thing();
-            cut();
+            cut(0);
           }
 
         translate([10,0,0]) rotate(90,[0,1,0])
           intersection() {
             thing();
-            cut();
+            cut(ClearanceJoin);
           }
     }
 }
-
 
 translate([0,-Width,0]) rod();
 translate([HoleLength/2,-Width,0]) rod();
