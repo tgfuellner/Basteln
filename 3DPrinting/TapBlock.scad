@@ -14,8 +14,8 @@ rHoles = 15; //holes will be laid-out on a
 tBlock = 10; //thickness of the block
 
 // Vorsicht: Bohrerdurchmesser / 2.0
-rMin = 2.05; //Minimum hole radius
-rMax = 2.5; //Maximum hole radius
+rMin = 1.55; //Minimum hole radius
+rMax = 2; //Maximum hole radius
 
 rStep = (rMax-rMin)/(nHoles-1); //hole
 //radius step size

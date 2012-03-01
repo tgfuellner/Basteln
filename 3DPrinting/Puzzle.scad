@@ -70,17 +70,19 @@ module cutInTwoPartsForAssembly() {
             cut(0);
           }
 
+        /*
         translate([10,0,0]) rotate(90,[0,1,0])
           intersection() {
             thing();
             cut(ClearanceJoin);
           }
+         */
     }
 }
 
-translate([0,-Width,0]) rod();
-translate([HoleLength/2,-Width,0]) rod();
-translate([0,Width,0]) rod();
-translate([HoleLength/2,Width,0]) rod();
+//translate([0,-Width,0]) rod();
+//translate([HoleLength/2,-Width,0]) rod();
+//translate([0,Width,0]) rod();
+//translate([HoleLength/2,Width,0]) rod();
 cutInTwoPartsForAssembly();
 translate([0,2*Width,0]) cutInTwoPartsForAssembly();

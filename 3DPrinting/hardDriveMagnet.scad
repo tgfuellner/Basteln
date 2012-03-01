@@ -2,12 +2,12 @@ $fa=6;
 $fs=0.1;
 EPS=0.01;
 
-Height=12;
-Width=4;
+Height=14;
+Width=5.5;
 Depth=23;
-MagnetThickness=2.1;
-MagnetHeight=10.5;
-HandleWidth=2;
+MagnetThickness=2.3;
+MagnetHeight=11;
+HandleWidth=2.5;
 
 difference() {
     union() {
@@ -15,7 +15,7 @@ difference() {
         translate([Width-EPS,Depth/2-HandleWidth/2,0])
             cube(size=[10,HandleWidth,Height]);
     }
-    translate([0.9, -EPS, (Height-MagnetHeight)/2])
+    translate([1, -EPS, (Height-MagnetHeight)/2])
         cube(size=[MagnetThickness,Depth-1,MagnetHeight]);
 }
 
