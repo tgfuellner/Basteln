@@ -24,7 +24,7 @@ module window() {
     H=PictureHeight-4;
 
     translate([Width-1, HandleWidth+3, 3])
-      rotate(90,[1,0,0]) rotate(90, [0,1,0]) translate([W/2,H/2,10/2])
+      rotate(90,[1,0,0]) rotate(90, [0,1,0]) translate([W/2,H/2,10/2-EPS])
       roundCornersCube(W,H,10,13);
 }
 
