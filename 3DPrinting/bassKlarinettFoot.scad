@@ -4,7 +4,7 @@ EPS=0.01;
 
 rSphere=15;
 rClarinettRod=3.5;
-rFooter=6;
+rFooter=6.5;
 FooterDepth=0.6;
 
 unImportantLength=100;
