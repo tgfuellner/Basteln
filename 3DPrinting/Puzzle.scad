@@ -85,4 +85,4 @@ module cutInTwoPartsForAssembly() {
 //translate([0,Width,0]) rod();
 //translate([HoleLength/2,Width,0]) rod();
 cutInTwoPartsForAssembly();
-translate([0,2*Width,0]) cutInTwoPartsForAssembly();
+// translate([0,2*Width,0]) cutInTwoPartsForAssembly();

@@ -16,7 +16,7 @@ Height=PictureHeight+2;
 Depth=PictureWidth+HandleWidth+2;
 
 
-PictureMagnet();
+rotate(90, [1,0,0]) PictureMagnet();
 
 
 module window() {

@@ -18,11 +18,11 @@ baseHeight = 6; //6 is good
 centreToInsideBase = 7;
 baseLegWidth = 9;
 fanSideBaseHeight = 6; //No less than 2 but preferably more. Need short to fit nut on fan below
-tubeRadius = 3.1;
+tubeRadius = 2.5;
 tR_Allow = 0.8; //adjustment for above for clearance. Printers put too much inside holes usually
 threadLength = 20;
 tubeBottom = 16;
-tighteningConeTopRadius = 4.7;
+tighteningConeTopRadius = 4;
 tighteningConeHeight = 10;
 topOfTighteningConeHeight = 3;
 tighteningConeOpening = 1.7;
@@ -55,11 +55,11 @@ tubeCentre = [insideHolesFromCentre,-insideHolesFromCentre, -stlClearance];
 //*****************************************************************************
 //******************* PRINTING ****************************************************
 
-//baseAndRiser();
+translate ([0,30,-baseHeight]) baseAndRiser();
 
-tighteningCone();
+translate([-20,0,0]) tighteningCone();
 
-//cap();
+translate([0,-30,0]) cap();
 
 //capTest(); // Makes a 4mm High Cap with no top to test thread for fit on riser. Uses capInsideDiameter same as cap
 
@@ -83,7 +83,7 @@ module explodedView(){
 module baseAndRiser(){
     difference(){
         union(){
-            base();
+            //base();
             riserTube();
         }
             translate(tubeCentre) passThroughTube();
