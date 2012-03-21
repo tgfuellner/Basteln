@@ -6,9 +6,9 @@ PictureHeight=30;
 PictureWidth=40;
 
 Width=6;
-MagnetThickness=2.1;
+MagnetThickness=1.8;
 MagnetHeight=10.5;
-HandleWidth=2;
+HandleWidth=0;
 HandleHeight=10;
 
 
@@ -33,8 +33,10 @@ module PictureMagnet() {
   difference() {
     union() {
         cube(size=[Width,Depth,Height]);
+        /*
         translate([Width-EPS,0,0])
             cube(size=[HandleHeight,HandleWidth,Height]);
+        */
     }
 
     translate([1, -EPS, (Height-MagnetHeight)/2])
