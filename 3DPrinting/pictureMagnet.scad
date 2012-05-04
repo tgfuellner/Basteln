@@ -7,7 +7,7 @@ PictureWidth=40;
 
 Width=6;
 MagnetThickness=1.8;
-MagnetHeight=10.5;
+MagnetHeight=15;
 HandleWidth=0;
 HandleHeight=10;
 
