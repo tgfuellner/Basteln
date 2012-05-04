@@ -4,17 +4,17 @@ EPS=0.01;
 $fs=0.2;
 
 StandX=10;
-StandY=35;
-StandZ=10.7;
+StandY=50;
+StandZ=14.0;
 Inset=7.5;
-Thickness=2.7;
+Thickness=2.4;
 
 HolderLength=24;
-HakenThickness=1.7;
+HakenThickness=1.5;
 HakenDepth=4;
 
 module samsung() {
-  translate([StandX+EPS,0,0]) rotate(70,[1,0,0]) rotate(-90,[0,1,0])
+  translate([StandX+EPS,0,-1]) rotate(60,[1,0,0]) rotate(-90,[0,1,0])
   linear_extrude(height = StandX+2*EPS, center = false, convexity = 10, twist = 0)
   polygon(points=[[0,10],[0,0],[0.5,-2],[1,-3],[1.5,-3.9],[2,-4.1],[2.5,-4.5],[3,-4.8]
         ,[3.5,-5],[4,-5.3],[4.5,-5.5],[5,-5.6],[5.5,-5.6],[6,-5.5]
@@ -34,20 +34,22 @@ module desire() {
 }
 
 module holder() {
-  difference() {
-    union() {
-      translate([0,StandY-Thickness,1.2]) rotate(-30,[1,0,0])
-      union() {
-          cube(size=[StandX,HolderLength,Thickness]);
-          translate([0,HolderLength-HakenThickness,Thickness])
-              cube(size=[StandX,HakenThickness,HakenDepth]);
+  union() {
+      difference() {
+        union() {
+          translate([0,StandY-Thickness,1.2]) rotate(-30,[1,0,0])
+          union() {
+              cube(size=[StandX,HolderLength,Thickness]);
+              translate([0,HolderLength-HakenThickness,Thickness-EPS])
+                  cube(size=[StandX,HakenThickness,HakenDepth]);
+          }
+          cube(size=[StandX-EPS,StandY,StandZ]);
+        }
+        //translate([0,14,4.5]) desire();
+        translate([0,14,6]) samsung();
+        translate([-EPS,10,Thickness]) cube(size=[StandX+2*EPS,StandY,StandZ]);
+        translate([Inset,20,-EPS]) cube(size=[StandX-Inset*2,15,StandZ]);
       }
-      cube(size=[StandX-EPS,StandY,StandZ]);
-    }
-    //translate([0,14,4.5]) desire();
-    translate([0,14,6]) samsung();
-    translate([-EPS,10,Thickness]) cube(size=[StandX+2*EPS,StandY,StandZ]);
-    translate([Inset,20,-EPS]) cube(size=[StandX-Inset*2,15,StandZ]);
   }
 }
 
