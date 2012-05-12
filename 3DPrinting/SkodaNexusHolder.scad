@@ -111,7 +111,7 @@ module middle() {
 
 module topHolder() {
     Hight=MountLength-StlHight;
-    NexusThickness=10;
+    NexusThickness=13;
     NexusInset=5;
     AddOnZ=5;
     AddOnY=4;
@@ -145,10 +145,10 @@ module all() {
         topHolder();
 }
 
-all();
+//all();
 
 //For printing
 // middle();
-// rotate(90, [0,1,0]) topHolder();
+rotate(90, [0,1,0]) topHolder();
 // rotate(-90, [0,1,0]) baseLeftWithHaken();
 // rotate(90, [0,1,0]) translate([-110,0,0]) baseRightWithHaken();
