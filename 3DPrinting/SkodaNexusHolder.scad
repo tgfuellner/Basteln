@@ -8,8 +8,8 @@ MountLength=50;
 Thickness=2.4;
 
 HolderLength=24;
-HakenThickness=1.5;
-HakenDepth=4;
+HakenThickness=1.2;
+HakenDepth=2.5;
 
 StlLength=150;
 StlHight=10;
@@ -103,14 +103,14 @@ module middle() {
             cube(size=[GlueLength,MountLength,Thickness]);
 
         // middle
-        translate([MiddlePlaceMent,0,Thickness/2])
-            cube(size=[MountWidth,MountLength,Thickness]);
+        translate([MiddlePlaceMent,0,Thickness/4])
+            cube(size=[MountWidth,MountLength,Thickness/2]);
     }
 
 }
 
 module topHolder() {
-    Hight=MountLength-StlHight;
+    Hight=16+MountLength-StlHight;
     NexusThickness=13;
     NexusInset=5;
     AddOnZ=5;
@@ -145,10 +145,10 @@ module all() {
         topHolder();
 }
 
-//all();
+ all();
 
 //For printing
 // middle();
-rotate(90, [0,1,0]) topHolder();
+//rotate(90, [0,1,0]) topHolder();
 // rotate(-90, [0,1,0]) baseLeftWithHaken();
 // rotate(90, [0,1,0]) translate([-110,0,0]) baseRightWithHaken();
