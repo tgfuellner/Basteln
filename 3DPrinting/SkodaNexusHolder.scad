@@ -8,12 +8,13 @@ MountLength=50;
 Thickness=2.4;
 
 HolderLength=24;
+HolderAngle=35;
 HakenThickness=1.2;
 HakenDepth=2.5;
 
 StlLength=150;
 StlHight=10;
-StlEdgeLength=30;
+StlEdgeLength=25;
 LeftCut=7;
 BackCut=18;
 
@@ -21,10 +22,10 @@ BackCut=18;
     Inset=5;
     Length=StlLength-2*LeftCut-Inset;
     GlueLength=MountWidth-Inset/2;
-    MiddlePlaceMent=2*(Length/5)-MountWidth;
+    MiddlePlaceMent=12+2*(Length/5)-MountWidth;
 
 module haken() {
-    translate([0,MountLength,0]) rotate(-30,[1,0,0])
+    translate([0,MountLength,0]) rotate(-HolderAngle,[1,0,0])
        union() {
               cube(size=[MountWidth,HolderLength,Thickness]);
               translate([0,HolderLength-HakenThickness,Thickness-EPS])
@@ -34,7 +35,7 @@ module haken() {
 
     // Close the gap
     hull() {
-    translate([0,MountLength,0]) rotate(-30,[1,0,0])
+    translate([0,MountLength,0]) rotate(-HolderAngle,[1,0,0])
        cube(size=[MountWidth,EPS,Thickness]);
     cube(size=[MountWidth,MountLength,Thickness]);
     }
@@ -103,21 +104,28 @@ module middle() {
             cube(size=[GlueLength,MountLength,Thickness]);
 
         // middle
-        translate([MiddlePlaceMent,0,Thickness/4])
+        translate([MiddlePlaceMent,0,Thickness/2])
             cube(size=[MountWidth,MountLength,Thickness/2]);
     }
 
 }
 
 module topHolder() {
-    Hight=16+MountLength-StlHight;
+    Hight=18+MountLength-StlHight;
     NexusThickness=13;
     NexusInset=5;
     AddOnZ=5;
     AddOnY=4;
+    BackLength=25;
 
     translate([0,0,Thickness/2])
         cube(size=[MountWidth,Hight,Thickness/2]);
+    difference() {
+      translate([0,MountLength-StlHight-BackLength,-Thickness*0.5-0.5])
+        cube(size=[MountWidth,BackLength,Thickness+0.8]);
+      translate([0,MountLength-StlHight-BackLength,-0.4])
+        cube(size=[MountWidth,BackLength-Inset,0.4+Thickness/2]);
+    }
     translate([0,Hight-EPS,0])
         cube(size=[MountWidth,AddOnY,Thickness]);
 
@@ -145,10 +153,10 @@ module all() {
         topHolder();
 }
 
- all();
+// all();
 
 //For printing
 // middle();
-//rotate(90, [0,1,0]) topHolder();
+rotate(90, [0,1,0]) topHolder();
 // rotate(-90, [0,1,0]) baseLeftWithHaken();
 // rotate(90, [0,1,0]) translate([-110,0,0]) baseRightWithHaken();
