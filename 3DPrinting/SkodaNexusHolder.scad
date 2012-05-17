@@ -112,7 +112,7 @@ module middle() {
 
 module topHolder() {
     Hight=18+MountLength-StlHight;
-    NexusThickness=13;
+    NexusThickness=12;
     NexusInset=5;
     AddOnZ=5;
     AddOnY=4;
