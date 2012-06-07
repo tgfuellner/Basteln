@@ -4,7 +4,7 @@ EPS=0.01;
 
 // Box Parameter
 width_outer = 40;
-length_outer = 50;
+length_outer = 60;
 height_outer = 50;
 wall_thickness = 2;
 
@@ -12,7 +12,7 @@ wall_thickness = 2;
 // Give Dimension of the magnet:
 Magnet_width = 18.5;
 Magnet_Length = 37;
-Magnet_Heigth = 3.5;
+Magnet_Heigth = 2;
 Magnet_MaterialThicknessArround = 1.5;
 
 
