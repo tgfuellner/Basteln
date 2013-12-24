@@ -1,5 +1,7 @@
 /*
 
+Stammt von http://www.thingiverse.com/thing:168745
+
 OpenSCAD-File to generate a Customized luggage label
 2013-10-19 - kowomike
 
@@ -14,16 +16,25 @@ http://www.thingiverse.com/thing:100779
 
 */
 
-use <Module/Writescad/write.scad>  //Change to directory where write.scad resides; Put the font (stencil2.dxf) in same directory (were other fonts are as well)
+use <Write.scad/Write.scad>  //Change to directory where write.scad resides; Put the font (stencil2.dxf) in same directory (were other fonts are as well)
+
+
+text=[				 
+//"YOUR NAME"
+//,"ADDRESS"
+"MARIA"
+//,"COUNTRY"
+
+];						  
 
 //Other fonts need heavy changes for spacing, size etc.
-font="stencil2.dxf";
+font="Write.scad/stencil2.dxf";
 fontlengthfactor=.682;
 
 // **** START CUSTOMIZING HERE ****
 
 // Fontheight of text (too small will be hard to print)
-fontsize=11;
+fontsize=13;
 
 // Spacing between letters (too little will be hard to print)
 spacing=0.9;		 
@@ -39,7 +50,7 @@ platethickness=3;
 
 // emgraving depth of text in % of plate (-66 is nice; -100 is through-hole)
 // Use positive values to emboss instead of engraving 
-textdepth=-66;      
+textdepth=-100;      
 
 // Length of slitted hole [mm]
 slitlength=10;		 
@@ -53,13 +64,6 @@ hidetext=false;
 // Enter Text; UPPERCASE looks best
 // Use up to 10 lines as needed; for alignment to center or right, use spaces
 
-text=[				 
-"YOUR NAME",
-"ADDRESS",
-"ZIP CITY",
-"COUNTRY"
-
-];						  
 
 // **** END CUSTOMIZING HERE ****
 
@@ -103,20 +107,22 @@ linear_extrude(height = slitheight+1, center = true, convexity = 10) {
 
 //Generate complete plate
 difference () {
-	plate(platelength,platewidth,platethickness,cornerradius);
+	//plate(platelength,platewidth,platethickness,cornerradius);
+    cylinder(r=35,center=true,h=thickness,$fn=50);
 
 	//Slit for attaching
-	translate ([-platelength/2+4+slitwidth/2,0,0])
-	slit(slitlengthuse,slitwidth,platethickness);
+	//translate ([-platelength/2+4+slitwidth/2,0,0])
+	//slit(slitlengthuse,slitwidth,platethickness);
 
 	//Engrave text if textdepth negative
 	if (textdepth<0) {
 		translate ([fontlengthfactor*fontsize/2,-fontsize*0.75,platethickness/2])  //Adjust text start 
-		translate ([-textlength/2+2+slitwidth/2,textlines*linespacing*fontsize/2,textdepthuse])
+		translate ([-textlength/2,textlines*linespacing*fontsize/2,textdepthuse])
 		for (i=[0:textlines-1]) {
 			translate ([0,-fontsize*linespacing*i,0])
-			#write(text[i],t=textthickness,h=fontsize,font=font,space=spacing);
-		};
+            //TG
+			write(text[i],t=textthickness,h=fontsize,font=font,space=spacing);
+		}
 	}
 
 //Uncomment to show inside of plate for checking hidden text position
@@ -133,6 +139,6 @@ if (textdepth>0) {
 		for (i=[0:textlines-1]) {
 			translate ([0,-fontsize*linespacing*i,0])
 			write(text[i],t=textthickness,h=fontsize,font=font,space=spacing);
-		};
+		}
 }
 
