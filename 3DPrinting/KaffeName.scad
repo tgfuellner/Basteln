@@ -108,7 +108,7 @@ linear_extrude(height = slitheight+1, center = true, convexity = 10) {
 //Generate complete plate
 difference () {
 	//plate(platelength,platewidth,platethickness,cornerradius);
-    cylinder(r=35,center=true,h=thickness,$fn=50);
+    cylinder(r=35,center=true,h=platethickness,$fn=50);
 
 	//Slit for attaching
 	//translate ([-platelength/2+4+slitwidth/2,0,0])
