@@ -34,7 +34,7 @@ fontlengthfactor=.682;
 // **** START CUSTOMIZING HERE ****
 
 // Fontheight of text (too small will be hard to print)
-fontsize=13;
+fontsize=18;
 
 // Spacing between letters (too little will be hard to print)
 spacing=0.9;		 
@@ -46,7 +46,7 @@ linespacing=0.85;
 cornerradius=3;   
 
 // Thickness of plate [mm]
-platethickness=3; 
+platethickness=2; 
 
 // emgraving depth of text in % of plate (-66 is nice; -100 is through-hole)
 // Use positive values to emboss instead of engraving 
@@ -108,7 +108,7 @@ linear_extrude(height = slitheight+1, center = true, convexity = 10) {
 //Generate complete plate
 difference () {
 	//plate(platelength,platewidth,platethickness,cornerradius);
-    cylinder(r=35,center=true,h=platethickness,$fn=50);
+    cylinder(r=45,center=true,h=platethickness,$fn=50);
 
 	//Slit for attaching
 	//translate ([-platelength/2+4+slitwidth/2,0,0])
