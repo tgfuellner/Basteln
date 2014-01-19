@@ -34,7 +34,7 @@ module hexScrewForCutout() {
           0,  // Length of the threaded section of the screw
          0.3,  // Resolution (face at each 2mm of the perimeter)
            -0,  // Countersink in both ends
-          8,  // Distance between flats for the hex head
+          7.1,  // Distance between flats for the hex head
            5,  // Height of the hex head (can be zero)
            20,  // Length of the non threaded section of the screw
            0); // Diameter for the non threaded section of the screw
