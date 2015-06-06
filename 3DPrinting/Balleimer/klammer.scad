@@ -11,8 +11,14 @@ difference() {
 		rotate(-10,[0,0,1])
 		rotate(-90,[1,0,0])
 		rotate(-90,[0,0,1])
-		linear_extrude(height = 25, center = true, convexity = 10)
+        difference() {
+		  linear_extrude(height = 25, center = true, convexity = 10)
 		   import (file = "klammer.dxf", layer = "SegBody", $fn=300);
+
+          translate([0,0,10])
+		  linear_extrude(height = 15, center = true, convexity = 10)
+		   import (file = "klammer.dxf", layer = "SegCut", $fn=300);
+        }
 	}
 
 	translate([-W/2,0,0])
