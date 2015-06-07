@@ -3,24 +3,29 @@ HEIGHT=70;
 W=10;
 
 difference() {
-	union() {
+        difference() {
+	   union() {
 		linear_extrude(height = HEIGHT, center = true, convexity = 10)
 		   import (file = "klammer.dxf", layer = "0", $fn=50);
 
-		translate([3,70,-HEIGHT/2])
+		translate([11,70,-HEIGHT/2])
 		rotate(-10,[0,0,1])
 		rotate(-90,[1,0,0])
 		rotate(-90,[0,0,1])
-        difference() {
 		  linear_extrude(height = 25, center = true, convexity = 10)
 		   import (file = "klammer.dxf", layer = "SegBody", $fn=300);
 
-          translate([0,0,10])
-		  linear_extrude(height = 15, center = true, convexity = 10)
+          }
+		translate([12,70,-HEIGHT/2])
+		rotate(-10,[0,0,1])
+		rotate(-90,[1,0,0])
+		rotate(-90,[0,0,1])
+          translate([0,0,9+EPS])
+		  linear_extrude(height = 7, center = true, convexity = 10)
 		   import (file = "klammer.dxf", layer = "SegCut", $fn=300);
-        }
 	}
 
-	translate([-W/2,0,0])
-	cube([W, 200, HEIGHT+5*EPS], center=true);
+	translate([-19,97,0])
+	rotate(29,[0,0,1])
+	cube([W, 100, HEIGHT+5*EPS], center=true);
 }
