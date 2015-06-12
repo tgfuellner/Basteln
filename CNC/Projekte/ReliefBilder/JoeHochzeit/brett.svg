@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1417.3228"
+   height="1771.6534"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="brett.svg">
+  <defs
+     id="defs4">
+    <symbol
+       id="*Paper_Space" />
+    <symbol
+       id="*Model_Space" />
+    <pattern
+       y="0"
+       x="0"
+       width="8"
+       patternUnits="userSpaceOnUse"
+       id="Hatch"
+       height="8">
+      <path
+         id="path3014"
+         stroke-width="0.25"
+         stroke="#000000"
+         linecap="square"
+         d="M8 4 l-4,4" />
+      <path
+         id="path3016"
+         stroke-width="0.25"
+         stroke="#000000"
+         linecap="square"
+         d="M6 2 l-4,4" />
+      <path
+         id="path3018"
+         stroke-width="0.25"
+         stroke="#000000"
+         linecap="square"
+         d="M4 0 l-4,4" />
+    </pattern>
+    <marker
+       style="overflow:visible"
+       refY="0.0"
+       refX="0.0"
+       orient="auto"
+       id="DistanceX">
+      <path
+         id="path3011"
+         style="stroke:#000000; stroke-width:0.5"
+         d="M 3,-3 L -3,3 M 0,-5 L  0,5" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="558.55227"
+     inkscape:cy="808.93287"
+     inkscape:document-units="cm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="cm"
+     inkscape:window-width="1920"
+     inkscape:window-height="1176"
+     inkscape:window-x="1920"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,719.29263)">
+    <g
+       id="g3073">
+      <path
+         id="path3032"
+         style="fill:none;stroke:#000000;stroke-width:1.90705228;stroke-linecap:round"
+         d="m 655.50847,627.65336 106.43937,0"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3034"
+         style="fill:none;stroke:#000000;stroke-width:1.90705228;stroke-linecap:round"
+         d="m 761.94784,627.65336 0,-354.71564"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3036"
+         style="fill:none;stroke:#000000;stroke-width:1.90705228;stroke-linecap:round"
+         d="m 761.94784,272.93772 -106.43937,0"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3038"
+         style="fill:none;stroke:#000000;stroke-width:1.90705228;stroke-linecap:round"
+         d="m 655.50847,272.93772 0,354.71564"
+         inkscape:connector-curvature="0" />
+      <path
+         id="path3040"
+         style="fill:none;stroke:#000000;stroke-width:1.90705228;stroke-linecap:round"
+         d="m 708.72815,-294.60732 a 266.09842,319.24408 0 1 0 0,638.48816 266.09842,319.24408 0 0 0 0,-638.48816 z"
+         inkscape:connector-curvature="0" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:165.99479675px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS Bold"
+       id="text3099"
+       sodipodi:linespacing="125%"><textPath
+         xlink:href="#path3899"
+         id="textPath3905"><tspan
+   id="tspan3101"
+   dx="1589.9717">Die TT'ler wünschen</tspan></textPath></text>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3103"
+       style="fill:black;stroke:none;stroke-opacity:1;stroke-width:1px;stroke-linejoin:miter;stroke-linecap:butt;fill-opacity:1;font-family:Sans;font-style:normal;font-weight:normal;font-size:40px;line-height:125%;letter-spacing:0px;word-spacing:0px"><flowRegion
+         id="flowRegion3105"><rect
+           id="rect3107"
+           width="20.203051"
+           height="62.629459"
+           x="105.05586"
+           y="262.48553" /></flowRegion><flowPara
+         id="flowPara3109"></flowPara></flowRoot>    <text
+       transform="scale(0.75168375,1.3303467)"
+       sodipodi:linespacing="125%"
+       id="text3111"
+       y="710.57886"
+       x="57.792999"
+       style="font-size:152.07371521px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS Bold"
+       xml:space="preserve"><tspan
+         y="710.57886"
+         x="57.792999"
+         id="tspan3113"
+         sodipodi:role="line">ein erfolgreiches Doppel</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-opacity:1"
+       id="rect3893"
+       width="1420.2745"
+       height="1775.8481"
+       x="0"
+       y="1.8661839"
+       transform="translate(0,-719.29263)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:none;stroke:#000000;stroke-opacity:1"
+       id="path3899"
+       sodipodi:cx="1214.2034"
+       sodipodi:cy="1066.567"
+       sodipodi:rx="553.5636"
+       sodipodi:ry="472.7514"
+       d="m 1767.767,1066.567 a 553.5636,472.7514 0 1 1 -1107.12723,0 553.5636,472.7514 0 1 1 1107.12723,0 z"
+       transform="translate(-504.0661,-1139.5161)" />
+    <text
+       xml:space="preserve"
+       style="font-size:211.51564026px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS Bold"
+       x="113.88235"
+       y="381.37628"
+       id="text3910"
+       sodipodi:linespacing="125%"
+       transform="scale(0.75168375,1.3303467)"><tspan
+         sodipodi:role="line"
+         id="tspan3912"
+         x="113.88235"
+         y="381.37628">Irmi</tspan></text>
+    <text
+       transform="scale(0.75168375,1.3303467)"
+       sodipodi:linespacing="125%"
+       id="text3914"
+       y="356.17618"
+       x="1285.7223"
+       style="font-size:211.51564026px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Comic Sans MS;-inkscape-font-specification:Comic Sans MS Bold"
+       xml:space="preserve"><tspan
+         y="356.17618"
+         x="1285.7223"
+         id="tspan3916"
+         sodipodi:role="line">Sepp</tspan></text>
+  </g>
+</svg>
