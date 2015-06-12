@@ -1,5 +1,5 @@
 EPS=0.01;
-HEIGHT=70;
+HEIGHT=60;     // Check with dxf
 W=10;
 
 difference() {
