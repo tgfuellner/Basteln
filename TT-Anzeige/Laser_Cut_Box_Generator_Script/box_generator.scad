@@ -21,11 +21,11 @@ tablengthperiod = 3;
 tabwidthperiod = 3;
 tabdepthperiod = 9;
 
-screwLength = 12;
+screwLength = 11.5-tablength;
 screwDiameter = 2.95;
 
-hexWidth = 2.2;
-hexThickness = 7 ;
+hexWidth = 2.4;
+hexThickness = 5.5 ;
 
 exploded = true;
 explodedplateseperation = 2;
@@ -225,14 +225,14 @@ module Panel(length=65 , width =50 , tablength = 3, tabwidth = 6, tablengthperio
 			square([length+tablength*2,width+tablength*2], center=true);
 			PanelTabs(length,width,tabwidthperiod,tablengthperiod, tablength,tabwidth);
 
-			translate([-((length/2)) - tablength/4,(-width/2)-(width/tabwidthperiod)/2 ])
-			WidthScrewHoles(width, tabwidthperiod, screwDiameter);
+			//translate([-((length/2)) - tablength/4,(-width/2)-(width/tabwidthperiod)/2 ])
+		//	WidthScrewHoles(width, tabwidthperiod, screwDiameter);
 
-			translate([((length/2)) + tablength/4,(-width/2)-(width/tabwidthperiod)/2 ])
-			WidthScrewHoles(width, tabwidthperiod, screwDiameter);
+			//translate([((length/2)) + tablength/4,(-width/2)-(width/tabwidthperiod)/2 ])
+			//WidthScrewHoles(width, tabwidthperiod, screwDiameter);
 
-			translate([(-length/2) + (length/tablengthperiod)/2  ,-((width/2)) - tablength/4 ])
-			LengthScrewHoles(length, tablengthperiod, screwDiameter);
+			//translate([(-length/2) + (length/tablengthperiod)/2  ,-((width/2)) - tablength/4 ])
+			//LengthScrewHoles(length, tablengthperiod, screwDiameter);
 
 			translate([(-length/2) + (length/tablengthperiod)/2  ,((width/2)) + tablength/4 ])
 			LengthScrewHoles(length, tablengthperiod, screwDiameter);
@@ -334,7 +334,7 @@ module PositiveLengthTabs(length,width, tablengthperiod, tablength,  tabwidth)
 
 module WidthScrewSlots(width, tabwidthperiod, screwlength, screwdiameter, hexwidth, hexthickness, offsetHex=0)
 {
-	for(i = [ 1  : 1 : tabwidthperiod-1])
+	for(i = [ 1,4,  tabwidthperiod-1])
 	{
 		assign(offset = ((width/tabwidthperiod)*i) )
 		{
@@ -352,7 +352,7 @@ module WidthScrewSlots(width, tabwidthperiod, screwlength, screwdiameter, hexwid
 
 module WidthScrewHoles(width, tabwidthperiod, screwdiameter)
 {
-	for(i = [ 1  : 1 : tabwidthperiod-1])
+	for(i = [ ])
 	{
 		assign(offset = ((width/tabwidthperiod)*i) )
 		{
@@ -366,7 +366,7 @@ module WidthScrewHoles(width, tabwidthperiod, screwdiameter)
 
 module LengthScrewHoles(length, tablengthperiod, screwdiameter)
 {
-	for(i = [ 1  : 1 : tablengthperiod-1])
+	for(i = [ 1  ,4, tablengthperiod-1])
 	{
 		assign(offset = ((length/tablengthperiod)*i) )
 		{
@@ -379,7 +379,7 @@ module LengthScrewHoles(length, tablengthperiod, screwdiameter)
 
 module LengthScrewSlots(length, tablengthperiod, screwlength, screwdiameter, hexwidth, hexthickness, offsetHex=0)
 {
-	for(i = [ 1  : 1 : tablengthperiod-1])
+	for(i = [ ])
 	{
 		assign(offset = ((length/tablengthperiod)*i) )
 		{
@@ -430,7 +430,7 @@ module tab(a,b)
 
 module ScrewSlot(a, b)
 {
-	square([a,b], center=true);
+	square([a+2,b], center=true);
 	
 }
 
