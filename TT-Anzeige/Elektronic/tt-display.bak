@@ -1,0 +1,124 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:cmos_ieee
+LIBS:tt-display-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATTINY2313-P IC?
+U 1 1 572B8BA6
+P 2150 3700
+F 0 "IC?" H 1200 4700 50  0000 C CNN
+F 1 "ATTINY2313-P" H 2950 2800 50  0000 C CNN
+F 2 "DIP20" H 2150 3700 50  0000 C CIN
+F 3 "" H 2150 3700 50  0000 C CNN
+	1    2150 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4543 U?
+U 1 1 572B90FB
+P 5800 1000
+F 0 "U?" H 6150 1450 50  0000 C CNN
+F 1 "4543" H 6150 550 50  0000 C CNN
+F 2 "" H 5800 1000 60  0000 C CNN
+F 3 "" H 5800 1000 60  0000 C CNN
+	1    5800 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4543 U?
+U 1 1 572B91BA
+P 5800 2000
+F 0 "U?" H 6150 2450 50  0000 C CNN
+F 1 "4543" H 6150 1550 50  0000 C CNN
+F 2 "" H 5800 2000 60  0000 C CNN
+F 3 "" H 5800 2000 60  0000 C CNN
+	1    5800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4543 U?
+U 1 1 572B91EC
+P 5800 3000
+F 0 "U?" H 6150 3450 50  0000 C CNN
+F 1 "4543" H 6150 2550 50  0000 C CNN
+F 2 "" H 5800 3000 60  0000 C CNN
+F 3 "" H 5800 3000 60  0000 C CNN
+	1    5800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4543 U?
+U 1 1 572B9225
+P 5800 4000
+F 0 "U?" H 6150 4450 50  0000 C CNN
+F 1 "4543" H 6150 3550 50  0000 C CNN
+F 2 "" H 5800 4000 60  0000 C CNN
+F 3 "" H 5800 4000 60  0000 C CNN
+	1    5800 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4543 U?
+U 1 1 572B92EA
+P 5800 5000
+F 0 "U?" H 6150 5450 50  0000 C CNN
+F 1 "4543" H 6150 4550 50  0000 C CNN
+F 2 "" H 5800 5000 60  0000 C CNN
+F 3 "" H 5800 5000 60  0000 C CNN
+	1    5800 5000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 4543 U?
+U 1 1 572B93EF
+P 5800 6000
+F 0 "U?" H 6150 6450 50  0000 C CNN
+F 1 "4543" H 6150 5550 50  0000 C CNN
+F 2 "" H 5800 6000 60  0000 C CNN
+F 3 "" H 5800 6000 60  0000 C CNN
+	1    5800 6000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
