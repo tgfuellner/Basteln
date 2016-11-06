@@ -1,9 +1,9 @@
 rBall = 21.5+0.5;
 bend_radius = 40;
 knickWinkel=25;
-WandSTaerke=5;
+WandSTaerke=5.5;
 RotateRadius=80;
-RAussenRohr=50/2;
+RAussenRohr=51/2;
 EPS=0.1;
 
 
@@ -25,9 +25,9 @@ module knick() {
 }
 
 module trichter() {
-    rWide=rBall+WandSTaerke+12.5;
+    rWide=rBall+WandSTaerke+8.5;
     hoehe=40;
-    GummiLoecherVonAussen=20;
+    GummiLoecherVonAussen=23;
 
     difference() {
       cylinder(r1=rBall+WandSTaerke, r2=rWide, h=hoehe);
