@@ -7,7 +7,7 @@
 // roundedBox([width, height, depth], float radius, bool sidesonly);
 
 // EXAMPLE USAGE:
-// roundedBox([20, 30, 40], 5, true);
+ roundedBox([20, 30, 40], 5, true);
 
 // size is a vector [w, h, d]
 module roundedBox(size, radius, sidesonly)
